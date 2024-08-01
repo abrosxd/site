@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./Navigation.css";
 
@@ -20,12 +20,13 @@ import PlSVG from "../../assets/icons/language/pl.svg";
 export default function Navigation() {
   useGlyphAnimation();
 
-  const { t, i18n } = useTranslation("menu");
+  const { t, i18n } = useTranslation("Menu");
   const [isLinksMenuOpen, setLinksMenuOpen] = useState(false);
   const [isLangMenuOpen, setLangMenuOpen] = useState(false);
 
   const linksMenuRef = useRef(null);
   const langMenuRef = useRef(null);
+  const location = useLocation();
 
   const toggleLinksMenu = () => {
     setLinksMenuOpen(!isLinksMenuOpen);
@@ -58,17 +59,35 @@ export default function Navigation() {
     };
   }, []);
 
+  const isActive = (path) => location.pathname === path;
+  const isCurrentLanguage = (lang) => i18n.language === lang;
+
   return (
     <nav>
       <ul className="menu">
         <li className="section">
-          <Button className="glyph" as={Link} to="/" text={t("home")} />
+          <Button
+            className={`glyph ${isActive("/") ? "active" : ""}`}
+            as={Link}
+            to="/"
+            text={t("home")}
+          />
         </li>
         <li className="section">
-          <Button className="glyph" as={Link} to="/work" text={t("work")} />
+          <Button
+            className={`glyph ${isActive("/work") ? "active" : ""}`}
+            as={Link}
+            to="/work"
+            text={t("work")}
+          />
         </li>
         <li className="section">
-          <Button className="glyph" as={Link} to="/about" text={t("about")} />
+          <Button
+            className={`glyph ${isActive("/about") ? "active" : ""}`}
+            as={Link}
+            to="/about"
+            text={t("about")}
+          />
         </li>
       </ul>
 
@@ -119,17 +138,26 @@ export default function Navigation() {
           </Button>
           <ul className={`submenu lang-sub ${isLangMenuOpen ? "active" : ""}`}>
             <li>
-              <Button onClick={() => changeLanguage("en")}>
+              <Button
+                className={isCurrentLanguage("en") ? "active" : ""}
+                onClick={() => changeLanguage("en")}
+              >
                 <img className="nav-icon" src={EnSVG} alt="English" />
               </Button>
             </li>
             <li>
-              <Button onClick={() => changeLanguage("ru")}>
+              <Button
+                className={isCurrentLanguage("ru") ? "active" : ""}
+                onClick={() => changeLanguage("ru")}
+              >
                 <img className="nav-icon" src={RuSVG} alt="Русский" />
               </Button>
             </li>
             <li>
-              <Button onClick={() => changeLanguage("pl")}>
+              <Button
+                className={isCurrentLanguage("pl") ? "active" : ""}
+                onClick={() => changeLanguage("pl")}
+              >
                 <img className="nav-icon" src={PlSVG} alt="Polski" />
               </Button>
             </li>

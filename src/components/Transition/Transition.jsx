@@ -1,3 +1,4 @@
+import React from "react";
 import "./Transition.css";
 import { motion } from "framer-motion";
 
