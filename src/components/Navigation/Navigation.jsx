@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "./Navigation.css";
+
+import useGlyphAnimation from "../../utils/GlyphAnimation";
+
 import Button from "../../partials/Button/Button";
 
 import LinkSVG from "../../assets/icons/link.svg";
@@ -14,6 +18,9 @@ import RuSVG from "../../assets/icons/language/ru.svg";
 import PlSVG from "../../assets/icons/language/pl.svg";
 
 export default function Navigation() {
+  useGlyphAnimation();
+
+  const { t, i18n } = useTranslation("menu");
   const [isLinksMenuOpen, setLinksMenuOpen] = useState(false);
   const [isLangMenuOpen, setLangMenuOpen] = useState(false);
 
@@ -26,6 +33,10 @@ export default function Navigation() {
 
   const toggleLangMenu = () => {
     setLangMenuOpen(!isLangMenuOpen);
+  };
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
 
   useEffect(() => {
@@ -51,13 +62,13 @@ export default function Navigation() {
     <nav>
       <ul className="menu">
         <li className="section">
-          <Button className="glyph" as={Link} to="/" text="Главная" />
+          <Button className="glyph" as={Link} to="/" text={t("home")} />
         </li>
         <li className="section">
-          <Button className="glyph" as={Link} to="/work" text="Работы" />
+          <Button className="glyph" as={Link} to="/work" text={t("work")} />
         </li>
         <li className="section">
-          <Button className="glyph" as={Link} to="/about" text="Обо мне" />
+          <Button className="glyph" as={Link} to="/about" text={t("about")} />
         </li>
       </ul>
 
@@ -108,17 +119,17 @@ export default function Navigation() {
           </Button>
           <ul className={`submenu lang-sub ${isLangMenuOpen ? "active" : ""}`}>
             <li>
-              <Button>
+              <Button onClick={() => changeLanguage("en")}>
                 <img className="nav-icon" src={EnSVG} alt="English" />
               </Button>
             </li>
             <li>
-              <Button>
+              <Button onClick={() => changeLanguage("ru")}>
                 <img className="nav-icon" src={RuSVG} alt="Русский" />
               </Button>
             </li>
             <li>
-              <Button>
+              <Button onClick={() => changeLanguage("pl")}>
                 <img className="nav-icon" src={PlSVG} alt="Polski" />
               </Button>
             </li>

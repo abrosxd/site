@@ -1,5 +1,9 @@
+import React from "react";
 import "./Work.css";
+import Transition from "../../components/Transition/Transition";
 
-export default function Home() {
+const Work = () => {
   return <p>Work</p>;
-}
+};
+
+export default Transition(Work);

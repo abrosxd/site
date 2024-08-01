@@ -1,5 +1,14 @@
-.glyph {
-  line-height: 20px;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.glyph span {
+  display: inline-block;
 }
 
 .copy-success {
