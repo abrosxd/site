@@ -10,19 +10,19 @@ ul {
   display: flex;
 }
 
-.section {
+nav .section {
   display: flex;
   width: min-content;
   height: 40px;
 }
-.section.up {
+nav .section.up {
   flex-wrap: wrap;
 }
-.section.down {
+nav .section.down {
   flex-wrap: wrap-reverse;
 }
 @media (max-width: 767px) {
-  .section.down {
+  nav .section.down {
     flex-wrap: wrap;
   }
 }
@@ -31,15 +31,16 @@ ul {
   width: 20px;
 }
 
-.menu {
+nav .menu {
   position: fixed;
   top: 24px;
   left: 24px;
+  gap: 10px;
 }
 
 @media (max-width: 767px) {
-  .menu {
-    padding: 0 16px 16px;
+  nav .menu {
+    margin: 0 0 16px;
     bottom: 0;
     top: auto;
     left: 50%;
@@ -47,25 +48,21 @@ ul {
   }
 }
 
-.menu .section {
-  margin-right: 10px;
-}
-
-.links {
+nav .links {
   position: fixed;
   bottom: 24px;
   left: 24px;
 }
 
 @media (max-width: 767px) {
-  .links {
+  nav .links {
     top: 24px;
     bottom: auto;
     /* left: 80px; */
   }
 }
 
-.lang {
+nav .lang {
   position: fixed;
   /* bottom: 24px; */
   top: 24px;
@@ -81,15 +78,21 @@ ul {
     }
   } */
 
-.submenu {
-  flex-wrap: wrap;
-  z-index: 2;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease;
-}
+@media (max-width: 330px) {
+  nav .menu {
+    overflow-x: scroll;
+    width: 100%;
+    scrollbar-width: none;
+  }
 
-.submenu.active {
-  opacity: 1;
-  visibility: visible;
+  nav .menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav .menu li:nth-child(1) {
+    margin-left: 10px;
+  }
+  nav .menu li:nth-last-child(1) {
+    margin-right: 10px;
+  }
 }

@@ -12,7 +12,7 @@ import Documents from "../../components/About/Documents/Documents";
 const About = () => {
   const { t } = useTranslation("About");
   return (
-    <div className="container">
+    <div className="about-container">
       <div className="grid grid-cols gap-4">
         <div className="flex flex-col gap-4">
           <div className="card">

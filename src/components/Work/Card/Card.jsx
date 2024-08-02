@@ -1,18 +1,81 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Card.css";
 
-export default function Card() {
+export default function Card({ name, img, overlay, light, category, url }) {
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const card = cardRef.current;
+
+    const handleMouseMove = (event) => {
+      requestAnimationFrame(() => {
+        const { clientX, clientY } = event;
+        const cardRect = card.getBoundingClientRect();
+        const cardX = cardRect.left + cardRect.width / 2;
+        const cardY = cardRect.top + cardRect.height / 2;
+
+        const deltaX = clientX - cardX;
+        const deltaY = clientY - cardY;
+
+        const tiltX = deltaX / 20;
+        const tiltY = deltaY / 20;
+
+        card.style.transform = `rotateX(${-tiltY}deg) rotateY(${tiltX}deg)`;
+      });
+    };
+
+    const handleMouseLeave = () => {
+      requestAnimationFrame(() => {
+        card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+      });
+    };
+
+    const handleTouchStart = () => {
+      card.classList.add("mobcenter");
+    };
+
+    const handleTouchEnd = () => {
+      setTimeout(() => {
+        card.classList.remove("mobcenter");
+      }, 500);
+    };
+
+    if (!("ontouchstart" in window)) {
+      document.addEventListener("mousemove", handleMouseMove);
+      document.addEventListener("mouseleave", handleMouseLeave);
+    } else {
+      card.addEventListener("touchstart", handleTouchStart);
+      card.addEventListener("touchend", handleTouchEnd);
+    }
+
+    return () => {
+      if (!("ontouchstart" in window)) {
+        document.removeEventListener("mousemove", handleMouseMove);
+        document.removeEventListener("mouseleave", handleMouseLeave);
+      } else {
+        card.removeEventListener("touchstart", handleTouchStart);
+        card.removeEventListener("touchend", handleTouchEnd);
+      }
+    };
+  }, []);
+
   return (
-    <div
+    <Link
+      ref={cardRef}
       className="project"
-      id="5"
-      data-category="TildaMod"
-      style='background-image: url("/public/projects/Tilda/Player/avatar.png"); box-shadow: rgb(126, 112, 255) 0px 0px 10px; display: block; transform: rotateX(-11.25deg) rotateY(18.5deg);'
+      data-category={category.join(", ")}
+      style={{
+        backgroundImage: `url(${img})`,
+        boxShadow: `${light} 0px 0px 10px`,
+      }}
+      to={`/work/${url}`}
     >
+      <h1 className="title">{name}</h1>
       <div
-        class="overlay"
-        style='background-image: url("/public/projects/Tilda/Player/overlay.png");'
+        className="overlay"
+        style={{ backgroundImage: `url(${overlay})` }}
       ></div>
-    </div>
+    </Link>
   );
 }

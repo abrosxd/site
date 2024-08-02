@@ -9,16 +9,19 @@ const Button = ({
   text,
   children,
   onClick,
+  ...props
 }) => {
   const buttonRef = useRef(null);
+  const classes = className ? `button ${className}` : "button";
 
   return (
     <Component
-      className={`button ${className}`}
+      className={classes}
       href={href}
       to={to}
       onClick={onClick}
       ref={buttonRef}
+      {...props}
     >
       {children
         ? children

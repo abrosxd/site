@@ -1,0 +1,19 @@
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  transition: transform 0.3s ease-in-out;
+  top: 0;
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .work-container {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+}

@@ -65,7 +65,7 @@ export default function Navigation() {
   return (
     <nav>
       <ul className="menu">
-        <li className="section">
+        <li>
           <Button
             className={`glyph ${isActive("/") ? "active" : ""}`}
             as={Link}
@@ -73,7 +73,7 @@ export default function Navigation() {
             text={t("home")}
           />
         </li>
-        <li className="section">
+        <li>
           <Button
             className={`glyph ${isActive("/work") ? "active" : ""}`}
             as={Link}
@@ -81,7 +81,7 @@ export default function Navigation() {
             text={t("work")}
           />
         </li>
-        <li className="section">
+        <li>
           <Button
             className={`glyph ${isActive("/about") ? "active" : ""}`}
             as={Link}
