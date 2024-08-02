@@ -1,16 +1,40 @@
 {
   "FAQ": [
     {
-      "title": "Тильда — хорошее решение?",
-      "text": "Тильда — отличный выбор для небольших проектов или для больших, но с ограниченным бюджетом. Почему именно так? Все дело в том, что Тильда является конструктором веб-сайтов. Благодаря гибкости платформы после создания сайта вы сможете даже сами корректировать тексты и изменять изображения. Но придется принять тот факт, что для использования Тильды вам придется подписывать подписки или покупать их и оплачивать дополнительное развитие. В любом случае это все равно дешевле, чем создание сайта с нуля."
+      "title": "Konstruktor czy Framework?",
+      "text": "W świecie tworzenia stron internetowych istnieje wiele narzędzi, które pomagają w ich tworzeniu. Kreatory stron, takie jak Webflow, Tilda czy Wix, oferują prosty interfejs do szybkiego rozwoju. Z drugiej strony frameworki, takie jak React czy Angular, zapewniają bardziej elastyczne i potężne możliwości tworzenia skomplikowanych i funkcjonalnych aplikacji internetowych. Wybór między nimi zależy od twoich celów i poziomu wiedzy technicznej."
     },
     {
-      "title": "Почему такая цена?",
-      "text": "Создать сайт, написать модификацию, улучшить модификацию — это не так просто и быстро, как кажется. Процесс разработки включает в себя множество скрытых шагов, которые непосредственно влияют на результат. Разработка - это тонкий и трудоемкий процесс. В ходе работы часто возникают правки, увеличивающие сложность и время работы над проектом. Это длительная работа, которая требует определенных навыков. Ради этого я постоянно обучаюсь, поэтому стоимость разработки не может быть низкой."
+      "title": "Czy Webflow to dobre rozwiązanie?",
+      "text": "Webflow nadaje się do projektów, które chcą tworzyć skomplikowane i unikalne strony internetowe bez ograniczeń kreatorów. Webflow oferuje elastyczne ustawienia i wysoki stopień kontroli nad projektem i funkcjonalnością. Jest to doskonałe rozwiązanie dla sklepów/usług internetowych/dużych firm/skomplikowanych projektów."
     },
     {
-      "title": "В чем отличие правок от редакций?",
-      "text": "Правки - это когда вы просите внести мелкие изменения: поменять цвет, передвинуть кнопку, скруглить края...<br><br>Редакции - это когда вы просите внести крупные изменения: поменять функционал, изменить дизайн блока, сделать новый блок..."
+      "title": "Czy Tilda to dobre rozwiązanie?",
+      "text": "Tilda nadaje się do małych projektów, stron docelowych/małych sklepów/szkół z kursami/stron korporacyjnych. Jednak dla bardziej skomplikowanych i unikalnych projektów funkcjonalność Tildy może być niewystarczająca i w takich przypadkach konieczne będzie dodatkowe wykorzystanie rozwoju i usług zewnętrznych."
+    },
+    {
+      "title": "Czy Wix to dobre rozwiązanie?",
+      "text": "Wix oferuje wiele gotowych szablonów i narzędzi do edycji, co czyni go idealnym dla małych firm/blogerów/profesjonalistów kreatywnych. Jednak nie nadaje się do dużych projektów ani specyficznych wymagań."
+    },
+    {
+      "title": "Dlaczego taka cena?",
+      "text": "Stworzenie strony, napisanie modyfikacji, ulepszenie modyfikacji - to nie jest tak proste i szybkie, jak się wydaje. Proces tworzenia obejmuje wiele ukrytych kroków, które bezpośrednio wpływają na wynik. Tworzenie stron to delikatny i czasochłonny proces. W trakcie pracy często pojawiają się poprawki, zwiększające złożoność i czas pracy nad projektem. Jest to długotrwały proces, który wymaga określonych umiejętności. Dlatego stale się uczę, więc koszt tworzenia nie może być niski."
+    },
+    {
+      "title": "Czym różnią się poprawki od edycji?",
+      "text": "Poprawki to małe zmiany w istniejącej treści lub projekcie, mające na celu poprawienie błędów lub wyjaśnienie informacji. Edycje z drugiej strony, zakładają głębsze zmiany, które mogą obejmować przebudowę struktury strony, zmianę jej funkcjonalności lub dodanie nowej treści. Edycje wymagają więcej czasu i zasobów niż proste poprawki."
+    },
+    {
+      "title": "Jak ustalana jest cena?",
+      "text": "Formuła ustalania ceny jest prosta: [( X * czas ) - zniżka dla stałych klientów]. W ten sposób koszt projektu zależy od ilości pracy i czasu poświęconego na jego realizację. Stali klienci mogą liczyć na zniżki, co sprawia, że nasza współpraca jest jeszcze bardziej korzystna."
+    },
+    {
+      "title": "Jakie materiały muszę dostarczyć?",
+      "text": "Każdy projekt jest wyjątkowy. Dlatego wcześniej umawiamy się na rozmowę telefoniczną, aby omówić wszystkie szczegóły. W trakcie rozmowy powiem ci, czego będę potrzebować od ciebie i jakie mogą pojawić się dodatkowe koszty. Po takiej rozmowie będziesz już wiedzieć, czego wymagam od ciebie do realizacji twojego zamówienia i będziesz mógł zdecydować, czy te warunki ci odpowiadają."
+    },
+    {
+      "title": "Jakie mogą być dodatkowe koszty?",
+      "text": "Jesteśmy w erze cyfrowych subskrypcji i to nie omija twórców stron. Istnieją usługi, które pokrywają 70% twoich zapytań i mogą być użyte w twoich projektach. W ten sposób musisz zapłacić X kwotę za subskrypcję zamiast XXXXXXXX kwoty za tworzenie. Z kolei ja tylko kompetentnie integruję te usługi razem."
     }
   ]
 }

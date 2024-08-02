@@ -1,0 +1,20 @@
+.stack-container {
+  line-height: 1.7;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.stack-container .tag {
+  padding: 1px 5px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.stack-container img {
+  margin-right: 5px;
+  height: 20px;
+  border-radius: 5px;
+}

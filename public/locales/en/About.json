@@ -1,5 +1,8 @@
 {
   "hello": "👋 Hi - I'm Daniel, a web designer and web developer. Here you'll find all the necessary information about me and even more. Welcome!",
   "reviews": "Reviews",
-  "faq": "Answers on questions"
+  "faq": "Answers on questions",
+  "gallery": "Photo album",
+  "stack": "Stack",
+  "documents": "Documents"
 }
