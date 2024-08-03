@@ -2,6 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import "./About.css";
 import Transition from "../../components/Transition/Transition";
+
 import MyTime from "../../components/About/MyTime/MyTime";
 import Reviews from "../../components/About/Reviews/Reviews";
 import FAQ from "../../components/About/FAQ/FAQ";

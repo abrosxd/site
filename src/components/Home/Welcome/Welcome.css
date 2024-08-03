@@ -1,0 +1,88 @@
+/* Icon section */
+.scroll-icon,
+.swipe-icon {
+  height: 30px;
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  color: currentColor;
+  opacity: 0.5;
+  overflow: visible !important;
+}
+.scroll-icon {
+  display: block;
+}
+
+.swipe-icon {
+  display: none;
+}
+
+.scroll-icon path,
+.swipe-icon path {
+  animation: active 4s infinite ease-in-out;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .scroll-icon {
+    display: none;
+  }
+
+  .swipe-icon {
+    display: block;
+  }
+}
+
+@keyframes active {
+  0%,
+  20%,
+  30%,
+  40%,
+  100% {
+    translate: 0 0;
+  }
+  25%,
+  35% {
+    translate: 0 -50%;
+  }
+}
+
+/* Header section */
+.welcome {
+  height: 100vh;
+  position: relative;
+  padding: 1rem;
+  width: 1100px;
+  max-width: calc(100% - 4rem);
+  left: 50%;
+  top: 0;
+  translate: -50% 0;
+  display: grid;
+  align-content: center;
+}
+
+.welcome h2 {
+  font-size: clamp(2rem, 5vw + 1rem, 8rem);
+  font-family: var(--font-basic);
+  line-height: 0.9;
+  font-weight: 500;
+  translate: 0 -100%;
+  margin: 0;
+}
+
+.welcome .typing-text::after {
+  content: "|";
+  animation: typing ease 1s infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

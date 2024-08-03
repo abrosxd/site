@@ -4,6 +4,17 @@
   --height: min(calc(100vh - 200px), 118vw);
   --width: calc(var(--height) / 1.3333);
   --font-basic: "Montserrat Alternates", sans-serif;
+  --nav-height: 60px;
+  --black: hsl(0 0% 2%);
+  --white: hsl(0 0% 98%);
+  --content-width: 120ch;
+  --accent: hsl(10 90% 50%);
+  --jump: cover 15% cover 45%;
+  --spin: cover 15% cover 45%;
+  --flip: cover 15% cover 45%;
+  --open: cover 15% cover 45%;
+  --straighten: contain 25% contain 65%;
+  --zoom: contain 25% exit -20%;
 }
 
 body,

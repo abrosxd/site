@@ -1,0 +1,57 @@
+/* Skills section */
+.block-skills {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  --color: hsl(0 0% 80%);
+  pointer-events: none;
+}
+
+.block-skills .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem 29rem;
+  margin: 50px 50px 0;
+}
+
+@media (max-width: 767px) {
+  .block-skills .grid {
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    margin: 30px 30px 0;
+  }
+}
+
+@media (min-width: 2000px) {
+  .block-skills .grid {
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 50px 0;
+  }
+}
+
+/* Rotate cards */
+.block-skills .window-apple:nth-of-type(1) {
+  rotate: -9deg;
+}
+.block-skills .window-apple:nth-of-type(2) {
+  rotate: 5deg;
+}
+.block-skills .window-apple:nth-of-type(3) {
+  rotate: -8deg;
+}
+.block-skills .window-apple:nth-of-type(4) {
+  rotate: 7deg;
+}
+.block-skills .window-apple:nth-of-type(5) {
+  rotate: -4deg;
+}
+.block-skills .window-apple:nth-of-type(6) {
+  rotate: 6deg;
+}
+.block-skills .window-apple:nth-of-type(7) {
+  rotate: -9deg;
+}
+.block-skills .window-apple:nth-of-type(8) {
+  rotate: 9deg;
+}
