@@ -24,7 +24,7 @@ export default function Laptop() {
                             <div className="cuboid__side up">
                               <img
                                 className="logo-abros"
-                                src="../../../../public/assets/logo/icon150.webp"
+                                src="/assets/logo/icon150.webp"
                               />
                               <p className="sticker-abros">ABROS</p>
                             </div>

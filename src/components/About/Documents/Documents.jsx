@@ -6,7 +6,7 @@ export default function Documents() {
   const data = [
     {
       title: "ABROS",
-      en: "/public/assets/about/documents/test.md",
+      en: "/assets/about/documents/test.md",
       ru: " ",
       pl: " ",
     },

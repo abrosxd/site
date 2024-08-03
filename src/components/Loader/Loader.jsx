@@ -7,10 +7,19 @@ export default function Loader({ setLoading }) {
       setLoading(false);
     };
 
-    window.addEventListener("load", handleLoad);
+    if (document.readyState === "complete") {
+      setLoading(false);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
 
     return () => {
       window.removeEventListener("load", handleLoad);
+      clearTimeout(timer);
     };
   }, [setLoading]);
 

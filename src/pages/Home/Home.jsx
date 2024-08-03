@@ -15,6 +15,41 @@ const Home = () => {
   const isMobile = () => window.innerWidth <= 860;
   const { t } = useTranslation("Home");
 
+  const skills = [
+    {
+      title: "Three.js | 3D",
+      img: "/assets/home/three-js.gif",
+    },
+    {
+      title: "JavaScript",
+      img: "/assets/home/javascript.gif",
+    },
+    {
+      title: "GSAP",
+      img: "/assets/home/gsap.gif",
+    },
+    {
+      title: "Figma",
+      img: "/assets/home/figma.gif",
+    },
+    {
+      title: "Tilda Code",
+      img: "/assets/home/tilda-code.gif",
+    },
+    {
+      title: "CDN APP MOD",
+      img: "/assets/home/cdn-app-mod.gif",
+    },
+    {
+      title: "Library Create",
+      img: "/assets/home/js-library.gif",
+    },
+    {
+      title: "Custom Tilda",
+      img: "/assets/home/tilda-custom.gif",
+    },
+  ];
+
   useEffect(() => {
     const scrollLaptop = {
       trigger: ".animate-trigger-laptop",
@@ -168,40 +203,6 @@ const Home = () => {
     ScrollTrigger.refresh();
   }, []);
 
-  const skills = [
-    {
-      title: "Three.js | 3D",
-      img: "../../../public/assets/home/three-js.gif",
-    },
-    {
-      title: "JavaScript",
-      img: "../../../public/assets/home/javascript.gif",
-    },
-    {
-      title: "GSAP",
-      img: "../../../public/assets/home/gsap.gif",
-    },
-    {
-      title: "Figma",
-      img: "../../../public/assets/home/figma.gif",
-    },
-    {
-      title: "Tilda Code",
-      img: "../../../public/assets/home/tilda-code.gif",
-    },
-    {
-      title: "CDN APP MOD",
-      img: "../../../public/assets/home/cdn-app-mod.gif",
-    },
-    {
-      title: "Library Create",
-      img: "../../../public/assets/home/js-library.gif",
-    },
-    {
-      title: "Custom Tilda",
-      img: "../../../public/assets/home/tilda-custom.gif",
-    },
-  ];
   return (
     <main>
       <Laptop />
