@@ -203,7 +203,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <>
       <Laptop />
       <div data-scroll-container>
         <div className="animate-trigger-laptop">
@@ -220,7 +220,7 @@ const Home = () => {
           <div className="gallery slick-carousel"></div>
         </div>
       </div>
-    </main>
+    </>
   );
 };
 
