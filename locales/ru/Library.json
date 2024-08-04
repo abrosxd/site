@@ -1,0 +1,10 @@
+{
+  "Work": "text",
+  "Filter": {
+    "all": "Все",
+    "library": "Библиотеки",
+    "tilda": "Tilda",
+    "layout": "Верстка сайтов",
+    "design": "Дизайн"
+  }
+}
