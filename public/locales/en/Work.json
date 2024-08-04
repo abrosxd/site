@@ -1,0 +1,10 @@
+{
+  "Work": "text",
+  "Filter": {
+    "all": "All",
+    "library": "Libraries",
+    "tilda": "Tilda",
+    "layout": "Website layout",
+    "design": "Design"
+  }
+}

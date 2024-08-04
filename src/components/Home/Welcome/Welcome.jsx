@@ -60,14 +60,14 @@ function typingText(element, words, intervalRef, timeoutRef) {
 }
 
 export default function Welcome() {
-  const { t } = useTranslation("Welcome");
+  const { t } = useTranslation("Home");
   const typingTextRef = useRef(null);
   const intervalRef = useRef(null);
   const timeoutRef = useRef(null);
 
   useEffect(() => {
     const element = typingTextRef.current;
-    const words = t("typing-text", { returnObjects: true });
+    const words = t("Welcome.typing-text", { returnObjects: true });
 
     if (Array.isArray(words) && words.length > 0) {
       typingText(element, words, intervalRef, timeoutRef);
@@ -86,7 +86,7 @@ export default function Welcome() {
   return (
     <div className="welcome">
       <h2>
-        <span>{t("title")}</span>
+        <span>{t("Welcome.title")}</span>
         <br />
         <span className="typing-text" ref={typingTextRef}></span>
       </h2>

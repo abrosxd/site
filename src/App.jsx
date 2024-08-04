@@ -9,10 +9,11 @@ import Loader from "./components/Loader/Loader";
 
 import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
+import Library from "./pages/Library/Library";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
-import Lampa from "./pages/Projects/Lampa/Lampa";
+import Lampa from "./pages/Work/Projects/Lampa/Lampa";
 
 export default function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ export default function App() {
             <Routes location={location} key={location.pathname}>
               <Route index element={<Home />} />
               <Route path="/work" element={<Work />} />
+              <Route path="/lib" element={<Library />} />
               <Route path="/about" element={<About />} />
               <Route path="/work/lampa" element={<Lampa />} />
               <Route path="*" element={<NotFound />} />

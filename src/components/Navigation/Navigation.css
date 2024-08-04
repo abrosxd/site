@@ -21,7 +21,7 @@ nav .section.up {
 nav .section.down {
   flex-wrap: wrap-reverse;
 }
-@media (max-width: 767px) {
+@media (max-width: 1170px) {
   nav .section.down {
     flex-wrap: wrap;
   }
@@ -38,7 +38,7 @@ nav .menu {
   gap: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1170px) {
   nav .menu {
     margin: 0 0 16px;
     bottom: 0;
@@ -54,7 +54,7 @@ nav .links {
   left: 24px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1170px) {
   nav .links {
     top: 24px;
     bottom: auto;
@@ -78,7 +78,7 @@ nav .lang {
     }
   } */
 
-@media (max-width: 330px) {
+@media (max-width: 475px) {
   nav .menu {
     overflow-x: scroll;
     width: 100%;

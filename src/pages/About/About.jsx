@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import "./About.css";
 import Transition from "../../components/Transition/Transition";
 
-import MyTime from "../../components/About/MyTime/MyTime";
+import MyTime from "../../components/About/Time/Time";
 import Reviews from "../../components/About/Reviews/Reviews";
 import FAQ from "../../components/About/FAQ/FAQ";
 import Gallery from "../../components/About/Gallery/Gallery";

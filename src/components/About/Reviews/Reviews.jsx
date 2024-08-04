@@ -6,8 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Reviews() {
-  const { t } = useTranslation();
-  const reviewsData = t("Reviews:Reviews", { returnObjects: true });
+  const { t } = useTranslation("About");
+  const reviewsData = t("Reviews", { returnObjects: true });
 
   if (!Array.isArray(reviewsData)) {
     return null;

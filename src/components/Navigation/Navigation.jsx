@@ -7,15 +7,15 @@ import useGlyphAnimation from "../../utils/GlyphAnimation";
 
 import Button from "../../partials/Button/Button";
 
-import LinkSVG from "../../assets/icons/link.svg";
-import TelegramSVG from "../../assets/icons/social/telegram.svg";
-import VkSVG from "../../assets/icons/social/vk.svg";
-import InstagramSVG from "../../assets/icons/social/instagram.svg";
+import LinkSVG from "./assets/link.svg";
+import TelegramSVG from "./assets/social/telegram.svg";
+import VkSVG from "./assets/social/vk.svg";
+import InstagramSVG from "./assets/social/instagram.svg";
 
-import LangSVG from "../../assets/icons/lang.svg";
-import EnSVG from "../../assets/icons/language/en.svg";
-import RuSVG from "../../assets/icons/language/ru.svg";
-import PlSVG from "../../assets/icons/language/pl.svg";
+import LangSVG from "./assets/lang.svg";
+import EnSVG from "./assets/language/en.svg";
+import RuSVG from "./assets/language/ru.svg";
+import PlSVG from "./assets/language/pl.svg";
 
 export default function Navigation() {
   useGlyphAnimation();
@@ -79,6 +79,14 @@ export default function Navigation() {
             as={Link}
             to="/work"
             text={t("work")}
+          />
+        </li>
+        <li>
+          <Button
+            className={`glyph ${isActive("/lib") ? "active" : ""}`}
+            as={Link}
+            to="/lib"
+            text={t("library")}
           />
         </li>
         <li>

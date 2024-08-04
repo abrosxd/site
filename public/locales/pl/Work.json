@@ -1,0 +1,10 @@
+{
+  "Work": "text",
+  "Filter": {
+    "all": "Wszystko",
+    "library": "Biblioteki",
+    "tilda": "Tilda",
+    "layout": "Układ strony internetowej",
+    "design": "Design"
+  }
+}

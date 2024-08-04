@@ -1,6 +1,6 @@
 import React from "react";
 // import { useTranslation } from "react-i18next";
-import Transition from "../../../components/Transition/Transition";
+import Transition from "../../../../components/Transition/Transition";
 import "./Lampa.css";
 
 const Lampa = () => {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import "./MyTime.css";
+import "./Time.css";
 
-export default function MyTime() {
-  const { t } = useTranslation("MyTime");
+export default function Time() {
+  const { t } = useTranslation("About");
 
   const [currentDay, setCurrentDay] = useState("");
   const [currentDate, setCurrentDate] = useState("");
@@ -13,7 +13,7 @@ export default function MyTime() {
     const nowInWarsaw = new Date(
       new Date().toLocaleString("en-US", { timeZone: "Europe/Warsaw" })
     );
-    const daysOfWeek = t("days", { returnObjects: true });
+    const daysOfWeek = t("Time.days", { returnObjects: true });
     const currentDay = daysOfWeek[nowInWarsaw.getDay()];
     const currentDate = `${nowInWarsaw
       .getDate()
@@ -38,7 +38,7 @@ export default function MyTime() {
   return (
     <>
       <div className="mytime">
-        <span className="title">{t("title")}</span>
+        <span className="title">{t("Time.title")}</span>
         <span
           className="tag"
           style={{ backgroundColor: "#a8cfff80", color: "#0051ff" }}

@@ -1,0 +1,48 @@
+.coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  font-family: var(--font-basic);
+  gap: 3rem;
+}
+
+.coming-soon .title {
+  font-size: xxx-large;
+}
+
+.coming-soon .deadline {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 1rem;
+}
+
+.coming-soon .countdown {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.coming-soon .h2 {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.coming-soon .text-center {
+  font-size: x-large;
+}
+
+@media (max-width: 900px) {
+  .coming-soon .h2 {
+    font-size: larger;
+  }
+
+  .coming-soon .title {
+    font-size: xx-large;
+  }
+
+  .coming-soon .text-center {
+    font-size: large;
+  }
+}

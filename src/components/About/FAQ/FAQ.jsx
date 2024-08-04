@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import "./FAQ.css";
 
 export default function FAQ() {
-  const { t } = useTranslation();
-  const faqData = t("FAQ:FAQ", { returnObjects: true });
+  const { t } = useTranslation("About");
+  const faqData = t("FAQ", { returnObjects: true });
 
   const [activeIndex, setActiveIndex] = useState(null);
 

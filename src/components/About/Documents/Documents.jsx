@@ -1,12 +1,12 @@
 import React from "react";
 import "./Documents.css";
-import DocSVG from "../../../assets/icons/document.svg";
+import DocSVG from "./assets/document.svg";
 
 export default function Documents() {
   const data = [
     {
       title: "ABROS",
-      en: "/assets/about/documents/test.md",
+      en: "/assets/documents/test.md",
       ru: " ",
       pl: " ",
     },

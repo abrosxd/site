@@ -5,11 +5,11 @@ import { useTranslation } from "react-i18next";
 import "./Home.css";
 import Transition from "../../components/Transition/Transition";
 
-gsap.registerPlugin(ScrollTrigger);
-
 import Laptop from "../../components/Home/Laptop/Laptop";
 import Welcome from "../../components/Home/Welcome/Welcome";
 import Window from "../../components/Home/Window/Window";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const isMobile = () => window.innerWidth <= 860;
@@ -18,35 +18,35 @@ const Home = () => {
   const skills = [
     {
       title: "Three.js | 3D",
-      img: "/assets/home/three-js.gif",
+      img: "/assets/skills/three-js.gif",
     },
     {
       title: "JavaScript",
-      img: "/assets/home/javascript.gif",
+      img: "/assets/skills/javascript.gif",
     },
     {
       title: "GSAP",
-      img: "/assets/home/gsap.gif",
+      img: "/assets/skills/gsap.gif",
     },
     {
       title: "Figma",
-      img: "/assets/home/figma.gif",
+      img: "/assets/skills/figma.gif",
     },
     {
       title: "Tilda Code",
-      img: "/assets/home/tilda-code.gif",
+      img: "/assets/skills/tilda-code.gif",
     },
     {
       title: "CDN APP MOD",
-      img: "/assets/home/cdn-app-mod.gif",
+      img: "/assets/skills/cdn-app-mod.gif",
     },
     {
       title: "Library Create",
-      img: "/assets/home/js-library.gif",
+      img: "/assets/skills/js-library.gif",
     },
     {
       title: "Custom Tilda",
-      img: "/assets/home/tilda-custom.gif",
+      img: "/assets/skills/tilda-custom.gif",
     },
   ];
 
@@ -71,19 +71,19 @@ const Home = () => {
     });
 
     // Анимация для прыжка ноутбука
-    gsap.to(".scene__jump", {
+    gsap.to(".laptop", {
       scrollTrigger: scrollLaptop,
       keyframes: {
-        "0%": { z: "0" },
-        "10%": { z: "30vmin" },
-        "30%": { z: "30vmin" },
-        "50%": { z: "0" },
-        "100%": { z: "-15vmin" },
+        "0%": { y: "0" },
+        "10%": { y: "-30vmin" },
+        "30%": { y: "-30vmin" },
+        "50%": { y: "0" },
+        "100%": { y: "15vmin" },
       },
     });
 
     // Анимация для вращения ноутбука
-    gsap.to(".scene__spin", {
+    gsap.to(".laptop", {
       scrollTrigger: scrollLaptop,
       keyframes: {
         "0%": { rotateZ: "0" },
@@ -93,7 +93,7 @@ const Home = () => {
     });
 
     // Анимация для переворота ноутбука
-    gsap.to(".scene__flip", {
+    gsap.to(".laptop", {
       scrollTrigger: scrollLaptop,
       keyframes: {
         "0%, 10%": { rotateX: "0deg" },
@@ -102,7 +102,7 @@ const Home = () => {
     });
 
     // Анимация открытия верхней крышки ноутбука
-    gsap.to(".shell--top", {
+    gsap.to(".laptop .shell--top", {
       scrollTrigger: scrollLaptop,
       keyframes: {
         "0%, 40%": { rotateX: "0deg" },
@@ -112,7 +112,7 @@ const Home = () => {
     });
 
     // Анимация открытия нижней крышки ноутбука
-    gsap.to(".shell--bottom", {
+    gsap.to(".laptop .shell--bottom", {
       scrollTrigger: scrollLaptop,
       keyframes: {
         "0%, 45%": { rotateX: "0deg" },
@@ -122,7 +122,7 @@ const Home = () => {
     });
 
     // Анимация для увеличения сцены
-    gsap.to(".scene__zoom", {
+    gsap.to(".laptop", {
       scrollTrigger: scrollLaptop,
       keyframes: isMobile()
         ? {
@@ -180,7 +180,7 @@ const Home = () => {
     });
 
     // Анимация перехода
-    gsap.to(".laptop .scene__visible", {
+    gsap.to(".laptop", {
       scrollTrigger: scrollLaptop,
       keyframes: isMobile()
         ? {
@@ -200,7 +200,6 @@ const Home = () => {
             },
           },
     });
-    ScrollTrigger.refresh();
   }, []);
 
   return (

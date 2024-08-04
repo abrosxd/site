@@ -40,26 +40,13 @@
   z-index: 2;
 }
 
-.laptop section {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.laptop .scene {
-  transform: rotateX(-24deg) rotateY(-32deg) rotateX(90deg)
-    translate3d(0, 0, -20vmin);
-}
-
 .jbook {
   width: 50vmin;
   aspect-ratio: 16 / 12;
-  position: relative;
-  transform: translate3d(0, 0, 2vmin);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotateX(-24deg) rotateY(-32deg) rotateX(90deg) translate(-60%, 10%);
 }
 
 .laptop-keyboard {
@@ -81,10 +68,6 @@
   rotate: 180deg;
 }
 
-.scene__shadow {
-  position: relative;
-}
-
 .shell--bottom .cuboid__side:nth-of-type(6) {
   --b: 0.8;
 }
@@ -104,10 +87,6 @@
     rgba(0, 0, 0, 0) 100%
   );
   box-shadow: inset 0 0 3px #888;
-}
-
-.scene {
-  transform: translate3d(0, 0, 100vmin);
 }
 
 .shell {
