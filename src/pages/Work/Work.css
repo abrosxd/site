@@ -1,0 +1,60 @@
+.work .navigation {
+  position: fixed;
+  bottom: 24px;
+  z-index: 2;
+  width: 90%;
+  height: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  display: flex;
+}
+
+.work .frame {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.work .item {
+  width: 60px;
+  height: 60px;
+  background: rgba(53, 53, 53, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.work .slider {
+  border-radius: 10px;
+}
+
+.work .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .projects {
+  top: 80px;
+  position: relative;
+}
+
+.work .card {
+  width: 95%;
+  height: 80vh;
+  background: rgba(53, 53, 53, 0.4);
+  border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+  .work .navigation {
+    bottom: 65px;
+    height: 70px;
+    width: 80em;
+  }
+}

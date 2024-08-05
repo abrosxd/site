@@ -13,7 +13,7 @@ import Documents from "../../components/About/Documents/Documents";
 const About = () => {
   const { t } = useTranslation("About");
   return (
-    <div className="about-container">
+    <main className="about">
       <div className="grid grid-cols gap-4">
         <div className="flex flex-col gap-4">
           <div className="card">
@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
