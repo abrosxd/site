@@ -1,0 +1,52 @@
+{
+  "stack": "Stack",
+  "footer": "Materials used in the case are taken from:",
+  "TvoyHit": {
+    "title": "Creating a player from the product catalog for the song store Tvoy Hit",
+    "desc": "Reworking the logic of the standard Tilda product catalog into a catalog of music compositions and integrating with a custom audio player.",
+    "button": {
+      "order": "Order for your project*",
+      "site": "View on website",
+      "desc": "* full integration of the modification into your project using your design."
+    },
+    "task": {
+      "title": "Task",
+      "text": {
+        "1": "The client already came with a ready player design in Zero-block. There were only 2 tasks:",
+        "2": "Improve the standard catalog design.",
+        "3": "Implement the player functionality."
+      }
+    },
+    "dev": {
+      "title": "Work on the project",
+      "step1": {
+        "title": "Step 1. Reconstruction of elements",
+        "text": {
+          "1": "In order to start working on the functionality, it was necessary to complete the player skeleton. Namely, to add volume and music sliders.",
+          "2": "For this purpose, the standard HTML components in Zero-block are perfect."
+        }
+      },
+      "step2": {
+        "title": "Step 2. Working with styles",
+        "text": {
+          "1": "Due to Tilda's limitations in editing styles, it was necessary to override them.",
+          "2": "This process is not difficult, but it also takes a significant amount of time."
+        }
+      },
+      "step3": {
+        "title": "Step 3. Working on functionality",
+        "text": {
+          "1": "It's time to bring this player to life and first of all, I start VS Code. Because this tool is much clearer to me than Tilda.",
+          "2": "First, I defined all the elements I was going to work with. For the most part, everything comes down to a simple document.querySelector.",
+          "3": "Now it was necessary to write down the functionality. For simplicity, I divided each possible action into separate functions.",
+          "4": "After all the scenarios, it was necessary to understand how to merge all this with the catalog. By reviewing the requests that come when interacting with the catalog, I realized that all this can be successfully parsed. On the third attempt, I managed to write a script that calmly received a list of music tracks from the catalog.",
+          "5": "Of course, I corrected the code 10-15 more times, refining the moments that I did not immediately notice. However, in the end, I delivered a fully working project."
+        }
+      }
+    },
+    "final": {
+      "title": "Final result",
+      "text": "You can click through yourself by following the link at the beginning of the case"
+    }
+  }
+}
