@@ -18,7 +18,7 @@ const About = () => {
         <div className="flex flex-col gap-4">
           <div className="card">
             <div className="hello">
-              <img src="/assets/about/me.jpg" alt="Me" />
+              <img src="/assets/photo/me.jpg" alt="Me" />
               <p>{t("hello")}</p>
             </div>
           </div>

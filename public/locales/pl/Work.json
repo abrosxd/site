@@ -1,0 +1,52 @@
+{
+  "stack": "Stack",
+  "footer": "Materiały użyte w tej sprawie pochodzą z:",
+  "TvoyHit": {
+    "title": "Tworzenie odtwarzacza z katalogu produktów dla sklepu z piosenkami Tvoy Hit",
+    "desc": "Przebudowa logiki standardowego katalogu produktów Tilda na katalog kompozycji muzycznych i integracja z niestandardowym odtwarzaczem audio.",
+    "button": {
+      "order": "Zamów dla swojego projektu*",
+      "site": "Zobacz na stronie",
+      "desc": "* pełna integracja modyfikacji w Twój projekt z wykorzystaniem Twojego projektu."
+    },
+    "task": {
+      "title": "Zadanie",
+      "text": {
+        "1": "Klient przyszedł już z gotowym projektem odtwarzacza w Zero-block. Były tylko 2 zadania:",
+        "2": "Ulepszyć standardowy projekt katalogu.",
+        "3": "Zrealizować funkcjonalność odtwarzacza."
+      }
+    },
+    "dev": {
+      "title": "Praca nad projektem",
+      "step1": {
+        "title": "Krok 1. Rekonstrukcja elementów",
+        "text": {
+          "1": "Aby rozpocząć pracę nad funkcjonalnością, trzeba było ukończyć szkielet odtwarzacza. Mianowicie dodać suwaki głośności i muzyki.",
+          "2": "Do tego celu doskonale nadają się standardowe komponenty HTML w Zero-block."
+        }
+      },
+      "step2": {
+        "title": "Krok 2. Praca ze stylami",
+        "text": {
+          "1": "Z powodu ograniczeń Tilda w możliwościach edytowania stylów, trzeba było je zastąpić.",
+          "2": "Ten proces nie jest trudny, ale zajmuje również znaczną część czasu."
+        }
+      },
+      "step3": {
+        "title": "Krok 3. Praca nad funkcjonalnością",
+        "text": {
+          "1": "Nadszedł czas, aby ożywić ten odtwarzacz i przede wszystkim uruchamiam VS Code. Ponieważ to narzędzie jest dla mnie o wiele bardziej zrozumiałe niż Tilda.",
+          "2": "Najpierw zdefiniowałem wszystkie elementy, z którymi zamierzam pracować. W większości wszystko sprowadza się do prostego document.querySelector.",
+          "3": "Teraz trzeba było zapisać funkcjonalność. Dla uproszczenia podzieliłem każde możliwe działanie na oddzielne funkcje.",
+          "4": "Po wszystkich scenariuszach trzeba było zrozumieć, jak połączyć to wszystko z katalogiem. Przeglądając żądania przychodzące podczas interakcji z katalogiem, zrozumiałem, że wszystko to można skutecznie analizować. Za trzecim podejściem udało mi się napisać skrypt, który spokojnie otrzymał listę utworów muzycznych z katalogu.",
+          "5": "Oczywiście, poprawiałem kod jeszcze 10-15 razy, dopracowując momenty, których od razu nie zauważyłem. Jednak w końcu dostarczyłem w pełni działający projekt."
+        }
+      }
+    },
+    "final": {
+      "title": "Ostateczny wynik",
+      "text": "Możesz sam kliknąć, przechodząc do linku na początku sprawy"
+    }
+  }
+}

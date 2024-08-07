@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Gallery() {
   const data = [
-    "/assets/about/gallery/1.jpeg",
-    "/assets/about/gallery/2.jpeg",
-    "/assets/about/gallery/3.png",
-    "/assets/about/gallery/4.png",
-    "/assets/about/gallery/5.png",
+    "/assets/photo/gallery/1.jpeg",
+    "/assets/photo/gallery/2.jpeg",
+    "/assets/photo/gallery/3.png",
+    "/assets/photo/gallery/4.png",
+    "/assets/photo/gallery/5.png",
   ];
 
   const settings = {

@@ -115,7 +115,7 @@ export default function Navigation() {
                 <img className="nav-icon" src={TelegramSVG} alt="Telegram" />
               </Button>
             </li>
-            <li>
+            {/* <li>
               <Button
                 className=""
                 as="a"
@@ -134,7 +134,7 @@ export default function Navigation() {
               >
                 <img className="nav-icon" src={InstagramSVG} alt="Instagram" />
               </Button>
-            </li>
+            </li> */}
           </ul>
         </li>
       </ul>
