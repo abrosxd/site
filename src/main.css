@@ -38,7 +38,7 @@ body {
 }
 
 body::before {
-  --size: 15px;
+  --size: 20px;
   --line: white;
   content: "";
   height: 100vh;
@@ -50,7 +50,7 @@ body::before {
       transparent 1px var(--size)
     )
     50% 50% / var(--size) var(--size);
-  opacity: 0.5;
+  opacity: 0.2;
   top: 0;
   transform-style: flat;
   pointer-events: none;

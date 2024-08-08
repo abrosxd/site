@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import "./Work.css";
 import Transition from "../../components/Transition/Transition";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +14,27 @@ const Work = () => {
       project: <TvoyHit />,
       icon: "/assets/projects/work/TvoyHit/icon.ico",
     },
+    {
+      project: <TvoyHit />,
+      icon: "/assets/projects/work/TvoyHit/icon.ico",
+    },
   ];
+
+  const setFullHeight = () => {
+    const workElement = document.querySelector(".work");
+    if (workElement) {
+      workElement.style.height = window.innerHeight + "px";
+    }
+  };
+
+  useLayoutEffect(() => {
+    setFullHeight();
+    window.addEventListener("resize", setFullHeight);
+
+    return () => {
+      window.removeEventListener("resize", setFullHeight);
+    };
+  }, []);
 
   return (
     <main className="work">
