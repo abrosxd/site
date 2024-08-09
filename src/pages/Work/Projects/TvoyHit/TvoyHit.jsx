@@ -12,6 +12,10 @@ export default function TvoyHit() {
   const { t } = useTranslation("Work");
   return (
     <div className="case tvoy-hit">
+      <img
+        className="sticker note"
+        src="/assets/projects/work/TvoyHit/note.png"
+      />
       <h1>Музыкальный плеер для магазина песен Твой Хит</h1>
       <div className="header">
         <div className="left">
@@ -94,21 +98,21 @@ export default function TvoyHit() {
           <div className="sec">
             <div className="card">
               <p>Интеграция каталога товаров</p>
-              <img src="/public/assets/projects/work/TvoyHit/result-1.png" />
+              <img src="/assets/projects/work/TvoyHit/result-1.png" />
             </div>
             <div className="card">
               <p>Стилизация каталога</p>
-              <img src="/public/assets/projects/work/TvoyHit/result-2.png" />
+              <img src="/assets/projects/work/TvoyHit/result-2.png" />
             </div>
           </div>
           <div className="sec">
             <div className="card">
-              <p>Гибкий код</p>
-              <img src="/public/assets/projects/work/TvoyHit/result-4.png" />
+              <p>Простая настройка</p>
+              <img src="/assets/projects/work/TvoyHit/result-4.png" />
             </div>
             <div className="card">
               <p>Любой дизайн плеера</p>
-              <img src="/public/assets/projects/work/TvoyHit/result-3.png" />
+              <img src="/assets/projects/work/TvoyHit/result-3.png" />
             </div>
           </div>
         </div>
@@ -119,7 +123,7 @@ export default function TvoyHit() {
               <h3>Logic Map</h3>
             </div>
             <div className="right">
-              <img src="/public/assets/projects/work/TvoyHit/logic-map.png" />
+              <img src="/assets/projects/work/TvoyHit/logic-map.png" />
             </div>
           </div>
           <div className="block design">
@@ -137,11 +141,11 @@ export default function TvoyHit() {
                 </div>
                 <img
                   className="mockup"
-                  src="/public/assets/projects/mockups/desktop.svg"
+                  src="/assets/projects/mockups/desktop.svg"
                 />
                 <img
                   className="screen"
-                  src="/public/assets/projects/work/TvoyHit/mockup-desktop.png"
+                  src="/assets/projects/work/TvoyHit/mockup-desktop.png"
                 />
               </div>
             </div>

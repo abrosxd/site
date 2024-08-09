@@ -105,6 +105,12 @@
 .case {
   font-family: var(--font-basic);
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.case .sticker {
+  position: absolute;
 }
 
 .case .content .info,
@@ -113,7 +119,8 @@
   margin-top: 5em;
 }
 
-.case .header {
+.case .header,
+.case .content .info .sec1 {
   display: flex;
   gap: 40px;
 }
@@ -174,8 +181,6 @@
   opacity: 0.5;
 }
 .case .content .info .sec1 {
-  display: flex;
-  gap: 40px;
   margin-bottom: 40px;
 }
 .case .content .info .sec1 .left,
@@ -229,20 +234,8 @@
 }
 .case .content .results .sec .card {
   display: grid;
-  gap: 10px;
-  font-size: large;
-  position: relative;
-  border-radius: 20px;
   overflow: hidden;
-}
-.case .content .results .sec .card p {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-.case .content .results .sec .card img {
-  width: 100%;
-  filter: opacity(0.7);
+  border-radius: 20px;
 }
 
 .case .content .process .block {
@@ -272,47 +265,33 @@
 }
 
 @media (max-width: 1060px) {
-  .case .header {
+  .case .header,
+  .case .content .info .sec1,
+  .case .content .results .sec,
+  .case .content .process .block,
+  .case .footer {
     flex-wrap: wrap;
   }
-  .case .header .left {
+  .case .header .left,
+  .case .header .right,
+  .case .content .info .sec1 .left,
+  .case .content .info .sec1 .right,
+  .case .content .process .left,
+  .case .content .process .right {
     flex: 0 0 100%;
   }
   .case .header .buttons a {
     font-size: smaller;
-  }
-  .case .header .right {
-    flex: 0 0 100%;
   }
   .case .content .info,
   .case .content .results,
   .case .content .process {
     margin-top: 3em;
   }
-  .case .content .info .sec1 {
-    flex-wrap: wrap;
-  }
-  .case .content .info .sec1 .left,
-  .case .content .info .sec1 .right {
-    flex: 0 0 100%;
-  }
   .case .content .info .sec2 li {
     flex: 0 0 80%;
   }
-  .case .content .results .sec {
-    flex-wrap: wrap;
-  }
-  .case .content .process .block {
-    flex-wrap: wrap;
-  }
-  .case .content .process .left {
-    flex: 0 0 100%;
-  }
   .case .content .process .right {
-    flex: 0 0 100%;
     margin-top: 10px;
-  }
-  .case .footer {
-    flex-wrap: wrap;
   }
 }
