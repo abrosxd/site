@@ -114,46 +114,57 @@ export default function TvoyHit() {
         </div>
         <div className="process">
           <h2>Процесс</h2>
-          <div className="logic-flow">
-            <h3>Logic Flow</h3>
-            <div className="img">
+          <div className="block logic-map">
+            <div className="left">
+              <h3>Logic Map</h3>
+            </div>
+            <div className="right">
               <img src="/public/assets/projects/work/TvoyHit/logic-map.png" />
             </div>
           </div>
-          <div className="mockups">
-            <h3>Дизайн</h3>
-            <div className="desktop">
-              <div className="text">
-                <h3>Каталог</h3>
-                <p>Дизайн карточек</p>
-                <h3>Плеер</h3>
-                <p>Дизайн таймлайна</p>
-                <p>Дизайн аудио</p>
+          <div className="block design">
+            <div className="left">
+              <h3>Дизайн</h3>
+            </div>
+            <div className="right">
+              <div className="desktop">
+                <div className="text">
+                  <h3>Каталог</h3>
+                  <p>Дизайн карточек</p>
+                  <h3>Плеер</h3>
+                  <p>Дизайн таймлайна</p>
+                  <p>Дизайн аудио</p>
+                </div>
+                <img
+                  className="mockup"
+                  src="/public/assets/projects/mockups/desktop.svg"
+                />
+                <img
+                  className="screen"
+                  src="/public/assets/projects/work/TvoyHit/mockup-desktop.png"
+                />
               </div>
-              <img
-                className="mockup"
-                src="/public/assets/projects/mockups/desktop.svg"
-              />
-              <img
-                className="screen"
-                src="/public/assets/projects/work/TvoyHit/mockup-desktop.png"
-              />
             </div>
           </div>
-          <div className="dev">
-            <h3>Разработка</h3>
-            <div className="line">
+          <div className="block dev">
+            <div className="left">
+              <h3>Разработка</h3>
+            </div>
+            <div className="right">
               <div className="step">
-                <p>
-                  Реализация через постоянные переменные, для использования кода
-                  в других проектах.
-                </p>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
+                <div className="text">
+                  <p>
+                    Реализация через постоянные переменные, для использования
+                    кода в других проектах.
+                  </p>
+                </div>
+                <div className="code">
+                  <SyntaxHighlighter
+                    language="javascript"
+                    style={arta}
+                    customStyle={customStyleCode}
+                  >
+                    {`
 const cover = player.querySelector(".player-cover .tn-atom");
 const title = player.querySelector(".player-title .tn-atom");
 const btnPrev = player.querySelector(".player-prev .tn-atom");
@@ -163,20 +174,24 @@ const btnBuy = player.querySelector(".player-btn-buy .tn-atom");
 const btnText = player.querySelector(".player-text .tn-atom");
 const btnVolume = player.querySelector(".player-volume .tn-atom");
                   `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+                </div>
               </div>
               <div className="step">
-                <p>
-                  Каждая функция изолирована, что снижает вероятность того, что
-                  изменения в одной функции могут вызвать неожиданные проблемы
-                  или ошибки в другой.
-                </p>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
+                <div className="text">
+                  <p>
+                    Каждая функция изолирована, что снижает вероятность того,
+                    что изменения в одной функции могут вызвать неожиданные
+                    проблемы или ошибки в другой.
+                  </p>
+                </div>
+                <div className="code">
+                  <SyntaxHighlighter
+                    language="javascript"
+                    style={arta}
+                    customStyle={customStyleCode}
+                  >
+                    {`
 const nothing = (e) => {
   e.preventDefault();
 };
@@ -193,20 +208,24 @@ const nowPlaying = () => {
   return playlist[Number(audio.dataset.trackNumber)];
 };
                   `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+                </div>
               </div>
               <div className="step">
-                <p>
-                  Данные о треках получаются на прямую из каталога товаров
-                  Tilda, что позволяет даже обычному пользователю редактировать
-                  плейлист.
-                </p>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
+                <div className="text">
+                  <p>
+                    Данные о треках получаются на прямую из каталога товаров
+                    Tilda, что позволяет даже обычному пользователю
+                    редактировать плейлист.
+                  </p>
+                </div>
+                <div className="code">
+                  <SyntaxHighlighter
+                    language="javascript"
+                    style={arta}
+                    customStyle={customStyleCode}
+                  >
+                    {`
 (d.onload = function () {
   if (d.readyState === d.DONE && 200 === d.status) {
     let response = JSON.parse(d.responseText);
@@ -220,19 +239,23 @@ const nowPlaying = () => {
   }
 }),
                   `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+                </div>
               </div>
               <div className="step">
-                <p>
-                  Адаптивное поведение плеера для любых устройств так же
-                  реализовано через код.
-                </p>
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
+                <div className="text">
+                  <p>
+                    Адаптивное поведение плеера для любых устройств так же
+                    реализовано через код.
+                  </p>
+                </div>
+                <div className="code">
+                  <SyntaxHighlighter
+                    language="javascript"
+                    style={arta}
+                    customStyle={customStyleCode}
+                  >
+                    {`
 if (
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
@@ -254,19 +277,23 @@ if (
   area.addEventListener("mouseleave", areaLeave);
 }
                   `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+                </div>
               </div>
               <div className="step">
-                <p>
-                  Базовые стили для корректной работы плеера так же хранятся
-                  внутри кода.
-                </p>
-                <SyntaxHighlighter
-                  language="css"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
+                <div className="text">
+                  <p>
+                    Базовые стили для корректной работы плеера так же хранятся
+                    внутри кода.
+                  </p>
+                </div>
+                <div className="code">
+                  <SyntaxHighlighter
+                    language="css"
+                    style={arta}
+                    customStyle={customStyleCode}
+                  >
+                    {`
 .play-wrapper {
     position: absolute;
     top: 0;
@@ -301,7 +328,8 @@ if (
     background-image: {sWPause};
 }
                   `}
-                </SyntaxHighlighter>
+                  </SyntaxHighlighter>
+                </div>
               </div>
             </div>
           </div>

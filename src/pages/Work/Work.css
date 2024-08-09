@@ -176,6 +176,7 @@
 .case .content .info .sec1 {
   display: flex;
   gap: 40px;
+  margin-bottom: 40px;
 }
 .case .content .info .sec1 .left,
 .case .content .info .sec1 .right {
@@ -194,6 +195,7 @@
   flex-wrap: nowrap;
   overflow-x: scroll;
   gap: 10px;
+  border-radius: 10px;
 }
 .case .content .info .sec2 li {
   padding: 10px;
@@ -226,7 +228,6 @@
   justify-content: center;
 }
 .case .content .results .sec .card {
-  /* flex: 0 0 50%; */
   display: grid;
   gap: 10px;
   font-size: large;
@@ -244,79 +245,20 @@
   filter: opacity(0.7);
 }
 
-.case .content .process {
-  display: grid;
-  gap: 50px;
-}
-.case .content .process .logic-flow,
-.case .content .process .mockups,
-.case .content .process .dev {
+.case .content .process .block {
   display: flex;
+  margin-bottom: 3em;
 }
-.case .content .process h3 {
-  flex: 0 0 18.5%;
-  opacity: 0.5;
+.case .content .process .block .left h3 {
+  opacity: 0.7;
+  font-size: medium;
   margin: 0;
 }
-.case .content .process .logic-flow img {
-  flex: 0 0 78.5%;
-  width: 80%;
-  border-radius: 20px;
-  filter: invert(1);
+.case .content .process .left {
+  flex: 0 0 20%;
 }
-.case .content .process .mockups .sec {
-  flex: 0 0 78.5%;
-  display: grid;
-  gap: 20px;
-}
-.case .content .process .mockups .sec .down {
-  display: flex;
-  gap: 20px;
-}
-.case .content .process .mockups .desktop {
-  position: relative;
-  background-color: #7e70ff;
-  border-radius: 20px;
+.case .content .process .right {
   flex: 0 0 80%;
-}
-.case .content .process .mockups .desktop .text {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  display: grid;
-  gap: 10px;
-}
-.case .content .process .mockups .desktop .mockup {
-  width: 100%;
-  height: 100%;
-}
-.case .content .process .mockups .desktop .screen {
-  width: 56%;
-  height: 77%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-47.5%, -53%);
-  border-radius: 15px;
-}
-
-.case .content .process .dev .line {
-  flex: 0 0 78.5%;
-  display: grid;
-  gap: 20px;
-}
-.case .content .process .dev .line .step {
-  display: flex;
-  gap: 20px;
-  border: 2px dashed #8e8e8e78;
-  border-radius: 20px;
-}
-.case .content .process .dev .line .step p {
-  flex: 0 0 30%;
-  padding: 20px;
-}
-.case .content .process .dev .line .step pre {
-  flex: 0 0 60%;
 }
 
 .case .footer {
@@ -329,13 +271,15 @@
   opacity: 0.2;
 }
 
-@media (max-width: 1090px) {
+@media (max-width: 1060px) {
   .case .header {
     flex-wrap: wrap;
   }
   .case .header .left {
     flex: 0 0 100%;
-    font-size: small;
+  }
+  .case .header .buttons a {
+    font-size: smaller;
   }
   .case .header .right {
     flex: 0 0 100%;
@@ -347,11 +291,8 @@
   }
   .case .content .info .sec1 {
     flex-wrap: wrap;
-    margin-bottom: 2em;
   }
-  .case .content .info .sec1 .left {
-    flex: 0 0 100%;
-  }
+  .case .content .info .sec1 .left,
   .case .content .info .sec1 .right {
     flex: 0 0 100%;
   }
@@ -361,38 +302,17 @@
   .case .content .results .sec {
     flex-wrap: wrap;
   }
-  .case .content .process .logic-flow,
-  .case .content .process .mockups,
-  .case .content .process .dev {
+  .case .content .process .block {
     flex-wrap: wrap;
   }
-  .case .content .process h3 {
-    flex: 0 0 100%;
-    margin-bottom: 1em;
-  }
-  .case .content .process .logic-flow img {
+  .case .content .process .left {
     flex: 0 0 100%;
   }
-  .case .content .process .mockups .desktop {
+  .case .content .process .right {
     flex: 0 0 100%;
+    margin-top: 10px;
   }
-  .case .content .process .mockups .desktop .text {
-    display: none;
-  }
-  .case .content .process .dev .line {
-    flex: 0 0 100%;
-  }
-  .case .content .process .dev .line .step {
+  .case .footer {
     flex-wrap: wrap;
   }
-  .case .content .process .dev .line .step p {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-  }
-  .case .content .process .dev .line .step pre {
-    flex: 0 0 100%;
-  }
-}
-
-@media (max-width: 690px) {
 }
