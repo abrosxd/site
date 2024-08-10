@@ -236,6 +236,15 @@
   display: grid;
   overflow: hidden;
   border-radius: 20px;
+  position: relative;
+}
+.case .content .results .sec .card img {
+  width: 100%;
+  height: 100%;
+}
+.case .content .results .sec .card p {
+  position: absolute;
+  font-size: x-large;
 }
 
 .case .content .process .block {
@@ -319,5 +328,8 @@
 @media (max-width: 767px) {
   .case .block.design .sec {
     flex-wrap: wrap;
+  }
+  .case .content .results .sec .card p {
+    font-size: medium;
   }
 }

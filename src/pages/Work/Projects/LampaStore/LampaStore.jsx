@@ -9,32 +9,33 @@ export default function TvoyHit() {
     backgroundColor: "transparent",
     fontSize: "medium",
   };
-
-  const { t: tWork } = useTranslation("Work");
-  const { t: tTvoyHit } = useTranslation("Work/Projects/TvoyHit");
-
+  const { t } = useTranslation("Work");
   return (
     <div className="case tvoy-hit">
       <img
         className="sticker note"
         src="/assets/projects/work/TvoyHit/note.png"
       />
-      <h1>{tTvoyHit("title")}</h1>
+      <h1>Музыкальный плеер для магазина песен Твой Хит</h1>
       <div className="header">
         <div className="left">
-          <h3>{tTvoyHit("header.description")}</h3>
+          <h3>
+            Переработка логики работы стандартного каталога товаров Tilda в
+            каталог музыкальных композиций и интеграция с кастомным аудио
+            плеером.
+          </h3>
           <div className="buttons">
             <a href="https://t.me/abrosxd" target="_blank">
-              {tTvoyHit("header.buttons.1")}
+              Заказать для своего проекта
             </a>
             <a href="https://tvoy-hit.ru" target="_blank">
-              {tTvoyHit("header.buttons.2")}
+              Посмотреть на сайте
             </a>
           </div>
         </div>
         <div className="right">
           <div className="widget stack">
-            <h2>{tWork("stack")}</h2>
+            <h2>{t("stack")}</h2>
             <div className="icons">
               <img src="/assets/icons/stack/tilda.png" />
               <img src="/assets/icons/stack/html5.png" />
@@ -43,74 +44,83 @@ export default function TvoyHit() {
             </div>
           </div>
           <div className="widget time">
-            <h2>{tWork("time")}</h2>
-            <p>{tTvoyHit("header.time")}</p>
+            <h2>Длительность</h2>
+            <p>3 недели</p>
           </div>
           <div className="widget role">
-            <h2>{tWork("role")}</h2>
-            <p>{tTvoyHit("header.role")}</p>
+            <h2>Роль</h2>
+            <p>Разработчик</p>
           </div>
         </div>
       </div>
       <div className="content">
         <div className="info">
-          <h2>{tWork("info")}</h2>
+          <h2>О проекте</h2>
           <div className="sec1">
             <div className="left">
-              <h3>{tWork("client")}</h3>
-              <p>{tTvoyHit("content.info.client")}</p>
+              <h3>Клиент</h3>
+              <p>
+                Твой Хит - магазин песен певца, композитора, аранжировщика,
+                музыкального продюсера - Олег Шаумаров.
+              </p>
             </div>
             <div className="right">
-              <h3>{tWork("tasks")}</h3>
+              <h3>Задачи</h3>
               <ul>
-                <li>{tTvoyHit("content.info.tasks.1")}</li>
-                <li>{tTvoyHit("content.info.tasks.2")}</li>
-                <li>{tTvoyHit("content.info.tasks.3")}</li>
+                <li>Редизайн каталога</li>
+                <li>Разработка логики плеера</li>
+                <li>Адаптив плеера</li>
               </ul>
             </div>
           </div>
-          <h3>{tWork("problems")}</h3>
+          <h3>Проблемы</h3>
           <ul className="sec2">
             <li>
               <h3>01</h3>
-              <h2>{tTvoyHit("content.info.problems.1.title")}</h2>
-              <p>{tTvoyHit("content.info.problems.1.text")}</p>
+              <h2>Ограничения конструктора</h2>
+              <p>
+                Сайт собран на конструкторе Tilda. Стандартный подход для
+                реализации не подойдет и нужно изучить что под капотом у Tilda.
+              </p>
             </li>
             <li>
               <h3>02</h3>
-              <h2>{tTvoyHit("content.info.problems.2.title")}</h2>
-              <p>{tTvoyHit("content.info.problems.2.text")}</p>
+              <h2>Адаптивность</h2>
+              <p>
+                Кроме функционала плеера, так же нужно адаптировать его под
+                разные платформы/девайсы.
+              </p>
             </li>
           </ul>
         </div>
         <div className="results">
-          <h2>{tWork("results")}</h2>
+          <h2>Результаты</h2>
           <div className="sec">
             <div className="card catalog-integration">
-              <p>{tTvoyHit("content.results.1")}</p>
+              <p>Интеграция каталога товаров</p>
               <img src="/assets/projects/work/TvoyHit/result-1.png" />
             </div>
             <div className="card catalog-style">
-              <p>{tTvoyHit("content.results.2")}</p>
+              <p>Стилизация каталога</p>
               <img src="/assets/projects/work/TvoyHit/result-2.png" />
             </div>
           </div>
           <div className="sec">
             <div className="card settings-lite">
-              <p>{tTvoyHit("content.results.3")}</p>
+              <p>Простая настройка</p>
               <img src="/assets/projects/work/TvoyHit/result-4.png" />
             </div>
             <div className="card player-design">
-              <p>{tTvoyHit("content.results.4")}</p>
+              <p>Любой дизайн плеера</p>
               <img src="/assets/projects/work/TvoyHit/result-3.png" />
             </div>
           </div>
         </div>
         <div className="process">
-          <h2>{tWork("process")}</h2>
+          <h2>Процесс</h2>
           <div className="block logic-map">
             <div className="left">
-              <h3>{tTvoyHit("content.process.logicmap")}</h3>
+              <h3>Logic Map</h3>
             </div>
             <div className="right">
               <img src="/assets/projects/work/TvoyHit/logic-map.png" />
@@ -118,7 +128,7 @@ export default function TvoyHit() {
           </div>
           <div className="block design">
             <div className="left">
-              <h3>{tTvoyHit("content.process.design")}</h3>
+              <h3>Дизайн</h3>
             </div>
             <div className="right">
               <div className="mockup">
@@ -136,12 +146,15 @@ export default function TvoyHit() {
           </div>
           <div className="block dev">
             <div className="left">
-              <h3>{tTvoyHit("content.process.dev.title")}</h3>
+              <h3>Разработка</h3>
             </div>
             <div className="right">
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.1")}</p>
+                  <p>
+                    Реализация через постоянные переменные, для использования
+                    кода в других проектах.
+                  </p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -164,7 +177,11 @@ const btnVolume = player.querySelector(".player-volume .tn-atom");
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.2")}</p>
+                  <p>
+                    Каждая функция изолирована, что снижает вероятность того,
+                    что изменения в одной функции могут вызвать неожиданные
+                    проблемы или ошибки в другой.
+                  </p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -194,7 +211,11 @@ const nowPlaying = () => {
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.3")}</p>
+                  <p>
+                    Данные о треках получаются на прямую из каталога товаров
+                    Tilda, что позволяет даже обычному пользователю
+                    редактировать плейлист.
+                  </p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -221,7 +242,10 @@ const nowPlaying = () => {
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.4")}</p>
+                  <p>
+                    Адаптивное поведение плеера для любых устройств так же
+                    реализовано через код.
+                  </p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -256,7 +280,10 @@ if (
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.5")}</p>
+                  <p>
+                    Базовые стили для корректной работы плеера так же хранятся
+                    внутри кода.
+                  </p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -307,7 +334,7 @@ if (
         </div>
       </div>
       <div className="footer">
-        <p>{tWork("footer")}</p>
+        <p>{t("footer")}</p>
         <p>tvoy-hit.ru | google.com</p>
       </div>
     </div>

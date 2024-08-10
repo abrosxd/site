@@ -1,57 +1,92 @@
-/* Skills section */
-.block-skills {
-  position: relative;
-  width: 100%;
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  transition: transform 0.3s ease-in-out;
+  top: 0;
+  position: absolute;
+  padding-top: 70px;
+  padding-bottom: 70px;
   z-index: 1;
-  --color: hsl(0 0% 80%);
+}
+@media (max-width: 767px) {
+  .work-container {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+}
+
+.work-container .project {
+  position: relative;
+  margin: 10px;
+  width: 350px;
+  height: 470px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+  z-index: 2;
+  border-radius: 5px;
+  font-family: var(--font-basic);
+}
+
+.work-container .project .title {
+  font-size: xxx-large;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
   pointer-events: none;
 }
 
-.block-skills .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem 29rem;
-  margin: 50px 50px 0;
+@media (max-width: 767px) {
+  .work-container .project {
+    width: 190px;
+    height: 255px;
+  }
+  .work-container .project .title {
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 390px) {
+  .work-container .project {
+    width: 170px;
+    height: 227px;
+  }
+}
+
+.work-container .project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  transform: translateZ(30px);
+}
+
+.work-container .project:hover .title,
+.work-container .project:hover .overlay {
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
-  .block-skills .grid {
-    gap: 3rem;
-    grid-template-columns: 1fr;
-    margin: 30px 30px 0;
+  .work-container .project:hover .title,
+  .work-container .project:hover .overlay {
+    opacity: 0;
   }
 }
 
-@media (min-width: 2000px) {
-  .block-skills .grid {
-    gap: 5rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px 50px 0;
-  }
-}
-
-/* Rotate cards */
-.block-skills .window-apple:nth-of-type(1) {
-  rotate: -9deg;
-}
-.block-skills .window-apple:nth-of-type(2) {
-  rotate: 5deg;
-}
-.block-skills .window-apple:nth-of-type(3) {
-  rotate: -8deg;
-}
-.block-skills .window-apple:nth-of-type(4) {
-  rotate: 7deg;
-}
-.block-skills .window-apple:nth-of-type(5) {
-  rotate: -4deg;
-}
-.block-skills .window-apple:nth-of-type(6) {
-  rotate: 6deg;
-}
-.block-skills .window-apple:nth-of-type(7) {
-  rotate: -9deg;
-}
-.block-skills .window-apple:nth-of-type(8) {
-  rotate: 9deg;
+.work-container .project:hover .title,
+.work-container .project.mobcenter .overlay {
+  opacity: 1;
 }

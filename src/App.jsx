@@ -13,8 +13,6 @@ import Library from "./pages/Library/Library";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
-import Lampa from "./pages/Library/Projects/Lampa/Lampa";
-
 export default function App() {
   const location = useLocation();
   const [loading, setLoading] = useState(true);
@@ -32,7 +30,6 @@ export default function App() {
               <Route path="/work" element={<Work />} />
               <Route path="/lib" element={<Library />} />
               <Route path="/about" element={<About />} />
-              <Route path="/lib/lampa" element={<Lampa />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </AnimatePresence>

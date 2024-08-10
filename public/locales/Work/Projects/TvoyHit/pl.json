@@ -1,0 +1,50 @@
+{
+  "title": "Odtwarzacz muzyczny dla sklepu z piosenkami Tvoy Hit",
+  "header": {
+    "description": "Przebudowa logiki standardowego katalogu produktów Tilda na katalog kompozycji muzycznych i integracja z niestandardowym odtwarzaczem audio.",
+    "buttons": {
+      "1": "Zamów dla swojego projektu",
+      "2": "Zobacz na stronie"
+    },
+    "time": "3 tygodnie",
+    "role": "Deweloper"
+  },
+  "content": {
+    "info": {
+      "client": "Tvoy Hit - sklep z piosenkami prowadzony przez piosenkarza, kompozytora, aranżera, producenta muzycznego - Olega Shaumarova.",
+      "tasks": {
+        "1": "Przeprojektowanie katalogu",
+        "2": "Opracowanie logiki odtwarzacza",
+        "3": "Responsywność odtwarzacza"
+      },
+      "problems": {
+        "1": {
+          "title": "Ograniczenia konstruktora",
+          "text": "Strona została zbudowana na konstruktorze Tilda. Standardowe podejście do implementacji nie będzie działać, więc konieczne jest zbadanie, co jest pod maską Tilda."
+        },
+        "2": {
+          "title": "Responsywność",
+          "text": "Oprócz funkcjonalności odtwarzacza, należy go również dostosować do różnych platform/urządzeń."
+        }
+      }
+    },
+    "results": {
+      "1": "Integracja katalogu produktów",
+      "2": "Stylizacja katalogu",
+      "3": "Prosta konfiguracja",
+      "4": "Dowolny projekt odtwarzacza"
+    },
+    "process": {
+      "logicmap": "Mapa logiki",
+      "design": "Projekt",
+      "dev": {
+        "title": "Rozwój",
+        "1": "Wdrożone przy użyciu stałych zmiennych w celu ponownego wykorzystania kodu w innych projektach.",
+        "2": "Każda funkcja jest izolowana, co zmniejsza prawdopodobieństwo, że zmiany w jednej funkcji mogą powodować nieoczekiwane problemy lub błędy w innej.",
+        "3": "Dane o utworach są pobierane bezpośrednio z katalogu produktów Tilda, co pozwala nawet zwykłemu użytkownikowi na edycję playlisty.",
+        "4": "Adaptacyjne zachowanie odtwarzacza dla dowolnych urządzeń jest również realizowane przez kod.",
+        "5": "Podstawowe style do prawidłowego działania odtwarzacza są również przechowywane w kodzie."
+      }
+    }
+  }
+}
