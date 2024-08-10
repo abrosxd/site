@@ -254,6 +254,20 @@
   flex: 0 0 80%;
 }
 
+.case .block.design .sec {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+.case .block.design .mockup {
+  border-radius: 20px;
+  overflow: hidden;
+  display: grid;
+}
+.case .block.design .mockup img {
+  width: 100%;
+}
+
 .case .footer {
   display: flex;
   flex-wrap: nowrap;
@@ -265,6 +279,9 @@
 }
 
 @media (max-width: 1060px) {
+  .case {
+    padding: 0.5rem;
+  }
   .case .header,
   .case .content .info .sec1,
   .case .content .results .sec,
@@ -293,5 +310,14 @@
   }
   .case .content .process .right {
     margin-top: 10px;
+  }
+  .case .block.design .mockup {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .case .block.design .sec {
+    flex-wrap: wrap;
   }
 }

@@ -26,29 +26,12 @@
   width: 100%;
   border-radius: 20px;
   filter: invert(1);
+  box-sizing: border-box;
+  border: 2px dashed #7e70ff73;
 }
 
-.tvoy-hit .block.design .desktop {
-  position: relative;
-  border-radius: 20px;
-  background-color: #7e70ff;
-}
-.tvoy-hit .block.design .desktop .text {
-  position: absolute;
-  top: 10px;
-  left: 30px;
-}
-.tvoy-hit .block.design .desktop .mockup {
-  width: 100%;
-}
-.tvoy-hit .block.design .desktop .screen {
-  width: 55%;
-  height: 76%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-47.5%, -53%);
-  border-radius: 10px;
+.case .block.design .mockup {
+  border: 2px dashed #7e70ff73;
 }
 
 .tvoy-hit .block.dev .step {
@@ -85,17 +68,11 @@
 }
 
 @media (max-width: 1060px) {
+  .tvoy-hit .note {
+    width: 100px;
+  }
   .tvoy-hit .block.logic-map img {
     border-radius: 10px;
-  }
-  .tvoy-hit .block.design .desktop {
-    border-radius: 10px;
-  }
-  .tvoy-hit .block.design .desktop .text {
-    display: none;
-  }
-  .tvoy-hit .block.design .desktop .screen {
-    border-radius: 5px;
   }
   .tvoy-hit .block.dev .step {
     flex-wrap: wrap;
@@ -106,5 +83,15 @@
   .tvoy-hit .block.dev .step .code {
     flex: 0 0 100%;
     display: grid;
+  }
+}
+@media (max-width: 767px) {
+  .tvoy-hit .block.logic-map img {
+    width: auto;
+    border-radius: 0;
+  }
+  .case .content .process .right {
+    overflow: scroll;
+    border-radius: 10px;
   }
 }

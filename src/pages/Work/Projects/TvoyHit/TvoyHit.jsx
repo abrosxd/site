@@ -131,22 +131,16 @@ export default function TvoyHit() {
               <h3>Дизайн</h3>
             </div>
             <div className="right">
-              <div className="desktop">
-                <div className="text">
-                  <h3>Каталог</h3>
-                  <p>Дизайн карточек</p>
-                  <h3>Плеер</h3>
-                  <p>Дизайн таймлайна</p>
-                  <p>Дизайн аудио</p>
+              <div className="mockup">
+                <img src="/assets/projects/work/TvoyHit/mockup-desktop.png" />
+              </div>
+              <div className="sec">
+                <div className="mockup">
+                  <img src="/assets/projects/work/TvoyHit/mockup-tablet.png" />
                 </div>
-                <img
-                  className="mockup"
-                  src="/assets/projects/mockups/desktop.svg"
-                />
-                <img
-                  className="screen"
-                  src="/assets/projects/work/TvoyHit/mockup-desktop.png"
-                />
+                <div className="mockup">
+                  <img src="/assets/projects/work/TvoyHit/mockup-mobile.png" />
+                </div>
               </div>
             </div>
           </div>
