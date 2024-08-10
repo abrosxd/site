@@ -15,10 +15,6 @@ export default function TvoyHit() {
 
   return (
     <div className="case tvoy-hit">
-      <img
-        className="sticker note"
-        src="/assets/projects/work/TvoyHit/note.png"
-      />
       <h1>{tTvoyHit("title")}</h1>
       <div className="header">
         <div className="left">

@@ -102,48 +102,48 @@
 }
 
 /* Case page */
-.case {
+.work .case {
   font-family: var(--font-basic);
   padding: 2rem;
   position: relative;
   overflow: hidden;
 }
 
-.case .sticker {
+.work .case .sticker {
   position: absolute;
 }
 
-.case .content .info,
-.case .content .results,
-.case .content .process {
+.work .case .content .info,
+.work .case .content .results,
+.work .case .content .process {
   margin-top: 5em;
 }
 
-.case .header,
-.case .content .info .sec1 {
+.work .case .header,
+.work .case .content .info .sec1 {
   display: flex;
   gap: 40px;
 }
-.case .header .left {
+.work .case .header .left {
   flex: 0 0 68.5%;
 }
-.case .header .buttons {
+.work .case .header .buttons {
   display: flex;
   gap: 10px;
 }
-.case .header .buttons a {
+.work .case .header .buttons a {
   padding: 10px 20px;
   text-align: center;
   border-radius: 10px;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
-.case .header .right {
+.work .case .header .right {
   flex: 0 0 28.5%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.case .widget {
+.work .case .widget {
   display: flex;
   flex-wrap: wrap;
   width: min-content;
@@ -154,130 +154,130 @@
   border-radius: 10px;
   pointer-events: none;
 }
-.case .widget h2 {
+.work .case .widget h2 {
   margin: 0;
   font-size: medium;
   font-weight: 200;
 }
-.case .widget p {
+.work .case .widget p {
   font-size: medium;
   font-weight: 500;
 }
-.case .widget img {
+.work .case .widget img {
   width: 20px;
   height: 20px;
   border-radius: 5px;
 }
-.case .widget .icons {
+.work .case .widget .icons {
   display: flex;
   flex-wrap: nowrap;
   gap: 5px;
 }
 
-.case .content .info h3 {
+.work .case .content .info h3 {
   margin: 0;
   font-size: medium;
   font-weight: 200;
   opacity: 0.5;
 }
-.case .content .info .sec1 {
+.work .case .content .info .sec1 {
   margin-bottom: 40px;
 }
-.case .content .info .sec1 .left,
-.case .content .info .sec1 .right {
+.work .case .content .info .sec1 .left,
+.work .case .content .info .sec1 .right {
   flex: 0 0 48.5%;
 }
-.case .content .info .sec1 p,
-.case .content .info ul {
+.work .case .content .info .sec1 p,
+.work .case .content .info ul {
   margin-top: 10px;
 }
-.case .content .info .sec1 ul {
+.work .case .content .info .sec1 ul {
   display: grid;
   list-style: inside;
   gap: 5px;
 }
-.case .content .info .sec2 {
+.work .case .content .info .sec2 {
   flex-wrap: nowrap;
   overflow-x: scroll;
   gap: 10px;
   border-radius: 10px;
 }
-.case .content .info .sec2 li {
+.work .case .content .info .sec2 li {
   padding: 10px;
   position: relative;
   flex: 0 0 25%;
   border-radius: 10px;
 }
-.case .content .info .sec2 li h2 {
+.work .case .content .info .sec2 li h2 {
   font-weight: 500;
   font-size: medium;
   margin: 5px 0;
 }
-.case .content .info .sec2 li h3 {
+.work .case .content .info .sec2 li h3 {
   font-weight: 600;
   opacity: 1;
   width: fit-content;
   padding: 2px 10px;
   border-radius: 10px;
 }
-.case .content .info .sec2 li p {
+.work .case .content .info .sec2 li p {
   font-weight: 200;
 }
-.case .content .results {
+.work .case .content .results {
   gap: 20px;
   display: grid;
 }
-.case .content .results .sec {
+.work .case .content .results .sec {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.case .content .results .sec .card {
+.work .case .content .results .sec .card {
   display: grid;
   overflow: hidden;
   border-radius: 20px;
   position: relative;
 }
-.case .content .results .sec .card img {
+.work .case .content .results .sec .card img {
   width: 100%;
   height: 100%;
 }
-.case .content .results .sec .card p {
+.work .case .content .results .sec .card p {
   position: absolute;
   font-size: x-large;
 }
 
-.case .content .process .block {
+.work .case .content .process .block {
   display: flex;
   margin-bottom: 3em;
 }
-.case .content .process .block .left h3 {
+.work .case .content .process .block .left h3 {
   opacity: 0.7;
   font-size: medium;
   margin: 0;
 }
-.case .content .process .left {
+.work .case .content .process .left {
   flex: 0 0 20%;
 }
-.case .content .process .right {
+.work .case .content .process .right {
   flex: 0 0 80%;
 }
 
-.case .block.design .sec {
+.work .case .block.design .sec {
   display: flex;
   gap: 40px;
   margin-top: 40px;
 }
-.case .block.design .mockup {
+.work .case .block.design .mockup {
   border-radius: 20px;
   overflow: hidden;
   display: grid;
 }
-.case .block.design .mockup img {
+.work .case .block.design .mockup img {
   width: 100%;
 }
 
-.case .footer {
+.work .case .footer {
   display: flex;
   flex-wrap: nowrap;
   gap: 5px;
@@ -288,48 +288,48 @@
 }
 
 @media (max-width: 1060px) {
-  .case {
+  .work .case {
     padding: 0.5rem;
   }
-  .case .header,
-  .case .content .info .sec1,
-  .case .content .results .sec,
-  .case .content .process .block,
-  .case .footer {
+  .work .case .header,
+  .work .case .content .info .sec1,
+  .work .case .content .results .sec,
+  .work .case .content .process .block,
+  .work .case .footer {
     flex-wrap: wrap;
   }
-  .case .header .left,
-  .case .header .right,
-  .case .content .info .sec1 .left,
-  .case .content .info .sec1 .right,
-  .case .content .process .left,
-  .case .content .process .right {
+  .work .case .header .left,
+  .work .case .header .right,
+  .work .case .content .info .sec1 .left,
+  .work .case .content .info .sec1 .right,
+  .work .case .content .process .left,
+  .work .case .content .process .right {
     flex: 0 0 100%;
   }
-  .case .header .buttons a {
+  .work .case .header .buttons a {
     font-size: smaller;
   }
-  .case .content .info,
-  .case .content .results,
-  .case .content .process {
+  .work .case .content .info,
+  .work .case .content .results,
+  .work .case .content .process {
     margin-top: 3em;
   }
-  .case .content .info .sec2 li {
+  .work .case .content .info .sec2 li {
     flex: 0 0 80%;
   }
-  .case .content .process .right {
+  .work .case .content .process .right {
     margin-top: 10px;
   }
-  .case .block.design .mockup {
+  .work .case .block.design .mockup {
     border-radius: 10px;
   }
 }
 
 @media (max-width: 767px) {
-  .case .block.design .sec {
+  .work .case .block.design .sec {
     flex-wrap: wrap;
   }
-  .case .content .results .sec .card p {
+  .work .case .content .results .sec .card p {
     font-size: medium;
   }
 }

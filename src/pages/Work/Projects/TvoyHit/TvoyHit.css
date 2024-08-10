@@ -75,29 +75,7 @@
   flex: 0 0 60%;
 }
 
-.tvoy-hit .note {
-  width: 150px;
-  right: 0;
-  top: 0;
-  animation: fly-note 15s infinite ease;
-}
-@keyframes fly-note {
-  0%,
-  to {
-    translate: 0 5%;
-    rotate: 4deg;
-  }
-
-  50% {
-    translate: 0 -5%;
-    rotate: -4deg;
-  }
-}
-
 @media (max-width: 1060px) {
-  .tvoy-hit .note {
-    width: 100px;
-  }
   .tvoy-hit .block.logic-map img {
     border-radius: 10px;
   }
