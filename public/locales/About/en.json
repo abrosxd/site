@@ -1,60 +1,69 @@
 {
-  "hello": "👋 Hi - I'm Daniel, a web designer and web developer. Here you'll find all the necessary information about me and even more. Welcome!",
-  "reviews": "Reviews",
-  "faq": "Answers on questions",
-  "gallery": "Photo album",
-  "stack": "Stack",
-  "documents": "Documents",
-  "Time": {
-    "title": "My time",
-    "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+  "info": {
+    "title": "About Me",
+    "hello": "👋 Hi — I'm Danil, a web designer and web developer. Here you will find all the necessary information about me and even more. Welcome!",
+    "time": {
+      "text": "My Time",
+      "days": ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
+    },
+    "stack": "Stack",
+    "timeline": {
+      "title": "Timeline",
+      "description": "Chronology of Development",
+      "2024": {
+        "8": "Working on other pages of the personal website",
+        "7": "Launching the personal website on React",
+        "6": "Working on Tilda, Webflow, and WordPress projects",
+        "5": "Working on the personal website",
+        "4": "Learning React",
+        "3": "Redesign of the personal website",
+        "2": "Getting to know WordPress",
+        "1": "Working on Tilda and Webflow projects"
+      },
+      "2023": {
+        "12": "Getting to know N8N",
+        "11": "Getting to know Make",
+        "10": "Getting to know Zapier",
+        "9": "Getting to know NocoDB",
+        "8": "Getting to know Airtable",
+        "7": "First order for a multi-page store on Tilda",
+        "6": "Getting to know Webflow",
+        "5": "First order for a website on Webflow",
+        "4": "Personal website on HTML/CSS/JS stack",
+        "3": "Redesign of the personal website in Figma for animations",
+        "2": "Learning GSAP",
+        "1": "Getting to know JS libraries"
+      },
+      "2022": {
+        "12": "Started working on the personal website",
+        "11": "First full-fledged static landing page",
+        "10": "Thousands of attempts to create a good landing page",
+        "9": "Working on Tilda orders",
+        "8": "Learning JavaScript",
+        "7": "First static landing page without JS",
+        "6": "Learning HTML",
+        "5": "Learning CSS",
+        "4": "Second push to learn the language - JavaScript in modifications",
+        "3": "Struggles with combining/working on modifications",
+        "2": "Getting to know modifications",
+        "1": "First order to create a website on Tilda"
+      },
+      "2021": {
+        "7": "First order for website design",
+        "6": "Designing my ideas in Figma",
+        "5": "Getting to know the Awwwards website",
+        "4": "Getting to know Figma",
+        "3": "Learning the basics of design from YouTube",
+        "2": "First websites on Tilda",
+        "1": "Getting to know Tilda"
+      },
+      "2020": {
+        "3": "First push to learn the language - PHP on Devel Studio",
+        "2": "Getting to know the Devel Studio constructor",
+        "1": "First pages on WIX"
+      }
+    }
   },
-  "Reviews": [
-    {
-      "name": "Adele (Songwriting by O. Shaumarov)",
-      "text": "Daniel, good day! I personally thank you for your fast and high-quality work!!! Thank you very much!!! I will definitely keep your contact and recommend you!"
-    },
-    {
-      "name": "Anna Moiseenko",
-      "text": "Fire) thank you so much) saved me from a huge workload 😂"
-    }
-  ],
-  "FAQ": [
-    {
-      "title": "Builder or Framework?",
-      "text": "In the world of web development, there are many tools that help create websites. Website builders like Webflow, Tilda, or Wix offer a simple interface for quick development. On the other hand, frameworks like React or Angular provide more flexible and powerful capabilities for creating complex and functional web applications. The choice between them depends on your goals and level of technical expertise."
-    },
-    {
-      "title": "Is Webflow a good solution?",
-      "text": "Webflow is suitable for projects that want to create complex and unique websites without the limitations of builders. Webflow offers flexible settings and a high degree of control over design and functionality. It is an excellent solution for stores/web services/large businesses/complex projects."
-    },
-    {
-      "title": "Is Tilda a good solution?",
-      "text": "Tilda is suitable for small projects, landing pages/small stores/schools with courses/corporate pages. However, for more complex and unique projects, Tilda's functionality may be insufficient, and in such cases, additional development and third-party services will be required."
-    },
-    {
-      "title": "Is Wix a good solution?",
-      "text": "Wix offers many ready-made templates and editing tools, making it ideal for small businesses/bloggers/creative professionals. However, it is not suitable for large projects or specific requirements."
-    },
-    {
-      "title": "Why such a price?",
-      "text": "Creating a website, writing a modification, and improving a modification are not as simple and quick as they seem. The development process involves many hidden steps that directly affect the result. Development is a delicate and labor-intensive process. During the work, edits often arise, increasing the complexity and time of work on the project. It is a long process that requires certain skills. For this reason, I am constantly learning, so the cost of development cannot be low."
-    },
-    {
-      "title": "What is the difference between edits and revisions?",
-      "text": "Edits are small changes to existing content or design aimed at correcting errors or clarifying information. Revisions, on the other hand, involve deeper changes that may include redesigning the site structure, changing its functionality, or adding new content. Revisions require more time and resources than simple edits."
-    },
-    {
-      "title": "How is the price formed?",
-      "text": "The pricing formula is simple: [( X * time ) - discount for regular clients]. Thus, the cost of the project depends on the amount of work and time spent on its execution. Regular clients can count on discounts, making our cooperation even more beneficial."
-    },
-    {
-      "title": "What materials do I need to provide?",
-      "text": "Each project is unique. Therefore, we will have a preliminary call to discuss all the details. During the conversation, I will tell you what I will need from you and what additional costs may arise. After such a conversation, you will already know what is required from you to fulfill your request and can decide if these conditions suit you."
-    },
-    {
-      "title": "What additional costs might there be?",
-      "text": "We are in the era of digital subscriptions, and this does not bypass developers. There are services that cover 70% of your requests and can be used in your projects. Thus, you have to pay X amount for a subscription instead of XXXXXXXX amount for development. In turn, I only competently integrate all these services together."
-    }
-  ]
+  "links": "Links to materials",
+  "gallery": "Photo album"
 }
