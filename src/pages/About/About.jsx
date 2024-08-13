@@ -144,197 +144,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div class="timeline">
-            <div class="tl-header">
-              <h1>{t("info.timeline.title")}</h1>
-              <p>{t("info.timeline.description")}</p>
-            </div>
-
-            <div class="tl-item">
-              <div class="tl-circle">&nbsp;</div>
-            </div>
-
-            <div class="tl-item">
-              <div class="tl-circle">&nbsp;</div>
-            </div>
-
-            <div class="tl-item tl-year-wrap">
-              <span class="tl-year-back">&nbsp;</span>
-              <span class="tl-year">2024</span>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">08</span>
-              <div class="tl-event">
-                <h2>{t("info.timeline.2024.8")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2024.7")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">06</span>
-              <div class="tl-event">
-                <h2>{t("info.timeline.2024.6")}</h2>
-                <h2>{t("info.timeline.2024.5")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">03</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2024.4")}</h2>
-                <h2>{t("info.timeline.2024.3")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">02</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2024.2")}</h2>
-                <h2>{t("info.timeline.2024.1")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-end">&nbsp;</div>
-            </div>
-
-            <div class="tl-item tl-year-wrap">
-              <span class="tl-year-back">&nbsp;</span>
-              <span class="tl-year">2023</span>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">11</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2023.12")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2023.11")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2023.10")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2023.9")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2023.8")}</h2>
-                <h2>{t("info.timeline.2023.7")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">06</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2023.6")}</h2>
-                <h2>{t("info.timeline.2023.5")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">03</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2023.4")}</h2>
-                <h2>{t("info.timeline.2023.3")}</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">01</span>
-              <div class="tl-event">
-                <h2 class="tl-color">{t("info.timeline.2023.2")}</h2>
-                <h2>{t("info.timeline.2023.1")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-end">&nbsp;</div>
-            </div>
-
-            <div className="tl-item tl-year-wrap">
-              <span className="tl-year-back">&nbsp;</span>
-              <span className="tl-year">2022</span>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">12</span>
-              <div class="tl-event">
-                <h2>Начало работ над личным сайтом</h2>
-              </div>
-            </div>
-
-            <div class="tl-item">
-              <span class="tl-date">11</span>
-              <div class="tl-event">
-                <h2>{t("info.timeline.2022.11")}</h2>
-                <h2>{t("info.timeline.2022.10")}</h2>
-                <h2>{t("info.timeline.2022.9")}</h2>
-                <h2 class="tl-color">{t("info.timeline.2022.8")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <span className="tl-date">07</span>
-              <div className="tl-event">
-                <h2>{t("info.timeline.2022.7")}</h2>
-                <h2 className="tl-color">{t("info.timeline.2022.6")}</h2>
-                <h2 className="tl-color">{t("info.timeline.2022.5")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <span className="tl-date">04</span>
-              <div className="tl-event">
-                <h2 className="tl-color">{t("info.timeline.2022.4")}</h2>
-                <h2>{t("info.timeline.2022.3")}</h2>
-                <h2>{t("info.timeline.2022.2")}</h2>
-                <h2 className="tl-color">{t("info.timeline.2022.1")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-end">&nbsp;</div>
-            </div>
-
-            <div className="tl-item tl-year-wrap">
-              <span className="tl-year-back">&nbsp;</span>
-              <span className="tl-year">2021</span>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-event">
-                <h2 className="tl-color">{t("info.timeline.2021.7")}</h2>
-                <h2>{t("info.timeline.2021.6")}</h2>
-                <h2>{t("info.timeline.2021.5")}</h2>
-                <h2 className="tl-color">{t("info.timeline.2021.4")}</h2>
-                <h2>{t("info.timeline.2021.3")}</h2>
-                <h2>{t("info.timeline.2021.2")}</h2>
-                <h2 className="tl-color">{t("info.timeline.2021.1")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-end">&nbsp;</div>
-            </div>
-
-            <div className="tl-item tl-year-wrap">
-              <span className="tl-year-back">&nbsp;</span>
-              <span className="tl-year">2020</span>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-event">
-                <h2 className="tl-color">{t("info.timeline.2020.3")}</h2>
-                <h2>{t("info.timeline.2020.2")}</h2>
-                <h2>{t("info.timeline.2020.1")}</h2>
-              </div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-end">&nbsp;</div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-circle">&nbsp;</div>
-            </div>
-
-            <div className="tl-item">
-              <div className="tl-circle">&nbsp;</div>
-            </div>
-          </div>
         </div>
       </div>
       <div className="center">
@@ -367,9 +176,14 @@ const About = () => {
             disableOnInteraction: false,
           }}
           loop={true}
-          direction="vertical"
+          direction="horizontal"
           slidesPerGroup={1}
           className="gallery"
+          breakpoints={{
+            960: {
+              direction: "vertical",
+            },
+          }}
         >
           {gallery.map((image, index) => (
             <SwiperSlide key={index}>

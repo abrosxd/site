@@ -57,7 +57,7 @@
   border: 2px dashed #818f0078;
 }
 
-.case .block.design .mockup {
+.tvoy-hit .block.design .mockup {
   border: 2px dashed #7e70ff73;
 }
 
@@ -95,7 +95,7 @@
     width: auto;
     border-radius: 0;
   }
-  .case .content .process .right {
+  .tvoy-hit .content .process .right {
     overflow: scroll;
     border-radius: 10px;
   }

@@ -1,92 +1,92 @@
-.work-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.home {
   width: 100vw;
-  transition: transform 0.3s ease-in-out;
-  top: 0;
-  position: absolute;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  z-index: 1;
-}
-@media (max-width: 767px) {
-  .work-container {
-    padding-top: 60px;
-    padding-bottom: 90px;
-  }
-}
-
-.work-container .project {
+  height: 100vh;
   position: relative;
-  margin: 10px;
-  width: 350px;
-  height: 470px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
-  will-change: transform;
-  z-index: 2;
-  border-radius: 5px;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
   font-family: var(--font-basic);
 }
 
-.work-container .project .title {
-  font-size: xxx-large;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-@media (max-width: 767px) {
-  .work-container .project {
-    width: 190px;
-    height: 255px;
-  }
-  .work-container .project .title {
-    font-size: x-large;
-  }
-}
-
-@media (max-width: 390px) {
-  .work-container .project {
-    width: 170px;
-    height: 227px;
-  }
-}
-
-.work-container .project .overlay {
+.home .meduza {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  top: 50%;
+  left: 50%;
+  scale: 2;
+  opacity: 0.8;
+  z-index: 2;
+  will-change: transform;
+}
+.home .meduza p {
+  line-height: 0.7;
+  font-size: smaller;
+  color: transparent;
+  background: url(/assets/photo/meduza.png) no-repeat center center;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  width: 690px;
+  height: 670px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   pointer-events: none;
-  transform: translateZ(30px);
+  will-change: transform;
 }
 
-.work-container .project:hover .title,
-.work-container .project:hover .overlay {
-  opacity: 1;
+.home .text {
+  margin: auto 0;
+  width: 100%;
+  overflow: hidden;
+}
+.home .text .marquee {
+  display: flex;
+  white-space: nowrap;
+}
+.home .text .marquee .marquee-inner {
+  display: flex;
+  white-space: nowrap;
+}
+.home .text .marquee .marquee-inner span {
+  display: inline-block;
+  margin: 0;
+  padding: 0 2rem;
+  font-size: 7em;
+  font-weight: 800;
+  color: #141414;
+  line-height: 0.8;
 }
 
-@media (max-width: 767px) {
-  .work-container .project:hover .title,
-  .work-container .project:hover .overlay {
-    opacity: 0;
+@media (max-width: 1920px) {
+  .home .meduza {
+    scale: 1.5;
   }
 }
 
-.work-container .project:hover .title,
-.work-container .project.mobcenter .overlay {
-  opacity: 1;
+@media (max-width: 1280px) {
+  .home .meduza {
+    scale: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .home .meduza {
+    scale: 0.8;
+  }
+  .home .text .marquee .marquee-inner span {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .home .meduza {
+    scale: 0.6;
+  }
+}
+
+@media (max-width: 320px) {
+  .home .meduza {
+    scale: 0.5;
+  }
 }

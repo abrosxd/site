@@ -283,12 +283,12 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="not-found">
+    <main className="not-found">
       <div className="fof">
         <canvas ref={canvasRef}></canvas>
       </div>
       <p className="title">{t("title")}</p>
-    </div>
+    </main>
   );
 };
 export default Transition(NotFound);

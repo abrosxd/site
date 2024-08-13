@@ -10,27 +10,27 @@ export default function TvoyHit() {
     fontSize: "medium",
   };
 
-  const { t: tWork } = useTranslation("Work");
-  const { t: tTvoyHit } = useTranslation("Work/Projects/TvoyHit");
+  const { t: w } = useTranslation("Work");
+  const { t: t } = useTranslation("Work/Projects/TvoyHit");
 
   return (
     <div className="case tvoy-hit">
-      <h1>{tTvoyHit("title")}</h1>
+      <h1>{t("title")}</h1>
       <div className="header">
         <div className="left">
-          <h3>{tTvoyHit("header.description")}</h3>
+          <h3>{t("header.description")}</h3>
           <div className="buttons">
             <a href="https://t.me/abrosxd" target="_blank">
-              {tTvoyHit("header.buttons.1")}
+              {t("header.buttons.1")}
             </a>
             <a href="https://tvoy-hit.ru" target="_blank">
-              {tTvoyHit("header.buttons.2")}
+              {t("header.buttons.2")}
             </a>
           </div>
         </div>
         <div className="right">
           <div className="widget stack">
-            <h2>{tWork("stack")}</h2>
+            <h2>{w("stack")}</h2>
             <div className="icons">
               <img src="/assets/icons/stack/tilda.png" />
               <img src="/assets/icons/stack/html5.png" />
@@ -39,82 +39,74 @@ export default function TvoyHit() {
             </div>
           </div>
           <div className="widget time">
-            <h2>{tWork("time")}</h2>
-            <p>{tTvoyHit("header.time")}</p>
+            <h2>{w("time")}</h2>
+            <p>{t("header.time")}</p>
           </div>
           <div className="widget role">
-            <h2>{tWork("role")}</h2>
-            <p>{tTvoyHit("header.role")}</p>
+            <h2>{w("role")}</h2>
+            <p>{t("header.role")}</p>
           </div>
         </div>
       </div>
       <div className="content">
         <div className="info">
-          <h2>{tWork("info")}</h2>
+          <h2>{w("info")}</h2>
           <div className="sec1">
             <div className="left">
-              <h3>{tWork("client")}</h3>
-              <p>{tTvoyHit("content.info.client")}</p>
+              <h3>{w("client")}</h3>
+              <p>{t("content.info.client")}</p>
             </div>
             <div className="right">
-              <h3>{tWork("tasks")}</h3>
+              <h3>{w("tasks")}</h3>
               <ul>
-                <li>{tTvoyHit("content.info.tasks.1")}</li>
-                <li>{tTvoyHit("content.info.tasks.2")}</li>
-                <li>{tTvoyHit("content.info.tasks.3")}</li>
+                <li>{t("content.info.tasks.1")}</li>
+                <li>{t("content.info.tasks.2")}</li>
+                <li>{t("content.info.tasks.3")}</li>
               </ul>
             </div>
           </div>
-          <h3>{tWork("problems")}</h3>
+          <h3>{w("problems")}</h3>
           <ul className="sec2">
             <li>
               <h3>01</h3>
-              <h2>{tTvoyHit("content.info.problems.1.title")}</h2>
-              <p>{tTvoyHit("content.info.problems.1.text")}</p>
+              <h2>{t("content.info.problems.1.title")}</h2>
+              <p>{t("content.info.problems.1.text")}</p>
             </li>
             <li>
               <h3>02</h3>
-              <h2>{tTvoyHit("content.info.problems.2.title")}</h2>
-              <p>{tTvoyHit("content.info.problems.2.text")}</p>
+              <h2>{t("content.info.problems.2.title")}</h2>
+              <p>{t("content.info.problems.2.text")}</p>
             </li>
           </ul>
         </div>
         <div className="results">
-          <h2>{tWork("results")}</h2>
+          <h2>{w("results")}</h2>
           <div className="sec">
             <div className="card catalog-integration">
-              <p>{tTvoyHit("content.results.1")}</p>
+              <p>{t("content.results.1")}</p>
               <img src="/assets/projects/work/TvoyHit/result-1.png" />
             </div>
             <div className="card catalog-style">
-              <p>{tTvoyHit("content.results.2")}</p>
+              <p>{t("content.results.2")}</p>
               <img src="/assets/projects/work/TvoyHit/result-2.png" />
             </div>
           </div>
           <div className="sec">
             <div className="card settings-lite">
-              <p>{tTvoyHit("content.results.3")}</p>
+              <p>{t("content.results.3")}</p>
               <img src="/assets/projects/work/TvoyHit/result-4.png" />
             </div>
             <div className="card player-design">
-              <p>{tTvoyHit("content.results.4")}</p>
+              <p>{t("content.results.4")}</p>
               <img src="/assets/projects/work/TvoyHit/result-3.png" />
             </div>
           </div>
         </div>
         <div className="process">
-          <h2>{tWork("process")}</h2>
-          <div className="block logic-map">
-            <div className="left">
-              <h3>{tTvoyHit("content.process.logicmap")}</h3>
-            </div>
-            <div className="right">
-              <img src="/assets/projects/work/TvoyHit/logic-map.png" />
-            </div>
-          </div>
+          <h2>{w("process")}</h2>
           <div className="block design">
             <div className="left">
-              <h3>{tTvoyHit("content.process.design")}</h3>
+              <h3>{t("content.process.design")}</h3>
             </div>
             <div className="right">
               <div className="mockup">
@@ -130,14 +122,22 @@ export default function TvoyHit() {
               </div>
             </div>
           </div>
+          <div className="block logic-map">
+            <div className="left">
+              <h3>{t("content.process.logicmap")}</h3>
+            </div>
+            <div className="right">
+              <img src="/assets/projects/work/TvoyHit/logic-map.png" />
+            </div>
+          </div>
           <div className="block dev">
             <div className="left">
-              <h3>{tTvoyHit("content.process.dev.title")}</h3>
+              <h3>{t("content.process.dev.title")}</h3>
             </div>
             <div className="right">
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.1")}</p>
+                  <p>{t("content.process.dev.1")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -160,7 +160,7 @@ const btnVolume = player.querySelector(".player-volume .tn-atom");
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.2")}</p>
+                  <p>{t("content.process.dev.2")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -190,7 +190,7 @@ const nowPlaying = () => {
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.3")}</p>
+                  <p>{t("content.process.dev.3")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -217,7 +217,7 @@ const nowPlaying = () => {
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.4")}</p>
+                  <p>{t("content.process.dev.4")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -252,7 +252,7 @@ if (
               </div>
               <div className="step">
                 <div className="text">
-                  <p>{tTvoyHit("content.process.dev.5")}</p>
+                  <p>{t("content.process.dev.5")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -303,7 +303,7 @@ if (
         </div>
       </div>
       <div className="footer">
-        <p>{tWork("footer")}</p>
+        <p>{w("footer")}</p>
         <p>tvoy-hit.ru | google.com</p>
       </div>
     </div>

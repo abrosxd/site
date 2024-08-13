@@ -10,7 +10,18 @@ const Cursor = () => {
     y: window.innerHeight / 2,
   });
 
+  const isTouchDevice = () => {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  };
+
   useEffect(() => {
+    if (isTouchDevice()) {
+      return;
+    }
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
 

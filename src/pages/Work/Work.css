@@ -146,7 +146,7 @@
 .work .case .widget {
   display: flex;
   flex-wrap: wrap;
-  width: min-content;
+  width: fit-content;
   height: fit-content;
   padding: 5px 10px;
   justify-content: flex-start;
@@ -321,6 +321,9 @@
     margin-top: 10px;
   }
   .work .case .block.design .mockup {
+    border-radius: 10px;
+  }
+  .work .case .content .results .sec .card {
     border-radius: 10px;
   }
 }

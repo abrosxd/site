@@ -6,63 +6,7 @@
       "text": "Mój Czas",
       "days": ["ND", "PN", "WT", "ŚR", "CZW", "PT", "SB"]
     },
-    "stack": "Stos",
-    "timeline": {
-      "title": "Oś czasu",
-      "description": "Chronologia rozwoju",
-      "2024": {
-        "8": "Praca nad innymi stronami osobistej witryny",
-        "7": "Uruchomienie osobistej witryny na React",
-        "6": "Praca nad projektami Tilda, Webflow i WordPress",
-        "5": "Praca nad osobistą witryną",
-        "4": "Nauka React",
-        "3": "Przeprojektowanie osobistej witryny",
-        "2": "Poznawanie WordPress",
-        "1": "Praca nad projektami Tilda i Webflow"
-      },
-      "2023": {
-        "12": "Poznawanie N8N",
-        "11": "Poznawanie Make",
-        "10": "Poznawanie Zapier",
-        "9": "Poznawanie NocoDB",
-        "8": "Poznawanie Airtable",
-        "7": "Pierwsze zamówienie na wielostronicowy sklep na Tilda",
-        "6": "Poznawanie Webflow",
-        "5": "Pierwsze zamówienie na stronę internetową w Webflow",
-        "4": "Osobista witryna na stosie HTML/CSS/JS",
-        "3": "Przeprojektowanie osobistej witryny w Figma pod animacje",
-        "2": "Nauka GSAP",
-        "1": "Poznawanie bibliotek JS"
-      },
-      "2022": {
-        "12": "Rozpoczęcie pracy nad osobistą witryną",
-        "11": "Pierwszy pełnoprawny statyczny landing page",
-        "10": "Tysiące prób stworzenia dobrego landing page",
-        "9": "Praca nad zamówieniami na Tilda",
-        "8": "Nauka JavaScript",
-        "7": "Pierwszy statyczny landing page bez JS",
-        "6": "Nauka HTML",
-        "5": "Nauka CSS",
-        "4": "Drugi impuls do nauki języka - JavaScript w modyfikacjach",
-        "3": "Trudności z łączeniem/pracą nad modyfikacjami",
-        "2": "Poznawanie modyfikacji",
-        "1": "Pierwsze zamówienie na stworzenie strony na Tilda"
-      },
-      "2021": {
-        "7": "Pierwsze zamówienie na projekt strony internetowej",
-        "6": "Projektowanie moich pomysłów w Figma",
-        "5": "Poznawanie strony Awwwards",
-        "4": "Poznawanie Figma",
-        "3": "Nauka podstaw projektowania na YouTube",
-        "2": "Pierwsze strony na Tilda",
-        "1": "Poznawanie Tilda"
-      },
-      "2020": {
-        "3": "Pierwszy impuls do nauki języka - PHP na Devel Studio",
-        "2": "Poznawanie konstruktora Devel Studio",
-        "1": "Pierwsze strony na WIX"
-      }
-    }
+    "stack": "Stos"
   },
   "links": "Linki do materiałów",
   "gallery": "Album zdjęć"

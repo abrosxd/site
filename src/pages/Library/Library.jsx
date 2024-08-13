@@ -132,7 +132,7 @@ const Library = () => {
   // );
 
   return (
-    <main>
+    <main className="lib">
       {/* <Filter
         categories={categories}
         activeCategory={activeCategory}
@@ -144,7 +144,7 @@ const Library = () => {
           <ProjectCard key={project.url} {...project} />
         ))}
       </div> */}
-      <ComingSoon deadline="05 09 2024 20:20:20 UTC+1" />
+      <ComingSoon deadline="05 11 2024 20:20:20 UTC+1" />
     </main>
   );
 };

@@ -2,159 +2,140 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { arta } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import "./TvoyHit.css";
+import "./LampaStore.css";
 
-export default function TvoyHit() {
+export default function LampaStore() {
   const customStyleCode = {
     backgroundColor: "transparent",
     fontSize: "medium",
   };
-  const { t } = useTranslation("Work");
+
+  const { t: w } = useTranslation("Work");
+  const { t: t } = useTranslation("Work/Projects/LampaStore");
+
   return (
-    <div className="case tvoy-hit">
-      <img
-        className="sticker note"
-        src="/assets/projects/work/TvoyHit/note.png"
-      />
-      <h1>Музыкальный плеер для магазина песен Твой Хит</h1>
+    <div className="case lampa-store">
+      <h1>{t("title")}</h1>
       <div className="header">
         <div className="left">
-          <h3>
-            Переработка логики работы стандартного каталога товаров Tilda в
-            каталог музыкальных композиций и интеграция с кастомным аудио
-            плеером.
-          </h3>
+          <h3>{t("header.description")}</h3>
           <div className="buttons">
             <a href="https://t.me/abrosxd" target="_blank">
-              Заказать для своего проекта
-            </a>
-            <a href="https://tvoy-hit.ru" target="_blank">
-              Посмотреть на сайте
+              {t("header.buttons.1")}
             </a>
           </div>
         </div>
         <div className="right">
           <div className="widget stack">
-            <h2>{t("stack")}</h2>
+            <h2>{w("stack")}</h2>
             <div className="icons">
-              <img src="/assets/icons/stack/tilda.png" />
               <img src="/assets/icons/stack/html5.png" />
               <img src="/assets/icons/stack/css3.png" />
               <img src="/assets/icons/stack/js.png" />
             </div>
           </div>
           <div className="widget time">
-            <h2>Длительность</h2>
-            <p>3 недели</p>
+            <h2>{w("time")}</h2>
+            <p>{t("header.time")}</p>
           </div>
           <div className="widget role">
-            <h2>Роль</h2>
-            <p>Разработчик</p>
+            <h2>{w("role")}</h2>
+            <p>{t("header.role")}</p>
           </div>
         </div>
       </div>
       <div className="content">
         <div className="info">
-          <h2>О проекте</h2>
+          <h2>{w("info")}</h2>
           <div className="sec1">
             <div className="left">
-              <h3>Клиент</h3>
-              <p>
-                Твой Хит - магазин песен певца, композитора, аранжировщика,
-                музыкального продюсера - Олег Шаумаров.
-              </p>
+              <h3>{w("client")}</h3>
+              <p>{t("content.info.client")}</p>
             </div>
             <div className="right">
-              <h3>Задачи</h3>
+              <h3>{w("tasks")}</h3>
               <ul>
-                <li>Редизайн каталога</li>
-                <li>Разработка логики плеера</li>
-                <li>Адаптив плеера</li>
+                <li>{t("content.info.tasks.1")}</li>
+                <li>{t("content.info.tasks.2")}</li>
+                <li>{t("content.info.tasks.3")}</li>
+                <li>{t("content.info.tasks.4")}</li>
               </ul>
             </div>
           </div>
-          <h3>Проблемы</h3>
+          <h3>{w("problems")}</h3>
           <ul className="sec2">
             <li>
               <h3>01</h3>
-              <h2>Ограничения конструктора</h2>
-              <p>
-                Сайт собран на конструкторе Tilda. Стандартный подход для
-                реализации не подойдет и нужно изучить что под капотом у Tilda.
-              </p>
+              <h2>{t("content.info.problems.1.title")}</h2>
+              <p>{t("content.info.problems.1.text")}</p>
             </li>
             <li>
               <h3>02</h3>
-              <h2>Адаптивность</h2>
-              <p>
-                Кроме функционала плеера, так же нужно адаптировать его под
-                разные платформы/девайсы.
-              </p>
+              <h2>{t("content.info.problems.2.title")}</h2>
+              <p>{t("content.info.problems.2.text")}</p>
+            </li>
+            <li>
+              <h3>03</h3>
+              <h2>{t("content.info.problems.3.title")}</h2>
+              <p>{t("content.info.problems.3.text")}</p>
             </li>
           </ul>
         </div>
         <div className="results">
-          <h2>Результаты</h2>
+          <h2>{w("results")}</h2>
           <div className="sec">
-            <div className="card catalog-integration">
-              <p>Интеграция каталога товаров</p>
-              <img src="/assets/projects/work/TvoyHit/result-1.png" />
+            <div className="card save-ui">
+              <p>{t("content.results.1")}</p>
+              <img src="/assets/projects/work/LampaStore/result-1.png" />
             </div>
-            <div className="card catalog-style">
-              <p>Стилизация каталога</p>
-              <img src="/assets/projects/work/TvoyHit/result-2.png" />
+            <div className="card news-integration">
+              <p>{t("content.results.2")}</p>
+              <img src="/assets/projects/work/LampaStore/result-2.png" />
             </div>
           </div>
           <div className="sec">
-            <div className="card settings-lite">
-              <p>Простая настройка</p>
-              <img src="/assets/projects/work/TvoyHit/result-4.png" />
-            </div>
-            <div className="card player-design">
-              <p>Любой дизайн плеера</p>
-              <img src="/assets/projects/work/TvoyHit/result-3.png" />
+            <div className="card desc-status">
+              <p>{t("content.results.3")}</p>
+              <img src="/assets/projects/work/LampaStore/result-3.png" />
             </div>
           </div>
         </div>
         <div className="process">
-          <h2>Процесс</h2>
-          <div className="block logic-map">
-            <div className="left">
-              <h3>Logic Map</h3>
-            </div>
-            <div className="right">
-              <img src="/assets/projects/work/TvoyHit/logic-map.png" />
-            </div>
-          </div>
+          <h2>{w("process")}</h2>
           <div className="block design">
             <div className="left">
-              <h3>Дизайн</h3>
+              <h3>UI</h3>
             </div>
             <div className="right">
               <div className="mockup">
-                <img src="/assets/projects/work/TvoyHit/mockup-desktop.png" />
+                <img src="/assets/projects/work/LampaStore/mockup-desktop.png" />
               </div>
               <div className="sec">
                 <div className="mockup">
-                  <img src="/assets/projects/work/TvoyHit/mockup-tablet.png" />
+                  <img src="/assets/projects/work/LampaStore/mockup-tablet.png" />
                 </div>
                 <div className="mockup">
-                  <img src="/assets/projects/work/TvoyHit/mockup-mobile.png" />
+                  <img src="/assets/projects/work/LampaStore/mockup-mobile.png" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="block logic-map">
+            <div className="left">
+              <h3>{t("content.process.logicmap")}</h3>
+            </div>
+            <div className="right">
+              <img src="/assets/projects/work/LampaStore/logic-map.png" />
             </div>
           </div>
           <div className="block dev">
             <div className="left">
-              <h3>Разработка</h3>
+              <h3>{t("content.process.dev.title")}</h3>
             </div>
             <div className="right">
               <div className="step">
                 <div className="text">
-                  <p>
-                    Реализация через постоянные переменные, для использования
-                    кода в других проектах.
-                  </p>
+                  <p>{t("content.process.dev.1")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -163,89 +144,36 @@ export default function TvoyHit() {
                     customStyle={customStyleCode}
                   >
                     {`
-const cover = player.querySelector(".player-cover .tn-atom");
-const title = player.querySelector(".player-title .tn-atom");
-const btnPrev = player.querySelector(".player-prev .tn-atom");
-const btnPlay = player.querySelector(".player-play .tn-atom");
-const btnNext = player.querySelector(".player-next .tn-atom");
-const btnBuy = player.querySelector(".player-btn-buy .tn-atom");
-const btnText = player.querySelector(".player-text .tn-atom");
-const btnVolume = player.querySelector(".player-volume .tn-atom");
-                  `}
-                  </SyntaxHighlighter>
-                </div>
-              </div>
-              <div className="step">
-                <div className="text">
-                  <p>
-                    Каждая функция изолирована, что снижает вероятность того,
-                    что изменения в одной функции могут вызвать неожиданные
-                    проблемы или ошибки в другой.
-                  </p>
-                </div>
-                <div className="code">
-                  <SyntaxHighlighter
-                    language="javascript"
-                    style={arta}
-                    customStyle={customStyleCode}
-                  >
-                    {`
-const nothing = (e) => {
-  e.preventDefault();
-};
+function deletePlugin(pluginToRemoveUrl) {
+  var plugins = Lampa.Storage.get("plugins");
+  var updatedPlugins = plugins.filter(function (obj) {
+    return obj.url !== pluginToRemoveUrl;
+  });
+  Lampa.Storage.set("plugins", updatedPlugins);
+  Lampa.Settings.update();
+  Lampa.Noty.show("Плагин успешно удален");
+  Lampa.Storage.set("needRebootSettingExit", true);
+  settingsWatch();
+}
 
-const playingSame = (link) => {
-  return link != null && link === audio.src ? true : false;
-};
-
-const isPlaying = () => {
-  return !audio.paused;
-};
-
-const nowPlaying = () => {
-  return playlist[Number(audio.dataset.trackNumber)];
-};
-                  `}
-                  </SyntaxHighlighter>
-                </div>
-              </div>
-              <div className="step">
-                <div className="text">
-                  <p>
-                    Данные о треках получаются на прямую из каталога товаров
-                    Tilda, что позволяет даже обычному пользователю
-                    редактировать плейлист.
-                  </p>
-                </div>
-                <div className="code">
-                  <SyntaxHighlighter
-                    language="javascript"
-                    style={arta}
-                    customStyle={customStyleCode}
-                  >
-                    {`
-(d.onload = function () {
-  if (d.readyState === d.DONE && 200 === d.status) {
-    let response = JSON.parse(d.responseText);
-    if (response.product.characteristics.length > 0) {
-      let chars = response.product.characteristics;
-      let link = chars.find((song) => song.title === "music").value;
-      resolve(link);
-    } else {
-      resolve(false);
-    }
+function checkPlugin(pluginToCheck) {
+  var plugins = Lampa.Storage.get("plugins");
+  var checkResult = plugins.filter(function (obj) {
+    return obj.url == pluginToCheck;
+  });
+  if (JSON.stringify(checkResult) !== "[]") {
+    return true;
+  } else {
+    return false;
   }
-}),
+}
                   `}
                   </SyntaxHighlighter>
                 </div>
               </div>
               <div className="step">
                 <div className="text">
-                  <p>
-                    Адаптивное поведение плеера для любых устройств так же
-                    реализовано через код.
-                  </p>
+                  <p>{t("content.process.dev.2")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
@@ -254,77 +182,55 @@ const nowPlaying = () => {
                     customStyle={customStyleCode}
                   >
                     {`
-if (
-  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-    navigator.userAgent
-  )
-) {
-  products.forEach((product) => playPauseBtnOnProduct(null, product));
-  areaEnter();
-} else {
-  let covers = document.querySelectorAll(".js-product-img");
-  for (let cover of covers) {
-    cover.removeEventListener("mouseenter", enter);
-    cover.removeEventListener("mouseleave", leave);
-    cover.addEventListener("mouseenter", enter);
-    cover.addEventListener("mouseleave", leave);
+Lampa.SettingsApi.addComponent({
+  component: "skull",
+  name: "Skull Store",
+  icon: icon_skull,
+});
+
+Lampa.Settings.listener.follow("open", function (e) {
+  if (e.name == "main") {
+    setTimeout(function () {
+      $('div[data-component="skull_online"]').remove();
+      $('div[data-component="skull_tv"]').remove();
+      $('div[data-component="skull_torpars"]').remove();
+      $('div[data-component="skull_interface"]').remove();
+      $('div[data-component="skull_control"]').remove();
+      $('div[data-component="skull_style"]').remove();
+    }, 0);
+    $("#hideInstall").remove();
+    setTimeout(function () {
+      $("div[data-component=plugins]").before(
+        $("div[data-component=skull]")
+      );
+    }, 30);
   }
-  area.removeEventListener("mouseenter", areaEnter);
-  area.removeEventListener("mouseleave", areaLeave);
-  area.addEventListener("mouseenter", areaEnter);
-  area.addEventListener("mouseleave", areaLeave);
-}
+});
                   `}
                   </SyntaxHighlighter>
                 </div>
               </div>
               <div className="step">
                 <div className="text">
-                  <p>
-                    Базовые стили для корректной работы плеера так же хранятся
-                    внутри кода.
-                  </p>
+                  <p>{t("content.process.dev.3")}</p>
                 </div>
                 <div className="code">
                   <SyntaxHighlighter
-                    language="css"
+                    language="javascript"
                     style={arta}
                     customStyle={customStyleCode}
                   >
                     {`
-.play-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: {sWBgClr};
-    border-radius: {sWBrdRd};
-}
-/* Кнопки play/pause */
-.btn-music {
-    width: 60px;
-    height: 60px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    transform: translate(-50%, -50%) scale(100%);
-    transition: all .2s ease-in-out;
-}
-.btn-music:hover {
-    transform: translate(-50%, -50%) scale(110%);
-}
-.play {
-    background-image: {sWPlay};
-}
-.pause {
-    background-image: {sWPause};
-}
+const newsBlock = "code news";
+
+Lampa.SettingsApi.addParam({
+  component: "skull",
+  param: {
+    name: "skull_news",
+    type: "static",
+  },
+  field: { name: newsBlock },
+});
                   `}
                   </SyntaxHighlighter>
                 </div>
@@ -334,8 +240,8 @@ if (
         </div>
       </div>
       <div className="footer">
-        <p>{t("footer")}</p>
-        <p>tvoy-hit.ru | google.com</p>
+        <p>{w("footer")}</p>
+        <p>lampa.mx | google.com</p>
       </div>
     </div>
   );

@@ -6,63 +6,7 @@
       "text": "My Time",
       "days": ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"]
     },
-    "stack": "Stack",
-    "timeline": {
-      "title": "Timeline",
-      "description": "Chronology of Development",
-      "2024": {
-        "8": "Working on other pages of the personal website",
-        "7": "Launching the personal website on React",
-        "6": "Working on Tilda, Webflow, and WordPress projects",
-        "5": "Working on the personal website",
-        "4": "Learning React",
-        "3": "Redesign of the personal website",
-        "2": "Getting to know WordPress",
-        "1": "Working on Tilda and Webflow projects"
-      },
-      "2023": {
-        "12": "Getting to know N8N",
-        "11": "Getting to know Make",
-        "10": "Getting to know Zapier",
-        "9": "Getting to know NocoDB",
-        "8": "Getting to know Airtable",
-        "7": "First order for a multi-page store on Tilda",
-        "6": "Getting to know Webflow",
-        "5": "First order for a website on Webflow",
-        "4": "Personal website on HTML/CSS/JS stack",
-        "3": "Redesign of the personal website in Figma for animations",
-        "2": "Learning GSAP",
-        "1": "Getting to know JS libraries"
-      },
-      "2022": {
-        "12": "Started working on the personal website",
-        "11": "First full-fledged static landing page",
-        "10": "Thousands of attempts to create a good landing page",
-        "9": "Working on Tilda orders",
-        "8": "Learning JavaScript",
-        "7": "First static landing page without JS",
-        "6": "Learning HTML",
-        "5": "Learning CSS",
-        "4": "Second push to learn the language - JavaScript in modifications",
-        "3": "Struggles with combining/working on modifications",
-        "2": "Getting to know modifications",
-        "1": "First order to create a website on Tilda"
-      },
-      "2021": {
-        "7": "First order for website design",
-        "6": "Designing my ideas in Figma",
-        "5": "Getting to know the Awwwards website",
-        "4": "Getting to know Figma",
-        "3": "Learning the basics of design from YouTube",
-        "2": "First websites on Tilda",
-        "1": "Getting to know Tilda"
-      },
-      "2020": {
-        "3": "First push to learn the language - PHP on Devel Studio",
-        "2": "Getting to know the Devel Studio constructor",
-        "1": "First pages on WIX"
-      }
-    }
+    "stack": "Stack"
   },
   "links": "Links to materials",
   "gallery": "Photo album"
