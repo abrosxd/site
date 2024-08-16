@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "./About.css";
 import Transition from "../../components/Transition/Transition";
+import Button from "../../partials/Button/Button";
+import CrossSVG from "./assets/cross.svg";
 
 const About = () => {
   const { t } = useTranslation("About");
@@ -19,6 +21,7 @@ const About = () => {
   const [currentDay, setCurrentDay] = useState("");
   const [currentDate, setCurrentDate] = useState("");
   const [currentTime, setCurrentTime] = useState("");
+  const [expandedSection, setExpandedSection] = useState(null);
 
   const updateDateTime = () => {
     const nowInWarsaw = new Date(
@@ -46,18 +49,56 @@ const About = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const handleExpandSection = (section) => {
+    if (window.innerWidth <= 960) {
+      setExpandedSection(section);
+    }
+  };
+
+  const closeSection = () => {
+    setExpandedSection(null);
+  };
+
   return (
-    <main className="about">
-      <div className="left">
+    <main className={`about ${expandedSection === null ? "default" : ""}`}>
+      <div
+        className={`left ${expandedSection === "left" ? "expanded" : ""}`}
+        onClick={() => handleExpandSection("left")}
+      >
+        <img className="bg" src="/assets/photo/mona-lisa.png" />
+        <div className="overlay">
+          <h2>{t("links")}</h2>
+        </div>
+        <div className="content">
+          <div className="block links">
+            <h2>Связь со мной</h2>
+            <a href="https://t.me/abrosxd" target="_blank">
+              <img src="/public/assets/icons/social/telegram.svg" />
+              <p>Telegram</p>
+            </a>
+          </div>
+          <div className="block links">
+            <h2>Ресурсы</h2>
+            <a href="https://codepen.io/abros" target="_blank">
+              <img src="/public/assets/icons/social/codepen.svg" />
+              <p>Codepen</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`center ${expandedSection === "center" ? "expanded" : ""}`}
+        onClick={() => handleExpandSection("center")}
+      >
         <img className="bg" src="/assets/photo/statue.png" />
         <div className="overlay">
           <h2>{t("info.title")}</h2>
         </div>
         <div className="content">
-          <div className="hi">
+          <div className="block hi">
             <h1>{t("info.hello")}</h1>
           </div>
-          <div className="time">
+          <div className="block time">
             <div className="title">
               <h1 className="text">{t("info.time.text")}</h1>
               <h1 className="tag city">Warszawa</h1>
@@ -72,7 +113,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="stack">
+          <div className="block stack">
             <h1>{t("info.stack")}</h1>
             <div className="items">
               <div className="tag vs-code">
@@ -144,15 +185,28 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="center">
-        <img className="bg" src="/assets/photo/mona-lisa.png" />
-        <div className="overlay">
-          <h2>{t("links")}</h2>
-        </div>
-        <div className="content">
-          <div className="links"></div>
+          <div className="block desc">
+            <h1>Кто я.</h1>
+            <h3>
+              Меня зовут Daniel Abros, и я человек. Давайте будем реалистами,
+              можете ли вы действительно охарактеризовать человека с помощью
+              пары забавных фактов?
+            </h3>
+            <h1>Что я делаю.</h1>
+            <h3>
+              Я работаю frontend разработчиком-фрилансером на полную ставку.
+              Хотя я специализируюсь на создании веб-сайтов, я люблю
+              разнообразие и люблю браться за уникальные творческие задачи. Если
+              вы хотите изменить мир или переосмыслить мир, в котором мы живем,
+              я бы с удовольствием стал его частью.
+            </h3>
+            <h1>Откуда я родом.</h1>
+            <h3>
+              Я вырос в сибирском городе Сургут (если вы не знаете, где это, вам
+              определенно стоит поискать). На данный момент я живу в прекрасной
+              столице Польши - Варшава.
+            </h3>
+          </div>
         </div>
       </div>
       <div className="right">
@@ -192,6 +246,11 @@ const About = () => {
           ))}
         </Swiper>
       </div>
+      {expandedSection && (
+        <Button className="close" onClick={closeSection}>
+          <img className="cross-icon" src={CrossSVG} alt="Close icon" />
+        </Button>
+      )}
     </main>
   );
 };

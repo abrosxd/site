@@ -48,35 +48,11 @@ nav .menu {
   }
 }
 
-nav .links {
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-}
-
-@media (max-width: 1170px) {
-  nav .links {
-    top: 24px;
-    bottom: auto;
-    /* left: 80px; */
-  }
-}
-
 nav .lang {
   position: fixed;
-  /* bottom: 24px; */
   top: 24px;
   right: 24px;
 }
-
-/* @media (max-width: 767px) {
-    .lang {
-      top: 24px;
-      bottom: auto;
-      left: 24px;
-      right: auto;
-    }
-  } */
 
 @media (max-width: 475px) {
   nav .menu {

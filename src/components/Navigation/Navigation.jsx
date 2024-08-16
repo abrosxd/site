@@ -7,11 +7,6 @@ import useGlyphAnimation from "../../utils/GlyphAnimation";
 
 import Button from "../../partials/Button/Button";
 
-import LinkSVG from "./assets/link.svg";
-import TelegramSVG from "./assets/social/telegram.svg";
-import VkSVG from "./assets/social/vk.svg";
-import InstagramSVG from "./assets/social/instagram.svg";
-
 import LangSVG from "./assets/lang.svg";
 import EnSVG from "./assets/language/en.svg";
 import RuSVG from "./assets/language/ru.svg";
@@ -21,16 +16,10 @@ export default function Navigation() {
   useGlyphAnimation();
 
   const { t, i18n } = useTranslation("Menu");
-  const [isLinksMenuOpen, setLinksMenuOpen] = useState(false);
   const [isLangMenuOpen, setLangMenuOpen] = useState(false);
 
-  const linksMenuRef = useRef(null);
   const langMenuRef = useRef(null);
   const location = useLocation();
-
-  const toggleLinksMenu = () => {
-    setLinksMenuOpen(!isLinksMenuOpen);
-  };
 
   const toggleLangMenu = () => {
     setLangMenuOpen(!isLangMenuOpen);
@@ -43,12 +32,6 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        linksMenuRef.current &&
-        !linksMenuRef.current.contains(event.target)
-      ) {
-        setLinksMenuOpen(false);
-      }
       if (langMenuRef.current && !langMenuRef.current.contains(event.target)) {
         setLangMenuOpen(false);
       }
@@ -97,46 +80,6 @@ export default function Navigation() {
             to="/about"
             text={t("about")}
           />
-        </li>
-      </ul>
-
-      <ul className="links">
-        <li className="section down" ref={linksMenuRef}>
-          <Button onClick={toggleLinksMenu}>
-            <img className="nav-icon" src={LinkSVG} alt="Link Icon" />
-          </Button>
-          <ul className={`submenu ${isLinksMenuOpen ? "active" : ""}`}>
-            <li>
-              <Button
-                className=""
-                as="a"
-                href="https://t.me/abrosxd"
-                target="_blank"
-              >
-                <img className="nav-icon" src={TelegramSVG} alt="Telegram" />
-              </Button>
-            </li>
-            {/* <li>
-              <Button
-                className=""
-                as="a"
-                href="https://vk.com/abrosxd"
-                target="_blank"
-              >
-                <img className="nav-icon" src={VkSVG} alt="VK" />
-              </Button>
-            </li>
-            <li>
-              <Button
-                className=""
-                as="a"
-                href="https://www.instagram.com/abrosxd"
-                target="_blank"
-              >
-                <img className="nav-icon" src={InstagramSVG} alt="Instagram" />
-              </Button>
-            </li> */}
-          </ul>
         </li>
       </ul>
 

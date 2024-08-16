@@ -1,5 +1,5 @@
 .work {
-  padding: 70px 24px 100px;
+  padding: 70px 24px 80px;
   width: 100vw;
   box-sizing: border-box;
 }
@@ -20,10 +20,10 @@
   z-index: 1;
   height: 70px;
   position: absolute;
-  bottom: 24px;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 85%;
+  width: 100%;
 }
 
 .work .navigation .swiper-wrapper {
@@ -71,7 +71,6 @@
 
   .work .navigation {
     bottom: 60px;
-    width: 100%;
   }
 }
 
@@ -104,235 +103,47 @@
 /* Case page */
 .work .case {
   font-family: var(--font-basic);
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   overflow: hidden;
+  height: 3000px; /* Убрать */
 }
 
-.work .case .sticker {
+.work .case .sticky-header {
   position: absolute;
-}
-
-.work .case .content .info,
-.work .case .content .results,
-.work .case .content .process {
-  margin-top: 5em;
-}
-
-.work .case .header,
-.work .case .content .info .sec1 {
-  display: flex;
-  gap: 40px;
-}
-.work .case .header .left {
-  flex: 0 0 68.5%;
-}
-.work .case .header .buttons {
-  display: flex;
-  gap: 10px;
-}
-.work .case .header .buttons a {
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 10px;
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-.work .case .header .right {
-  flex: 0 0 28.5%;
+  top: 0;
+  right: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-}
-.work .case .widget {
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-  height: fit-content;
-  padding: 5px 10px;
-  justify-content: flex-start;
+  width: 400px;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px dashed;
+  border-top: 0;
   gap: 5px;
-  border-radius: 10px;
-  pointer-events: none;
+  justify-content: center;
 }
-.work .case .widget h2 {
-  margin: 0;
-  font-size: medium;
-  font-weight: 200;
-}
-.work .case .widget p {
-  font-size: medium;
-  font-weight: 500;
-}
-.work .case .widget img {
-  width: 20px;
-  height: 20px;
+.work .case .sticky-header .section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
   border-radius: 5px;
 }
-.work .case .widget .icons {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 5px;
-}
-
-.work .case .content .info h3 {
+.work .case .sticky-header .section h2,
+.work .case .sticky-header .section p {
   margin: 0;
-  font-size: medium;
-  font-weight: 200;
-  opacity: 0.5;
+  font-size: smaller;
 }
-.work .case .content .info .sec1 {
-  margin-bottom: 40px;
-}
-.work .case .content .info .sec1 .left,
-.work .case .content .info .sec1 .right {
-  flex: 0 0 48.5%;
-}
-.work .case .content .info .sec1 p,
-.work .case .content .info ul {
-  margin-top: 10px;
-}
-.work .case .content .info .sec1 ul {
-  display: grid;
-  list-style: inside;
-  gap: 5px;
-}
-.work .case .content .info .sec2 {
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  gap: 10px;
-  border-radius: 10px;
-}
-.work .case .content .info .sec2 li {
-  padding: 10px;
-  position: relative;
-  flex: 0 0 25%;
-  border-radius: 10px;
-}
-.work .case .content .info .sec2 li h2 {
-  font-weight: 500;
-  font-size: medium;
-  margin: 5px 0;
-}
-.work .case .content .info .sec2 li h3 {
-  font-weight: 600;
-  opacity: 1;
-  width: fit-content;
-  padding: 2px 10px;
-  border-radius: 10px;
-}
-.work .case .content .info .sec2 li p {
-  font-weight: 200;
-}
-.work .case .content .results {
-  gap: 20px;
-  display: grid;
-}
-.work .case .content .results .sec {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.work .case .content .results .sec .card {
-  display: grid;
-  overflow: hidden;
-  border-radius: 20px;
-  position: relative;
-}
-.work .case .content .results .sec .card img {
-  width: 100%;
-  height: 100%;
-}
-.work .case .content .results .sec .card p {
-  position: absolute;
-  font-size: x-large;
-}
-
-.work .case .content .process .block {
-  display: flex;
-  margin-bottom: 3em;
-}
-.work .case .content .process .block .left h3 {
-  opacity: 0.7;
-  font-size: medium;
-  margin: 0;
-}
-.work .case .content .process .left {
-  flex: 0 0 20%;
-}
-.work .case .content .process .right {
-  flex: 0 0 80%;
-}
-
-.work .case .block.design .sec {
-  display: flex;
-  gap: 40px;
-  margin-top: 40px;
-}
-.work .case .block.design .mockup {
-  border-radius: 20px;
-  overflow: hidden;
-  display: grid;
-}
-.work .case .block.design .mockup img {
-  width: 100%;
-}
-
-.work .case .footer {
+.work .case .sticky-header .icons {
   display: flex;
   flex-wrap: nowrap;
   gap: 5px;
-  justify-content: center;
-  font-size: x-small;
-  border-top: 1px solid;
-  opacity: 0.2;
 }
-
-@media (max-width: 1060px) {
-  .work .case {
-    padding: 0.5rem;
-  }
-  .work .case .header,
-  .work .case .content .info .sec1,
-  .work .case .content .results .sec,
-  .work .case .content .process .block,
-  .work .case .footer {
-    flex-wrap: wrap;
-  }
-  .work .case .header .left,
-  .work .case .header .right,
-  .work .case .content .info .sec1 .left,
-  .work .case .content .info .sec1 .right,
-  .work .case .content .process .left,
-  .work .case .content .process .right {
-    flex: 0 0 100%;
-  }
-  .work .case .header .buttons a {
-    font-size: smaller;
-  }
-  .work .case .content .info,
-  .work .case .content .results,
-  .work .case .content .process {
-    margin-top: 3em;
-  }
-  .work .case .content .info .sec2 li {
-    flex: 0 0 80%;
-  }
-  .work .case .content .process .right {
-    margin-top: 10px;
-  }
-  .work .case .block.design .mockup {
-    border-radius: 10px;
-  }
-  .work .case .content .results .sec .card {
-    border-radius: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .work .case .block.design .sec {
-    flex-wrap: wrap;
-  }
-  .work .case .content .results .sec .card p {
-    font-size: medium;
-  }
+.work .case .sticky-header .icons img {
+  width: 20px;
+  height: 20px;
 }

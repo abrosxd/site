@@ -8,16 +8,50 @@
   display: flex;
   flex-wrap: nowrap;
 }
+.about.default .left,
+.about.default .right {
+  flex: 0 0 30%;
+}
+
+.about.default .center {
+  flex: 0 0 40%;
+}
 .about .left,
 .about .right {
   flex: 0 0 30%;
   position: relative;
   overflow: hidden;
 }
+.about .left,
+.about .right,
+.about .center {
+  transition: flex 0.5s ease;
+}
 .about .center {
   flex: 0 0 40%;
   position: relative;
   overflow: hidden;
+}
+.about .left.expanded,
+.about .center.expanded {
+  flex: 0 0 100%;
+}
+.about:not(.default) .left:not(.expanded),
+.about:not(.default) .center:not(.expanded),
+.about:not(.default) .right:not(.expanded) {
+  flex: 0 0 0%;
+}
+.about .close {
+  position: absolute;
+  left: 50%;
+  bottom: 57px;
+  transform: translateX(-50%);
+  padding: 0;
+  z-index: 2;
+}
+.about .close .cross-icon {
+  width: 100%;
+  height: 100%;
 }
 .about .bg {
   position: absolute;
@@ -81,7 +115,7 @@
   opacity: 1;
 }
 
-.about .left .hi {
+.about .block {
   background-color: #808080bd;
   border-radius: 10px;
   padding: 10px;
@@ -102,28 +136,23 @@
   border-radius: 5px;
 }
 
-.about .left .time {
+.about .time {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
-  background-color: #808080bd;
-  border-radius: 10px;
-  width: 100%;
-  height: fit-content;
 }
-.about .left .time .title {
+.about .time .title {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
   justify-content: center;
   gap: 10px;
 }
-.about .time .city {
+.about .city {
   color: #0051ff;
   background-color: #a8cfff;
 }
-.about .left .time .dayblock {
+.about .time .dayblock {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
@@ -131,25 +160,21 @@
   align-items: center;
   gap: 20px;
 }
-.about .left .time .dayblock .date {
+.about .time .dayblock .date {
   display: grid;
   justify-content: center;
   text-align: center;
   font-size: large;
 }
-.about .left .time .dayblock .date .day {
+.about .time .dayblock .date .day {
   font-size: xx-large;
 }
-.about .left .time .dayblock .timeblock {
+.about .time .dayblock .timeblock {
   font-size: xxx-large;
   flex: 0 0 50%;
 }
 
 .about .stack {
-  padding: 10px;
-  background-color: #808080bd;
-  border-radius: 10px;
-  height: fit-content;
   display: grid;
   gap: 20px;
 }
@@ -225,12 +250,38 @@
   color: #eb4c72;
   background-color: #ffffff;
 }
+.about .desc h1 {
+  text-decoration: underline;
+}
+
+.about .links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: grey;
+  color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding: 10px;
+  transition: opacity 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+}
+.about .links a:hover {
+  background-color: white;
+  color: black;
+  opacity: 1;
+}
+.about .links img {
+  width: 100px;
+}
+.about .links p {
+  font-size: xx-large;
+}
 
 .about .gallery {
   width: 100%;
   height: 100%;
 }
-
 .about .gallery img {
   display: block;
   width: 100%;
@@ -245,13 +296,13 @@
   .about .content h1 {
     font-size: medium;
   }
-  .about .left .time .dayblock .date {
+  .about .time .dayblock .date {
     font-size: small;
   }
-  .about .left .time .dayblock .date .day {
+  .about .time .dayblock .date .day {
     font-size: x-large;
   }
-  .about .left .time .dayblock .timeblock {
+  .about .time .dayblock .timeblock {
     font-size: xx-large;
     flex: 0 0 69%;
   }
@@ -272,7 +323,7 @@
   .about .right {
     width: 100%;
   }
-  .about .left .time .dayblock .timeblock {
+  .about .time .dayblock .timeblock {
     flex: 0 0 34%;
   }
 }

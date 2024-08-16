@@ -1,0 +1,90 @@
+.unlock {
+  font-family: var(--font-basic);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.lock {
+  filter: blur(8px);
+  overflow: hidden;
+}
+
+.unlock .block {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-basic);
+  gap: 3rem;
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.unlock .block .icon {
+  position: absolute;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 6px;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.unlock .block .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.unlock .block .icon:hover {
+  opacity: 0;
+}
+.unlock .block .icon:hover ~ .title,
+.unlock .block .icon:hover ~ .deadline {
+  opacity: 1;
+}
+
+.unlock .block .title,
+.unlock .block .deadline {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.unlock .block .deadline {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 1rem;
+}
+
+.unlock .block .countdown {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.unlock .block .title,
+.unlock .block .h2 {
+  font-size: xx-large;
+  font-weight: 700;
+  text-align: center;
+}
+
+.unlock .block .text-center {
+  font-size: x-large;
+}
+
+@media (max-width: 900px) {
+  .unlock .block .title,
+  .unlock .block .h2,
+  .unlock .block .text-center {
+    font-size: larger;
+  }
+}

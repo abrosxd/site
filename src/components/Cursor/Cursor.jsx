@@ -73,7 +73,7 @@ const Cursor = () => {
           );
         }
 
-        context.strokeStyle = "rgb(128, 128, 128)";
+        context.strokeStyle = "rgb(255, 255, 255)";
         context.lineWidth = 3;
         context.stroke();
       } else {
@@ -119,6 +119,7 @@ const Cursor = () => {
         left: 0,
         zIndex: 1000,
         pointerEvents: "none",
+        mixBlendMode: "difference",
       }}
     />
   );

@@ -5,7 +5,7 @@ import "./Library.css";
 import Transition from "../../components/Transition/Transition";
 import Filter from "../../partials/Filter/Filter";
 
-import ComingSoon from "../../components/ComingSoon/ComingSoon";
+import Unlock from "../../components/Unlock/Unlock";
 
 const Library = () => {
   // const { t } = useTranslation("Work");
@@ -144,7 +144,7 @@ const Library = () => {
           <ProjectCard key={project.url} {...project} />
         ))}
       </div> */}
-      <ComingSoon deadline="05 11 2024 20:20:20 UTC+1" />
+      <Unlock deadline="05 11 2024 20:20:20 UTC+1" />
     </main>
   );
 };

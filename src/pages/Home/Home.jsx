@@ -34,7 +34,6 @@ const Home = () => {
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
 
   const homeRef = useRef(null);
-  const marqueeRefs = useRef([]);
 
   useEffect(() => {
     let animationFrameId;
@@ -96,22 +95,36 @@ const Home = () => {
     };
   }, []);
 
-  useEffect(() => {
-    marqueeRefs.current.forEach((ref, index) => {
-      const marqueeInner = ref.querySelector(".marquee-inner");
-      const textWidth = marqueeInner.scrollWidth / 2; // Полная ширина текста (с учетом дублирования)
-      const direction = index % 2 === 0 ? "-" : "+"; // Чередование направлений
+  const marqueeRefs = useRef([]);
+  const wordsArray = ["Frontend", "developer", "Daniel", "Abros"];
 
-      gsap.fromTo(
-        marqueeInner,
-        { x: direction === "-" ? 0 : -textWidth },
-        {
-          x: direction === "-" ? -textWidth : 0,
-          duration: 15, // Длительность анимации (можно регулировать)
-          ease: "linear",
-          repeat: -1,
-        }
-      );
+  useEffect(() => {
+    marqueeRefs.current.forEach((marqueeElement, index) => {
+      const width = marqueeElement.scrollWidth;
+
+      if (index === 1) {
+        gsap.fromTo(
+          marqueeElement,
+          { x: -width / 2 },
+          {
+            x: 0,
+            duration: 20 + index * 5,
+            ease: "linear",
+            repeat: -1,
+          }
+        );
+      } else {
+        gsap.fromTo(
+          marqueeElement,
+          { x: 0 },
+          {
+            x: -width / 2,
+            duration: 20 + index * 5,
+            ease: "linear",
+            repeat: -1,
+          }
+        );
+      }
     });
   }, []);
 
@@ -126,21 +139,18 @@ const Home = () => {
       >
         <p>{words.join(" ")}</p>
       </div>
-      <div className="text">
-        {[
-          "Frontend developer Daniel Abros",
-          "Frontend developer Daniel Abros",
-          "Frontend developer Daniel Abros",
-        ].map((text, index) => (
+      <div className="marquees">
+        {[0, 1, 2].map((_, index) => (
           <div
+            key={index}
             className="marquee"
             ref={(el) => (marqueeRefs.current[index] = el)}
-            key={index}
           >
-            <div className="marquee-inner">
-              <span>{text}</span>
-              <span>{text}</span>
-            </div>
+            {wordsArray.concat(wordsArray).map((word, i) => (
+              <span key={i} className="word">
+                {word}{" "}
+              </span>
+            ))}
           </div>
         ))}
       </div>

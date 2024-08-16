@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./ComingSoon.css";
+import "./Unlock.css";
+import LockSVG from "./assets/lock.svg";
 
 function getTimeRemaining(endtime) {
   const [day, month, year, time, timezone] = endtime.split(" ");
@@ -64,29 +65,34 @@ function useCountdown(deadline) {
   return time;
 }
 
-export default function ComingSoon({ deadline }) {
-  const { t } = useTranslation("ComingSoon");
+export default function Unlock({ deadline }) {
+  const { t } = useTranslation("Unlock");
   const time = useCountdown(deadline);
 
   return (
-    <div className="coming-soon">
-      <div className="title">{t("title")}</div>
-      <div className="deadline">
-        <div className="countdown">
-          <span className="h2 days">{time.days}</span>
-          <div className="text-center">{t("days")}</div>
+    <div className="unlock">
+      <div className="block">
+        <div className="icon">
+          <img src={LockSVG} />
         </div>
-        <div className="countdown">
-          <span className="h2 hours">{("0" + time.hours).slice(-2)}</span>
-          <div className="text-center">{t("hours")}</div>
-        </div>
-        <div className="countdown">
-          <span className="h2 minutes">{("0" + time.minutes).slice(-2)}</span>
-          <div className="text-center">{t("minutes")}</div>
-        </div>
-        <div className="countdown">
-          <span className="h2 seconds">{("0" + time.seconds).slice(-2)}</span>
-          <div className="text-center">{t("seconds")}</div>
+        <div className="title">{t("title")}</div>
+        <div className="deadline">
+          <div className="countdown">
+            <span className="h2 days">{time.days}</span>
+            <div className="text-center">{t("days")}</div>
+          </div>
+          <div className="countdown">
+            <span className="h2 hours">{("0" + time.hours).slice(-2)}</span>
+            <div className="text-center">{t("hours")}</div>
+          </div>
+          <div className="countdown">
+            <span className="h2 minutes">{("0" + time.minutes).slice(-2)}</span>
+            <div className="text-center">{t("minutes")}</div>
+          </div>
+          <div className="countdown">
+            <span className="h2 seconds">{("0" + time.seconds).slice(-2)}</span>
+            <div className="text-center">{t("seconds")}</div>
+          </div>
         </div>
       </div>
     </div>
