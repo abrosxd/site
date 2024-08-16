@@ -198,7 +198,7 @@
   color: #ffffff;
   background-color: #214ce5;
 }
-.about .stack .js {
+.about .stack .javascript {
   color: #000000;
   background-color: #f1dc4e;
 }
@@ -254,6 +254,9 @@
   text-decoration: underline;
 }
 
+.about .links h2 {
+  font-size: large;
+}
 .about .links a {
   display: flex;
   align-items: center;
@@ -272,10 +275,10 @@
   opacity: 1;
 }
 .about .links img {
-  width: 100px;
+  width: 60px;
 }
 .about .links p {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .about .gallery {
