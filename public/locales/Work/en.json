@@ -2,11 +2,11 @@
   "stack": "Stack",
   "time": "Duration",
   "role": "Role",
-  "info": "About the Project",
   "client": "Client",
   "tasks": "Tasks",
   "problems": "Challenges",
   "results": "Results",
-  "process": "Process",
+  "design": "Design",
+  "dev": "Development",
   "footer": "Materials used in the case are taken from:"
 }

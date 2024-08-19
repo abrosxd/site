@@ -1,13 +1,79 @@
-.tvoy-hit {
+.work .tvoy-hit {
   background-color: #0d0d0f;
   color: white;
 }
 
-.tvoy-hit .sticky-header {
-  border-color: #7e70ff !important;
-  color: white;
-}
-.tvoy-hit .sticky-header .section {
+.work .tvoy-hit .sticky-header .section {
   background-color: #7e70ff;
   color: white;
+}
+
+.work .tvoy-hit .header h1 {
+  top: 170px;
+  left: 100px;
+  width: 500px;
+}
+
+.work .tvoy-hit .content .buttons .but {
+  background-color: #7e70ff;
+  color: white;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.work .tvoy-hit .content .buttons .but:hover {
+  background-color: white;
+  color: #7e70ff;
+}
+
+.work .tvoy-hit .problems .card {
+  background-color: #7e70ff;
+  color: white;
+}
+.work .tvoy-hit .problems .card h5 {
+  background-color: #544c9a;
+  color: white;
+}
+
+.work .tvoy-hit .results .cards .card .t1 {
+  color: black;
+  bottom: 10px;
+  left: 10px;
+  width: min-content;
+}
+.work .tvoy-hit .results .cards .card .t2 {
+  top: 50%;
+  left: 10px;
+  width: min-content;
+}
+.work .tvoy-hit .results .cards .card .t3 {
+  color: black;
+  top: 50%;
+  left: 10px;
+  width: min-content;
+}
+.work .tvoy-hit .results .cards .card .t4 {
+  color: black;
+  top: 10px;
+  left: 10px;
+  width: min-content;
+}
+
+.work .tvoy-hit .dev .step {
+  border-color: #7e70ff;
+}
+
+.work .tvoy-hit .footer {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .work .tvoy-hit .header h1 {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-shadow: 3px 3px black;
+  }
+  .work .tvoy-hit .header img {
+    right: 100%;
+  }
 }

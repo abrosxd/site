@@ -2,11 +2,11 @@
   "stack": "Stos",
   "time": "Czas trwania",
   "role": "Rola",
-  "info": "O projekcie",
   "client": "Klient",
   "tasks": "Zadania",
   "problems": "Wyzwania",
   "results": "Wyniki",
-  "process": "Proces",
+  "design": "Projekt",
+  "dev": "Rozwój",
   "footer": "Materiały użyte w tej sprawie pochodzą z:"
 }

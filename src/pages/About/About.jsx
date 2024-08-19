@@ -83,17 +83,17 @@ const About = () => {
   const socialLinks = [
     {
       href: "https://t.me/abrosxd",
-      imgSrc: "/public/assets/icons/social/telegram.svg",
+      imgSrc: "/assets/icons/social/telegram.svg",
       name: "Telegram",
     },
     {
       href: "https://www.facebook.com/abrosxd/",
-      imgSrc: "/public/assets/icons/social/facebook.svg",
+      imgSrc: "/assets/icons/social/facebook.svg",
       name: "Facebook",
     },
     {
       href: "https://vk.com/abrosxd",
-      imgSrc: "/public/assets/icons/social/vk.svg",
+      imgSrc: "/assets/icons/social/vk.svg",
       name: "Вконтакте",
     },
   ];
@@ -101,7 +101,7 @@ const About = () => {
   const resourceLinks = [
     {
       href: "https://codepen.io/abros",
-      imgSrc: "/public/assets/icons/social/codepen.svg",
+      imgSrc: "/assets/icons/social/codepen.svg",
       name: "Codepen",
     },
   ];

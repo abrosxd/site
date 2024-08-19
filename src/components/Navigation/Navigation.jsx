@@ -67,14 +67,6 @@ export default function Navigation() {
         </li>
         <li>
           <Button
-            className={`glyph ${isActive("/lib") ? "active" : ""}`}
-            as={Link}
-            to="/lib"
-            text={t("library")}
-          />
-        </li>
-        <li>
-          <Button
             className={`glyph ${isActive("/about") ? "active" : ""}`}
             as={Link}
             to="/about"

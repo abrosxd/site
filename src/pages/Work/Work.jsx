@@ -14,14 +14,14 @@ const Work = () => {
 
   const projects = [
     {
-      project: <TvoyHit />,
-      icon: "/assets/projects/work/TvoyHit/icon.ico",
-      href: "TvoyHit",
+      project: <LampaStore />,
+      icon: "/assets/projects/LampaStore/logo.png",
+      href: "LampaStore",
     },
     {
-      project: <LampaStore />,
-      icon: "/assets/projects/work/LampaStore/logo.png",
-      href: "LampaStore",
+      project: <TvoyHit />,
+      icon: "/assets/projects/TvoyHit/icon.ico",
+      href: "TvoyHit",
     },
   ];
 

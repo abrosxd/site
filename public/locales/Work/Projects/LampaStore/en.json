@@ -1,50 +1,45 @@
 {
-  "title": "Third-Party Plugins Store for the Lampa Online Cinema",
-  "header": {
-    "description": "Development of a third-party plugins store for the Lampa online cinema",
-    "buttons": {
-      "1": "Order Development"
-    },
-    "time": "5 days",
+  "sticky": {
+    "time": "8 days",
     "role": "Developer"
   },
-  "content": {
-    "info": {
-      "client": "Administrator of a Telegram group. This group publishes news about the Lampa cinema.",
-      "tasks": {
-        "1": "Integration with the cinema",
-        "2": "Preserving the cinema's design",
-        "3": "Development for further backend integration",
-        "4": "Using the cinema's UI"
+  "title": "Third-Party Plugins Store for the Lampa Online Cinema",
+  "description": "Development of a third-party plugins store for the Lampa online cinema",
+  "buttons": {
+    "1": "Order Development"
+  },
+  "info": {
+    "client": "Administrator of a Telegram group. This group publishes news about the Lampa cinema.",
+    "tasks": {
+      "1": "Integration with the cinema",
+      "2": "Preserving the cinema's design",
+      "3": "Development for further backend integration",
+      "4": "Using the cinema's UI"
+    },
+    "problems": {
+      "1": {
+        "title": "Architecture",
+        "text": "The cinema has its own architecture that needed to be studied for use in the project."
       },
-      "problems": {
-        "1": {
-          "title": "Architecture",
-          "text": "The cinema has its own architecture that needed to be studied for use in the project."
-        },
-        "2": {
-          "title": "Integration",
-          "text": "In addition to the store functionality while preserving the cinema's UI, news integration with a similar design and UI was required."
-        },
-        "3": {
-          "title": "Blacklist",
-          "text": "The code had to account for the cinema's specifics. The cinema constantly updates its blacklist of blocked plugins. If such a plugin is detected in the store, the store is also at risk."
-        }
-      }
-    },
-    "results": {
-      "1": "Preservation of the standard UI",
-      "2": "News integration",
-      "3": "Descriptions and status"
-    },
-    "process": {
-      "logicmap": "Logic Map",
-      "dev": {
-        "title": "Development",
-        "1": "Implementation through the cinema's own functions.",
-        "2": "Standard rendering of the cinema's components to preserve the UI.",
-        "3": "Integration of project news through standard component rendering."
+      "2": {
+        "title": "Integration",
+        "text": "In addition to the store's functionality while preserving the cinema's UI, news integration with a similar design and UI was required."
+      },
+      "3": {
+        "title": "Blacklist",
+        "text": "The code had to account for the cinema's specifics. The cinema constantly updates its blacklist of blocked plugins. If such a plugin is detected in the store, the store is also at risk."
       }
     }
+  },
+  "results": {
+    "1": "Preservation of the standard UI",
+    "2": "News integration",
+    "3": "Descriptions and status"
+  },
+  "dev": {
+    "title": "Development",
+    "1": "Implementation through the cinema's own functions.",
+    "2": "Standard rendering of the cinema's components to preserve the UI.",
+    "3": "Integration of project news through standard component rendering."
   }
 }

@@ -1,89 +1,78 @@
-.lampa-store {
-  background-color: #232323;
+.work .lampa-store {
+  background-color: #232425;
   color: white;
 }
 
-.lampa-store .header .buttons a {
-  background-color: #000000;
-  color: #fff;
-}
-.lampa-store .header .buttons a:hover {
-  background-color: #fff;
-  color: #000000;
-}
-.lampa-store .widget {
-  background-color: #000000;
-}
-
-.lampa-store .content .info .sec2 li {
-  background-color: #000000;
-}
-.lampa-store .content .info .sec2 li h3 {
+.work .lampa-store .sticky-header .section {
   background-color: #404040;
-}
-
-.lampa-store .save-ui p {
   color: white;
-  bottom: 10%;
-  left: 5%;
-  width: 40%;
+  border: 2px solid white;
 }
-.lampa-store .news-integration p {
+
+.work .lampa-store .header h1 {
+  top: 260px;
+  left: 100px;
+  width: 800px;
+}
+.work .lampa-store .header img {
+  filter: blur(2px);
+}
+
+.work .lampa-store .content .buttons .but {
+  background-color: #404040;
   color: white;
-  bottom: 10%;
-  left: 25%;
-  width: 100%;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
-.lampa-store .desc-status p {
+.work .lampa-store .content .buttons .but:hover {
+  background-color: white;
+  color: #404040;
+}
+
+.work .lampa-store .problems .card {
+  background-color: #404040;
   color: white;
-  top: 5%;
-  left: 5%;
-  width: 30%;
+}
+.work .lampa-store .problems .card h5 {
+  background-color: #303030;
+  color: white;
 }
 
-.lampa-store .block.logic-map img {
-  width: 100%;
-  border-radius: 20px;
-  filter: invert(1);
-  box-sizing: border-box;
+.work .lampa-store .results .cards .card .t1 {
+  color: white;
+  bottom: 10px;
+  left: 10px;
+  width: min-content;
+}
+.work .lampa-store .results .cards .card .t2 {
+  color: white;
+  bottom: 10px;
+  left: 10px;
+  width: min-content;
+}
+.work .lampa-store .results .cards .card .t3 {
+  color: white;
+  top: 50%;
+  left: 10px;
+  width: min-content;
 }
 
-.lampa-store .block.dev .step {
-  display: flex;
-  border: 2px dashed #000000ae;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-.lampa-store .block.dev .step .text {
-  flex: 0 0 40%;
-}
-.lampa-store .block.dev .step .code {
-  flex: 0 0 60%;
+.work .lampa-store .dev .step {
+  border-color: #818181;
 }
 
-@media (max-width: 1060px) {
-  .lampa-store .block.logic-map img {
-    border-radius: 10px;
-  }
-  .lampa-store .block.dev .step {
-    flex-wrap: wrap;
-  }
-  .lampa-store .block.dev .step .text {
-    flex: 0 0 100%;
-  }
-  .lampa-store .block.dev .step .code {
-    flex: 0 0 100%;
-    display: grid;
-  }
+.work .lampa-store .footer {
+  color: white;
 }
-@media (max-width: 767px) {
-  .lampa-store .block.logic-map img {
-    width: auto;
-    border-radius: 0;
+
+@media (max-width: 1200px) {
+  .work .lampa-store .header h1 {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-shadow: 3px 3px black;
   }
-  .lampa-store .content .process .right {
-    overflow: scroll;
-    border-radius: 10px;
+  .work .lampa-store .header img {
+    right: 100%;
   }
 }

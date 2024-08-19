@@ -103,10 +103,21 @@
 /* Case page */
 .work .case {
   font-family: var(--font-basic);
-  padding: 1rem;
   position: relative;
   overflow: hidden;
-  height: 3000px; /* Убрать */
+}
+.work .case h1,
+.work .case h2,
+.work .case h3,
+.work .case h4,
+.work .case h5 {
+  margin: 0;
+}
+.work .case h4 {
+  opacity: 0.6;
+}
+.work .case .block {
+  overflow: hidden;
 }
 
 .work .case .sticky-header {
@@ -116,13 +127,11 @@
   display: flex;
   flex-wrap: wrap;
   width: 400px;
-  border-radius: 0px 0px 10px 10px;
   padding: 10px;
   box-sizing: border-box;
-  border: 2px dashed;
-  border-top: 0;
   gap: 5px;
   justify-content: center;
+  z-index: 1;
 }
 .work .case .sticky-header .section {
   display: flex;
@@ -146,4 +155,197 @@
 .work .case .sticky-header .icons img {
   width: 20px;
   height: 20px;
+}
+
+.work .case .header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.work .case .header h1 {
+  position: absolute;
+  z-index: 1;
+}
+.work .case .header img {
+  width: 100%;
+  height: auto;
+}
+
+.work .case .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+  height: auto;
+  display: grid;
+  gap: 100px;
+}
+
+.work .case .content .buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+.work .case .content .buttons .but {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.work .case .flex {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 5em;
+  margin-bottom: 30px;
+}
+.work .case .flex .section20 {
+  display: grid;
+  flex: 0 0 calc(20% - 2.5em);
+}
+.work .case .flex .section50 {
+  display: grid;
+  flex: 0 0 calc(50% - 2.5em);
+}
+.work .case .flex .section80 {
+  display: grid;
+  flex: 0 0 calc(80% - 2.5em);
+}
+
+.work .case .tasks {
+  list-style: inside;
+  display: block;
+}
+
+.work .case .problems {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 30px;
+  overflow: scroll;
+  border-radius: 10px;
+}
+.work .case .problems .card {
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+  border-radius: 10px;
+  flex: 0 0 calc(25% - 15px);
+}
+.work .case .problems .card h5 {
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 50px;
+  height: fit-content;
+}
+
+.work .case .results .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+.work .case .results .cards .card {
+  flex: 0 0 calc(50% - 1em);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.work .case .results .cards .card h3 {
+  position: absolute;
+}
+.work .case .results .cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.work .case .design .flex {
+  gap: 1em;
+  margin-top: 1em;
+}
+.work .case .design .img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.work .case .design .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.work .case .map .img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.work .case .map .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.work .case .dev .step {
+  border: 2px dashed;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  overflow-x: scroll;
+}
+
+.work .case .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+  font-size: x-small;
+  opacity: 0.2;
+}
+
+@media (max-width: 1200px) {
+  .work .case h2 {
+    font-size: large;
+  }
+  .work .case .flex {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .work .case .flex .section20,
+  .work .case .flex .section50,
+  .work .case .flex .section80 {
+    flex: 0 0 100%;
+  }
+
+  .work .case .sticky-header {
+    right: 50%;
+    transform: translateX(50%);
+    width: 100%;
+  }
+
+  .work .case .header img {
+    position: relative;
+    width: 250%;
+    height: 100%;
+  }
+
+  .work .case .content {
+    gap: 10px;
+  }
+
+  .work .case .content .buttons {
+    flex-wrap: wrap;
+  }
+
+  .work .case .problems .card {
+    flex: 0 0 calc(80% - 15px);
+  }
+
+  .work .case .results .cards .card {
+    flex: 0 0 100%;
+  }
 }

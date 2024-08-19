@@ -54,7 +54,7 @@ nav .lang {
   right: 24px;
 }
 
-@media (max-width: 475px) {
+@media (max-width: 350px) {
   nav .menu {
     overflow-x: scroll;
     width: 100%;

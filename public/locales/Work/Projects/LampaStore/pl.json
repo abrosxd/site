@@ -1,50 +1,45 @@
 {
-  "title": "Sklep zewnętrznych wtyczek dla kina online Lampa",
-  "header": {
-    "description": "Tworzenie sklepu zewnętrznych wtyczek dla kina online Lampa",
-    "buttons": {
-      "1": "Zamów opracowanie"
-    },
-    "time": "5 dni",
+  "sticky": {
+    "time": "8 dni",
     "role": "Deweloper"
   },
-  "content": {
-    "info": {
-      "client": "Administrator grupy na Telegramie. Ta grupa publikuje wiadomości o kinie Lampa.",
-      "tasks": {
-        "1": "Integracja z kinem",
-        "2": "Zachowanie projektu kina",
-        "3": "Opracowanie pod dalszą integrację backendu",
-        "4": "Użycie UI kina"
+  "title": "Sklep zewnętrznych wtyczek dla kina online Lampa",
+  "description": "Tworzenie sklepu zewnętrznych wtyczek dla kina online Lampa",
+  "buttons": {
+    "1": "Zamów opracowanie"
+  },
+  "info": {
+    "client": "Administrator grupy na Telegramie. Ta grupa publikuje wiadomości o kinie Lampa.",
+    "tasks": {
+      "1": "Integracja z kinem",
+      "2": "Zachowanie projektu kina",
+      "3": "Opracowanie pod dalszą integrację backendu",
+      "4": "Użycie UI kina"
+    },
+    "problems": {
+      "1": {
+        "title": "Architektura",
+        "text": "Kino ma własną architekturę, którą trzeba było przestudiować do wykorzystania w projekcie."
       },
-      "problems": {
-        "1": {
-          "title": "Architektura",
-          "text": "Kino ma własną architekturę, którą trzeba było przestudiować do wykorzystania w projekcie."
-        },
-        "2": {
-          "title": "Integracja",
-          "text": "Oprócz funkcjonalności sklepu z zachowaniem UI kina, konieczna była integracja wiadomości z podobnym projektem i UI."
-        },
-        "3": {
-          "title": "Czarna lista",
-          "text": "Kod musiał uwzględniać specyfikę kina. Kino stale aktualizuje swoją czarną listę zablokowanych wtyczek. Jeśli taki plugin zostanie wykryty w sklepie, sklep również znajduje się w strefie ryzyka."
-        }
-      }
-    },
-    "results": {
-      "1": "Zachowanie standardowego UI",
-      "2": "Integracja wiadomości",
-      "3": "Opisy i status"
-    },
-    "process": {
-      "logicmap": "Mapa logiki",
-      "dev": {
-        "title": "Opracowanie",
-        "1": "Realizacja za pomocą funkcji samego kina.",
-        "2": "Standardowy render komponentów kina dla zachowania UI.",
-        "3": "Integracja wiadomości projektowych poprzez standardowy render komponentów."
+      "2": {
+        "title": "Integracja",
+        "text": "Oprócz funkcjonalności sklepu z zachowaniem UI kina, konieczna była integracja wiadomości z podobnym projektem i UI."
+      },
+      "3": {
+        "title": "Czarna lista",
+        "text": "Kod musiał uwzględniać specyfikę kina. Kino stale aktualizuje swoją czarną listę zablokowanych wtyczek. Jeśli taki plugin zostanie wykryty w sklepie, sklep również znajduje się w strefie ryzyka."
       }
     }
+  },
+  "results": {
+    "1": "Zachowanie standardowego UI",
+    "2": "Integracja wiadomości",
+    "3": "Opisy i status"
+  },
+  "dev": {
+    "title": "Opracowanie",
+    "1": "Realizacja za pomocą funkcji samego kina.",
+    "2": "Standardowy render komponentów kina dla zachowania UI.",
+    "3": "Integracja wiadomości projektowych poprzez standardowy render komponentów."
   }
 }

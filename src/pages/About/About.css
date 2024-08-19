@@ -47,7 +47,7 @@
   bottom: 57px;
   transform: translateX(-50%);
   padding: 0;
-  z-index: 2;
+  z-index: 4;
 }
 .about .close .cross-icon {
   width: 100%;
@@ -69,7 +69,7 @@
 }
 .about .overlay {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   height: 100%;
   width: 100%;
   display: flex;
@@ -80,7 +80,7 @@
   background-color: #000000a1;
   transition: opacity 0.5s ease;
   opacity: 1;
-  pointer-events: none;
+  pointer-events: all;
 }
 .about .content {
   width: 100%;
@@ -98,6 +98,7 @@
   transition: opacity 0.5s ease;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  pointer-events: none;
 }
 .about .content h1 {
   font-size: large;
@@ -106,13 +107,21 @@
   display: none;
 }
 .about .left:hover .overlay,
-.about .center:hover .overlay,
+.about .center:hover .overlay {
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
 .about .right:hover .overlay {
   opacity: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 .about .left:hover .content,
 .about .center:hover .content {
   opacity: 1;
+  z-index: 3;
+  pointer-events: all;
 }
 
 .about .block {

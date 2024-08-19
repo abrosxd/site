@@ -10,7 +10,6 @@ import Cursor from "./components/Cursor/Cursor";
 
 import Home from "./pages/Home/Home";
 import Work from "./pages/Work/Work";
-import Library from "./pages/Library/Library";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 
@@ -30,7 +29,6 @@ export default function App() {
             <Routes location={location} key={location.pathname}>
               <Route index element={<Home />} />
               <Route path="/work" element={<Work />} />
-              <Route path="/lib" element={<Library />} />
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
