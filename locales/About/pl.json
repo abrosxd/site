@@ -1,0 +1,27 @@
+{
+  "info": {
+    "title": "Kilka słów o mnie",
+    "hello": "👋 Cześć — Jestem Danil, web designer i web developer. Tutaj znajdziesz wszystkie potrzebne informacje o mnie i nawet więcej. Witaj!",
+    "time": {
+      "text": "Mój Czas",
+      "days": ["ND", "PN", "WT", "ŚR", "CZW", "PT", "SB"]
+    },
+    "stack": "Stos",
+    "desc": {
+      "me": {
+        "title": "Kim jestem.",
+        "text": "Nazywam się Daniel Abros i jestem człowiekiem. Bądźmy realistami, czy naprawdę można opisać człowieka kilkoma zabawnymi faktami?"
+      },
+      "doing": {
+        "title": "Czym się zajmuję.",
+        "text": "Pracuję na pełny etat jako frontend developer-freelancer. Chociaż specjalizuję się w tworzeniu stron internetowych, uwielbiam różnorodność i chętnie podejmuję unikalne, kreatywne wyzwania. Jeśli chcesz zmienić świat lub przemyśleć świat, w którym żyjemy, z radością stanę się jego częścią."
+      },
+      "from": {
+        "title": "Skąd pochodzę.",
+        "text": "Dorastałem w syberyjskim mieście Surgut (jeśli nie wiesz, gdzie to jest, zdecydowanie powinieneś to sprawdzić). Obecnie mieszkam w pięknej stolicy Polski - Warszawie."
+      }
+    }
+  },
+  "links": "Linki do materiałów",
+  "gallery": "Album zdjęć"
+}

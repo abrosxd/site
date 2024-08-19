@@ -1,0 +1,43 @@
+{
+  "sticky": {
+    "time": "9 days",
+    "role": "Developer"
+  },
+  "title": "Music Player for the Tvoy Hit Song Store",
+  "description": "Reworking the logic of the standard Tilda product catalog into a catalog of music compositions and integrating with a custom audio player.",
+  "buttons": {
+    "1": "Order for your project",
+    "2": "View on website"
+  },
+  "info": {
+    "client": "Tvoy Hit - a song store by singer, composer, arranger, and music producer Oleg Shaumarov.",
+    "tasks": {
+      "1": "Catalog redesign",
+      "2": "Player logic development",
+      "3": "Player responsiveness"
+    },
+    "problems": {
+      "1": {
+        "title": "Constructor limitations",
+        "text": "The website is built using the Tilda constructor. The standard implementation approach won't work, so the underlying Tilda framework needed to be studied."
+      },
+      "2": {
+        "title": "Responsiveness",
+        "text": "In addition to player functionality, it also needed to be adapted for different platforms/devices."
+      }
+    }
+  },
+  "results": {
+    "1": "Product catalog integration",
+    "2": "Catalog styling",
+    "3": "Simple setup",
+    "4": "Any player design"
+  },
+  "dev": {
+    "1": "Implemented using constant variables for reuse in other projects.",
+    "2": "Each function is isolated, reducing the likelihood of unexpected issues or errors affecting other functions.",
+    "3": "Track data is retrieved directly from the Tilda product catalog, allowing even a regular user to edit the playlist.",
+    "4": "Adaptive player behavior for any device is also implemented via code.",
+    "5": "Basic styles for proper player functionality are also stored within the code."
+  }
+}
