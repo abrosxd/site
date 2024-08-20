@@ -37,7 +37,6 @@
     "3": "Opisy i status"
   },
   "dev": {
-    "title": "Opracowanie",
     "1": "Realizacja za pomocą funkcji samego kina.",
     "2": "Standardowy render komponentów kina dla zachowania UI.",
     "3": "Integracja wiadomości projektowych poprzez standardowy render komponentów."

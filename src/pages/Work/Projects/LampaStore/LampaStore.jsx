@@ -1,17 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import { arta } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Prism from "prismjs";
 import "./LampaStore.css";
 
 export default function LampaStore() {
-  const customStyleCode = {
-    backgroundColor: "transparent",
-    fontSize: "medium",
-  };
-
   const { t: w } = useTranslation("Work");
   const { t: t } = useTranslation("Work/Projects/LampaStore");
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, []);
 
   return (
     <div className="case lampa-store">
@@ -19,9 +17,9 @@ export default function LampaStore() {
         <div className="section">
           <h2>{w("stack")}</h2>
           <div className="icons">
-            <img src="/assets/icons/stack/html5.png" />
-            <img src="/assets/icons/stack/css3.png" />
-            <img src="/assets/icons/stack/js.png" />
+            <img src="/assets/icons/stack/html5.png" alt="HTML5" />
+            <img src="/assets/icons/stack/css3.png" alt="CSS3" />
+            <img src="/assets/icons/stack/js.png" alt="JavaScript" />
           </div>
         </div>
         <div className="section">
@@ -35,15 +33,21 @@ export default function LampaStore() {
       </div>
       <div className="header">
         <h1>{t("title")}</h1>
-        <img src="/assets/projects/LampaStore/header.png" />
+        <img src="/assets/projects/LampaStore/header.png" alt="Header" />
       </div>
       <div className="content">
         <h2>{t("description")}</h2>
         <div className="buttons">
-          <a className="but" href="https://t.me/abrosxd" target="_blank">
+          <a
+            className="but"
+            href="https://t.me/abrosxd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t("buttons.1")}
           </a>
         </div>
+
         <div className="block info">
           <div className="flex">
             <div className="section50">
@@ -56,6 +60,7 @@ export default function LampaStore() {
                 <li>{t("info.tasks.1")}</li>
                 <li>{t("info.tasks.2")}</li>
                 <li>{t("info.tasks.3")}</li>
+                <li>{t("info.tasks.4")}</li>
               </ul>
             </div>
           </div>
@@ -70,6 +75,11 @@ export default function LampaStore() {
               <h5>02</h5>
               <h3>{t("info.problems.2.title")}</h3>
               <p>{t("info.problems.2.text")}</p>
+            </li>
+            <li className="card">
+              <h5>03</h5>
+              <h3>{t("info.problems.3.title")}</h3>
+              <p>{t("info.problems.3.text")}</p>
             </li>
           </ul>
         </div>
@@ -130,13 +140,9 @@ export default function LampaStore() {
             <div className="step">
               <h3>{t("dev.1")}</h3>
               <div className="code">
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
-function deletePlugin(pluginToRemoveUrl) {
+                <pre>
+                  <code className="language-javascript">
+                    {`function deletePlugin(pluginToRemoveUrl) {
   var plugins = Lampa.Storage.get("plugins");
   var updatedPlugins = plugins.filter(function (obj) {
     return obj.url !== pluginToRemoveUrl;
@@ -158,21 +164,18 @@ function checkPlugin(pluginToCheck) {
   } else {
     return false;
   }
-}
-                  `}
-                </SyntaxHighlighter>
+}`}
+                  </code>
+                </pre>
               </div>
             </div>
+
             <div className="step">
               <h3>{t("dev.2")}</h3>
               <div className="code">
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
-Lampa.SettingsApi.addComponent({
+                <pre>
+                  <code className="language-javascript">
+                    {`Lampa.SettingsApi.addComponent({
   component: "skull",
   name: "Skull Store",
   icon: icon_skull,
@@ -195,22 +198,18 @@ Lampa.Settings.listener.follow("open", function (e) {
       );
     }, 30);
   }
-});
-                  `}
-                </SyntaxHighlighter>
+});`}
+                  </code>
+                </pre>
               </div>
             </div>
+
             <div className="step">
               <h3>{t("dev.3")}</h3>
               <div className="code">
-                <SyntaxHighlighter
-                  language="javascript"
-                  style={arta}
-                  customStyle={customStyleCode}
-                >
-                  {`
-const newsBlock = "code news";
-
+                <pre>
+                  <code className="language-javascript">
+                    {`const newsBlock = "code news";
 Lampa.SettingsApi.addParam({
   component: "skull",
   param: {
@@ -218,14 +217,15 @@ Lampa.SettingsApi.addParam({
     type: "static",
   },
   field: { name: newsBlock },
-});
-                  `}
-                </SyntaxHighlighter>
+});`}
+                  </code>
+                </pre>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div className="footer">
         <p>{w("footer")}</p>
         <p>lampa.mx | google.com</p>

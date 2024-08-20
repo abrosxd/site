@@ -130,10 +130,14 @@ const About = () => {
         onClick={() => handleExpandSection("left")}
       >
         <img className="bg" src="/assets/photo/statue1.avif" alt="Statue 1" />
-        <div className="overlay">
+        <div
+          className={`overlay ${expandedSection === "left" ? "expanded" : ""}`}
+        >
           <h2>{t("links")}</h2>
         </div>
-        <div className="content">
+        <div
+          className={`content ${expandedSection === "left" ? "expanded" : ""}`}
+        >
           <SocialLinks title="Связь со мной" links={socialLinks} />
           <SocialLinks title="Ресурсы" links={resourceLinks} />
         </div>
@@ -144,10 +148,18 @@ const About = () => {
         onClick={() => handleExpandSection("center")}
       >
         <img className="bg" src="/assets/photo/statue2.png" alt="Statue 2" />
-        <div className="overlay">
+        <div
+          className={`overlay ${
+            expandedSection === "center" ? "expanded" : ""
+          }`}
+        >
           <h2>{t("info.title")}</h2>
         </div>
-        <div className="content">
+        <div
+          className={`content ${
+            expandedSection === "center" ? "expanded" : ""
+          }`}
+        >
           <div className="block hi">
             <h1>{t("info.hello")}</h1>
           </div>
@@ -170,8 +182,12 @@ const About = () => {
           <div className="block desc">
             <h1>{t("info.desc.me.title")}</h1>
             <h3>{t("info.desc.me.text")}</h3>
+          </div>
+          <div className="block desc">
             <h1>{t("info.desc.doing.title")}</h1>
             <h3>{t("info.desc.doing.text")}</h3>
+          </div>
+          <div className="block desc">
             <h1>{t("info.desc.from.title")}</h1>
             <h3>{t("info.desc.from.text")}</h3>
           </div>

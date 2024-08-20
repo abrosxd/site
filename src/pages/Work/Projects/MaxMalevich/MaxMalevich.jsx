@@ -1,18 +1,18 @@
 import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Prism from "prismjs";
-import "./TvoyHit.css";
+import "./MaxMalevich.css";
 
-export default function TvoyHit() {
+export default function MaxMalevich() {
   const { t: w } = useTranslation("Work");
-  const { t: t } = useTranslation("Work/Projects/TvoyHit");
+  const { t: t } = useTranslation("Work/Projects/MaxMalevich");
 
   useEffect(() => {
     Prism.highlightAll();
   }, []);
 
   return (
-    <div className="case tvoy-hit">
+    <div className="case max-malevich">
       <div className="sticky-header">
         <div className="section">
           <h2>{w("stack")}</h2>
@@ -34,7 +34,7 @@ export default function TvoyHit() {
       </div>
       <div className="header">
         <h1>{t("title")}</h1>
-        <img src="/assets/projects/TvoyHit/header.png" alt="Project Header" />
+        <img src="/assets/projects/MaxMalevich/header.png" alt="Header" />
       </div>
       <div className="content">
         <h2>{t("description")}</h2>
@@ -49,7 +49,7 @@ export default function TvoyHit() {
           </a>
           <a
             className="but"
-            href="https://tvoy-hit.ru/"
+            href="https://kuhni-premium.moscow/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -69,6 +69,7 @@ export default function TvoyHit() {
                 <li>{t("info.tasks.1")}</li>
                 <li>{t("info.tasks.2")}</li>
                 <li>{t("info.tasks.3")}</li>
+                <li>{t("info.tasks.4")}</li>
               </ul>
             </div>
           </div>
@@ -84,6 +85,11 @@ export default function TvoyHit() {
               <h3>{t("info.problems.2.title")}</h3>
               <p>{t("info.problems.2.text")}</p>
             </li>
+            <li className="card">
+              <h5>02</h5>
+              <h3>{t("info.problems.3.title")}</h3>
+              <p>{t("info.problems.3.text")}</p>
+            </li>
           </ul>
         </div>
         <div className="block flex results">
@@ -94,19 +100,15 @@ export default function TvoyHit() {
             <div className="cards">
               <div className="card">
                 <h3 className="t1">{t("results.1")}</h3>
-                <img src="/assets/projects/TvoyHit/result-1.png" />
+                <img src="/assets/projects/MaxMalevich/result-1.png" />
               </div>
               <div className="card">
                 <h3 className="t2">{t("results.2")}</h3>
-                <img src="/assets/projects/TvoyHit/result-2.png" />
+                <img src="/assets/projects/MaxMalevich/result-2.png" />
               </div>
               <div className="card">
                 <h3 className="t3">{t("results.3")}</h3>
-                <img src="/assets/projects/TvoyHit/result-3.png" />
-              </div>
-              <div className="card">
-                <h3 className="t4">{t("results.4")}</h3>
-                <img src="/assets/projects/TvoyHit/result-4.png" />
+                <img src="/assets/projects/MaxMalevich/result-3.png" />
               </div>
             </div>
           </div>
@@ -117,14 +119,14 @@ export default function TvoyHit() {
           </div>
           <div className="section80">
             <div className="img">
-              <img src="/assets/projects/TvoyHit/mockup-desktop.png" />
+              <img src="/assets/projects/MaxMalevich/mockup-desktop.png" />
             </div>
             <div className="flex">
               <div className="img">
-                <img src="/assets/projects/TvoyHit/mockup-tablet.png" />
+                <img src="/assets/projects/MaxMalevich/mockup-tablet.png" />
               </div>
               <div className="img">
-                <img src="/assets/projects/TvoyHit/mockup-mobile.png" />
+                <img src="/assets/projects/MaxMalevich/mockup-mobile.png" />
               </div>
             </div>
           </div>
@@ -135,7 +137,7 @@ export default function TvoyHit() {
           </div>
           <div className="section80">
             <div className="img">
-              <img src="/assets/projects/TvoyHit/logic-map.png" />
+              <img src="/assets/projects/MaxMalevich/logic-map.png" />
             </div>
           </div>
         </div>
@@ -150,15 +152,24 @@ export default function TvoyHit() {
                 <pre>
                   <code className="language-javascript">
                     {`
-const cover = player.querySelector(".player-cover .tn-atom");
-const title = player.querySelector(".player-title .tn-atom");
-const btnPrev = player.querySelector(".player-prev .tn-atom");
-const btnPlay = player.querySelector(".player-play .tn-atom");
-const btnNext = player.querySelector(".player-next .tn-atom");
-const btnBuy = player.querySelector(".player-btn-buy .tn-atom");
-const btnText = player.querySelector(".player-text .tn-atom");
-const btnVolume = player.querySelector(".player-volume .tn-atom");
-                `}
+const cards = [
+  {
+    img: "https://static.tildacdn.com/tild6366-3861-4134-a335-616663393938/2xolf9e9r3lvvvf4idcj.jpg",
+    href: "#",
+  },
+  {
+    img: "https://static.tildacdn.com/tild6337-3139-4461-b161-653332313932/bw6z7njskdwf226yqheq.jpg",
+    href: "#",
+  },
+  {
+    img: "https://static.tildacdn.com/tild3134-3536-4266-a163-633338373033/e1sto8oc42jk2f165har.jpg",
+    href: "#",
+  },
+  {
+    img: "https://static.tildacdn.com/tild6535-3566-4336-b931-613537646261/fbsl24ms1w7gxp1kuq6y.jpg",
+    href: "#",
+  },
+`}
                   </code>
                 </pre>
               </div>
@@ -170,22 +181,22 @@ const btnVolume = player.querySelector(".player-volume .tn-atom");
                 <pre>
                   <code className="language-javascript">
                     {`
-const nothing = (e) => {
-  e.preventDefault();
-};
-
-const playingSame = (link) => {
-  return link != null && link === audio.src ? true : false;
-};
-
-const isPlaying = () => {
-  return !audio.paused;
-};
-
-const nowPlaying = () => {
-  return playlist[Number(audio.dataset.trackNumber)];
-};
-                `}
+const slider = block.querySelector(".swiper-container");
+const html = block.querySelector(".tn-atom__html");
+html.style.position = "absolute";
+html.style.height = "100%";
+const wrapper = document.createElement("div");
+wrapper.classList.add("swiper-wrapper");
+slider.appendChild(wrapper);
+const prevBtn = block.querySelector(".prev .tn-atom");
+const nextBtn = block.querySelector(".next .tn-atom");
+const pagination = block.querySelector(".pagination");
+const paginationDots = block.querySelector(".swiper-pagination");
+const cur = block.querySelector(".cur .tn-atom");
+const last = block.querySelector(".last .tn-atom");
+const lineSVG = pagination.querySelector(".pagination-path");
+const svg = pagination.querySelector(".pagination-svg");
+                    `}
                   </code>
                 </pre>
               </div>
@@ -197,19 +208,25 @@ const nowPlaying = () => {
                 <pre>
                   <code className="language-javascript">
                     {`
-(d.onload = function () {
-  if (d.readyState === d.DONE && 200 === d.status) {
-    let response = JSON.parse(d.responseText);
-    if (response.product.characteristics.length > 0) {
-      let chars = response.product.characteristics;
-      let link = chars.find((song) => song.title === "music").value;
-      resolve(link);
-    } else {
-      resolve(false);
-    }
-  }
-}),
-                `}
+const abrosSwiper = new Swiper(slider, {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  effect: "creative",
+  creativeEffect: {
+    limitProgress: 2,
+    perspective: true,
+    next: {
+      translate: ["20.1rem", 0, -1],
+      scale: 0.85,
+      shadow: true,
+    },
+    prev: {
+      translate: ["-100%", 0, 0],
+    },
+  },
+  pagination: {
+    el: paginationDots,
+                    `}
                   </code>
                 </pre>
               </div>
@@ -221,67 +238,15 @@ const nowPlaying = () => {
                 <pre>
                   <code className="language-javascript">
                     {`
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  products.forEach((product) => playPauseBtnOnProduct(null, product));
-  areaEnter();
-} else {
-  let covers = document.querySelectorAll(".js-product-img");
-  for (let cover of covers) {
-    cover.removeEventListener("mouseenter", enter);
-    cover.removeEventListener("mouseleave", leave);
-    cover.addEventListener("mouseenter", enter);
-    cover.addEventListener("mouseleave", leave);
+slideChange: function (swiper) {
+  cur.textContent = "0{swiper.activeIndex + 1}";
+  const svgWidth = svg.clientWidth;
+  if (svgWidth) {
+    const oneSlideWidth = svgWidth / swiper.slides.length;
+    const lineWidth = (swiper.activeIndex + 1) * oneSlideWidth;
+    lineSVG.setAttribute("d", "M0 1H{lineWidth}");
   }
-  area.removeEventListener("mouseenter", areaEnter);
-  area.removeEventListener("mouseleave", areaLeave);
-  area.addEventListener("mouseenter", areaEnter);
-  area.addEventListener("mouseleave", areaLeave);
-}
-                `}
-                  </code>
-                </pre>
-              </div>
-            </div>
-
-            <div className="step">
-              <h3>{t("dev.5")}</h3>
-              <div className="code">
-                <pre>
-                  <code className="language-css">
-                    {`
-.play-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: {sWBgClr};
-  border-radius: {sWBrdRd};
-}
-.btn-music {
-  width: 60px;
-  height: 60px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%) scale(100%);
-  transition: all .2s ease-in-out;
-}
-.btn-music:hover {
-  transform: translate(-50%, -50%) scale(110%);
-}
-.play {
-  background-image: {sWPlay};
-}
-.pause {
-  background-image: {sWPause};
-}
-                `}
+                    `}
                   </code>
                 </pre>
               </div>
@@ -289,9 +254,10 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
           </div>
         </div>
       </div>
+
       <div className="footer">
         <p>{w("footer")}</p>
-        <p>tvoy-hit.ru</p>
+        <p>kuhni-premium.moscow</p>
       </div>
     </div>
   );

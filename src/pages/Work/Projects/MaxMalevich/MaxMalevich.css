@@ -1,0 +1,78 @@
+.work .max-malevich {
+  background-color: #1a120e;
+  color: white;
+}
+
+.work .max-malevich .sticky-header .section {
+  background-color: #aa7a4f;
+  color: white;
+}
+
+.work .max-malevich .header h1 {
+  top: 160px;
+  left: 100px;
+  width: 800px;
+}
+/* .work .max-malevich .header img {
+  filter: blur(2px);
+} */
+
+.work .max-malevich .content .buttons .but {
+  background-color: #aa7a4f;
+  color: white;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.work .max-malevich .content .buttons .but:hover {
+  background-color: white;
+  color: #aa7a4f;
+}
+
+.work .max-malevich .problems .card {
+  background-color: #aa7a4f;
+  color: white;
+}
+.work .max-malevich .problems .card h5 {
+  background-color: #8a623f;
+  color: white;
+}
+
+.work .max-malevich .results .cards .card .t1 {
+  color: white;
+  bottom: 50%;
+  left: 50px;
+  width: min-content;
+}
+.work .max-malevich .results .cards .card .t2 {
+  color: white;
+  bottom: 50%;
+  right: 100px;
+  width: min-content;
+}
+.work .max-malevich .results .cards .card .t3 {
+  color: black;
+  top: 50%;
+  left: 50px;
+  width: min-content;
+}
+
+.work .max-malevich .dev .step {
+  border-color: #8a623f;
+}
+
+.work .max-malevich .footer {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .work .max-malevich .header h1 {
+    top: 80px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-shadow: 3px 3px black;
+  }
+  .work .max-malevich .header img {
+    right: 100%;
+  }
+}

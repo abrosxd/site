@@ -1,0 +1,46 @@
+{
+  "sticky": {
+    "time": "5 days",
+    "role": "Developer"
+  },
+  "title": "Development of Sliders for Furniture Manufacturer MaxMalevich",
+  "description": "Development of 3 custom sliders for a website built on the Tilda constructor",
+  "buttons": {
+    "1": "Order Development",
+    "2": "View on Website"
+  },
+  "info": {
+    "client": "MaxMalevich - a premium home furniture manufacturer with its own full-cycle production.",
+    "tasks": {
+      "1": "Device responsiveness",
+      "2": "Full layout based on the design concept",
+      "3": "Working within the limits of Tilda",
+      "4": "Ability to reuse the code"
+    },
+    "problems": {
+      "1": {
+        "title": "Constructor",
+        "text": "The sliders must be able to be moved by the designer. Therefore, Zero-block must be used, rather than full code layout."
+      },
+      "2": {
+        "title": "Styles",
+        "text": "It was necessary to override the constructor styles to create a responsive slider."
+      },
+      "3": {
+        "title": "Autoscale",
+        "text": "The design is made with the Autoscale parameter, so it was important to account for this parameter to ensure proper slider behavior."
+      }
+    }
+  },
+  "results": {
+    "1": "Responsiveness on any device",
+    "2": "Various animation types",
+    "3": "Easy addition of new cards"
+  },
+  "dev": {
+    "1": "Photos and necessary links are stored in an array.",
+    "2": "Constant variables and style overrides.",
+    "3": "Swiper.js for slider implementation.",
+    "4": "Custom pagination"
+  }
+}

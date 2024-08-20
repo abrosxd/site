@@ -110,6 +110,10 @@ const Cursor = () => {
     };
   }, []);
 
+  if (isTouchDevice()) {
+    return null;
+  }
+
   return (
     <canvas
       ref={canvasRef}

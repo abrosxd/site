@@ -3,10 +3,12 @@ import "./Work.css";
 import Transition from "../../components/Transition/Transition";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs, Keyboard } from "swiper/modules";
+import "prismjs/themes/prism-funky.css";
 import "swiper/css";
 
 import TvoyHit from "./Projects/TvoyHit/TvoyHit";
 import LampaStore from "./Projects/LampaStore/LampaStore";
+import MaxMalevich from "./Projects/MaxMalevich/MaxMalevich";
 
 const Work = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -14,13 +16,18 @@ const Work = () => {
 
   const projects = [
     {
+      project: <MaxMalevich />,
+      icon: "/assets/projects/MaxMalevich/logo.svg",
+      href: "MaxMalevich",
+    },
+    {
       project: <LampaStore />,
       icon: "/assets/projects/LampaStore/logo.png",
       href: "LampaStore",
     },
     {
       project: <TvoyHit />,
-      icon: "/assets/projects/TvoyHit/icon.ico",
+      icon: "/assets/projects/TvoyHit/logo.ico",
       href: "TvoyHit",
     },
   ];

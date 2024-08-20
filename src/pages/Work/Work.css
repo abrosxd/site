@@ -76,7 +76,7 @@
 
 @media (max-width: 767px) {
   .work {
-    padding: 70px 24px 114px;
+    padding: 56px 5px 114px;
   }
 
   .work .navigation {
@@ -118,6 +118,15 @@
 }
 .work .case .block {
   overflow: hidden;
+}
+.work .case pre {
+  background: transparent !important;
+  font-size: smaller;
+}
+.work .case pre code[class*="language-"] {
+  background: transparent;
+  color: white;
+  box-shadow: none;
 }
 
 .work .case .sticky-header {
