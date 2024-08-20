@@ -6,7 +6,8 @@ import { b as useLocation, d as Routes, e as Route } from "./react-router-Cv1Hfe
 import { g as gsapWithCSS } from "./gsap-BiEXuivK.js";
 import { m as motion, A as AnimatePresence } from "./framer-motion-BnSgWLZS.js";
 import { S as Swiper, T as Thumb, a as SwiperSlide, K as Keyboard, A as Autoplay } from "./swiper-SJ08fNaw.js";
-import { S as SyntaxHighlighter, a as arta, b as atomOneDark } from "./react-syntax-highlighter-BAJrIxQ7.js";
+import { S as SyntaxHighlighter, a as arta } from "./react-syntax-highlighter-DajykeTl.js";
+import { P as Prism } from "./prismjs-BtCvx2uO.js";
 import { i as instance } from "./i18next-CQfSPugE.js";
 import { B as Browser } from "./i18next-browser-languagedetector-BjAGPolN.js";
 import { B as Backend } from "./i18next-http-backend-Bm29PEhM.js";
@@ -748,6 +749,9 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 function LampaStore() {
   const { t: w } = useTranslation("Work");
   const { t } = useTranslation("Work/Projects/LampaStore");
+  reactExports.useEffect(() => {
+    Prism.highlightAll();
+  }, []);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "case lampa-store", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "sticky-header", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "section", children: [
@@ -817,7 +821,7 @@ function LampaStore() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "section80", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.1") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `function deletePlugin(pluginToRemoveUrl) {
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("code", { className: "language-javascript", children: `function deletePlugin(pluginToRemoveUrl) {
   var plugins = Lampa.Storage.get("plugins");
   var updatedPlugins = plugins.filter(function (obj) {
     return obj.url !== pluginToRemoveUrl;
@@ -839,11 +843,11 @@ function checkPlugin(pluginToCheck) {
   } else {
     return false;
   }
-}` }) })
+}` }) }) })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.2") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `Lampa.SettingsApi.addComponent({
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("code", { className: "language-javascript", children: `Lampa.SettingsApi.addComponent({
   component: "skull",
   name: "Skull Store",
   icon: icon_skull,
@@ -866,11 +870,11 @@ Lampa.Settings.listener.follow("open", function (e) {
       );
     }, 30);
   }
-});` }) })
+});` }) }) })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.3") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `const newsBlock = "code news";
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx("pre", { children: /* @__PURE__ */ jsxRuntimeExports.jsx("code", { className: "language-javascript", children: `const newsBlock = "code news";
 Lampa.SettingsApi.addParam({
   component: "skull",
   param: {
@@ -878,7 +882,7 @@ Lampa.SettingsApi.addParam({
     type: "static",
   },
   field: { name: newsBlock },
-});` }) })
+});` }) }) })
           ] })
         ] })
       ] })
