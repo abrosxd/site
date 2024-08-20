@@ -817,8 +817,7 @@ function LampaStore() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "section80", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.1") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `
-function deletePlugin(pluginToRemoveUrl) {
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `function deletePlugin(pluginToRemoveUrl) {
   var plugins = Lampa.Storage.get("plugins");
   var updatedPlugins = plugins.filter(function (obj) {
     return obj.url !== pluginToRemoveUrl;
@@ -840,13 +839,11 @@ function checkPlugin(pluginToCheck) {
   } else {
     return false;
   }
-}
-                ` }) })
+}` }) })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.2") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `
-Lampa.SettingsApi.addComponent({
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `Lampa.SettingsApi.addComponent({
   component: "skull",
   name: "Skull Store",
   icon: icon_skull,
@@ -869,14 +866,11 @@ Lampa.Settings.listener.follow("open", function (e) {
       );
     }, 30);
   }
-});
-                ` }) })
+});` }) })
           ] }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "step", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { children: t("dev.3") }),
-            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `
-const newsBlock = "code news";
-
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "code", children: /* @__PURE__ */ jsxRuntimeExports.jsx(SyntaxHighlighter, { language: "javascript", style: atomOneDark, children: `const newsBlock = "code news";
 Lampa.SettingsApi.addParam({
   component: "skull",
   param: {
@@ -884,8 +878,7 @@ Lampa.SettingsApi.addParam({
     type: "static",
   },
   field: { name: newsBlock },
-});
-                ` }) })
+});` }) })
           ] })
         ] })
       ] })
