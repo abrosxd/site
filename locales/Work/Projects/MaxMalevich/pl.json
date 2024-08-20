@@ -1,0 +1,46 @@
+{
+  "sticky": {
+    "time": "5 dni",
+    "role": "Deweloper"
+  },
+  "title": "Tworzenie sliderów dla producenta mebli MaxMalevich",
+  "description": "Tworzenie 3 niestandardowych sliderów dla strony internetowej zbudowanej na konstruktorze Tilda",
+  "buttons": {
+    "1": "Zamów opracowanie",
+    "2": "Zobacz na stronie"
+  },
+  "info": {
+    "client": "MaxMalevich - producent mebli premium do domu z własną pełnocykliczną produkcją.",
+    "tasks": {
+      "1": "Responsywność na urządzeniach",
+      "2": "Pełne zakodowanie według koncepcji projektu",
+      "3": "Praca w ramach Tilda",
+      "4": "Możliwość ponownego użycia kodu"
+    },
+    "problems": {
+      "1": {
+        "title": "Konstruktor",
+        "text": "Slidery muszą być przenoszone przez projektanta. Dlatego należy użyć Zero-block, a nie pełnego kodowania."
+      },
+      "2": {
+        "title": "Style",
+        "text": "Trzeba było nadpisać style konstruktora, aby stworzyć responsywny slider."
+      },
+      "3": {
+        "title": "Autoscale",
+        "text": "Projekt wykonany został na parametrze Autoscale, więc konieczne było uwzględnienie tego parametru, aby zapewnić prawidłowe działanie slidera."
+      }
+    }
+  },
+  "results": {
+    "1": "Responsywność na dowolnym urządzeniu",
+    "2": "Różne rodzaje animacji",
+    "3": "Łatwe dodawanie nowych kart"
+  },
+  "dev": {
+    "1": "Zdjęcia i potrzebne linki są przechowywane w tablicy.",
+    "2": "Stałe zmienne i nadpisywanie stylów.",
+    "3": "Swiper.js do implementacji sliderów.",
+    "4": "Niestandardowa paginacja"
+  }
+}

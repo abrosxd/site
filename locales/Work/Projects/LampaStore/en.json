@@ -37,7 +37,6 @@
     "3": "Descriptions and status"
   },
   "dev": {
-    "title": "Development",
     "1": "Implementation through the cinema's own functions.",
     "2": "Standard rendering of the cinema's components to preserve the UI.",
     "3": "Integration of project news through standard component rendering."
