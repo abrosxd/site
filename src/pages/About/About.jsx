@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -7,13 +7,17 @@ import Transition from "../../components/Transition/Transition";
 import Button from "../../partials/Button/Button";
 import CrossSVG from "./assets/cross.svg";
 
-const SocialLinks = ({ title, links }) => (
-  <div className="block links">
-    <h2>{title}</h2>
-    {links.map(({ href, imgSrc, name }, index) => (
-      <a key={index} href={href} target="_blank" rel="noopener noreferrer">
-        <img src={imgSrc} alt={name} />
-        <p>{name}</p>
+const Links = ({ links }) => (
+  <div className="links">
+    {links.map(({ href, img, color }, index) => (
+      <a
+        key={index}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ backgroundColor: color }}
+      >
+        <img src={img} />
       </a>
     ))}
   </div>
@@ -23,12 +27,12 @@ const StackItems = ({ items }) => (
   <div className="block stack">
     <h1>{items.title}</h1>
     <div className="items">
-      {items.stacks.map(({ imgSrc, name }, index) => (
+      {items.stacks.map(({ img, name }, index) => (
         <div
           key={index}
           className={`tag ${name.toLowerCase().replace(/[\s.]/g, "-")}`}
         >
-          <img src={imgSrc} alt={name} />
+          <img src={img} alt={name} />
           <span>{name}</span>
         </div>
       ))}
@@ -80,46 +84,48 @@ const About = () => {
 
   const closeSection = () => setExpandedSection(null);
 
-  const socialLinks = [
+  const links = [
     {
       href: "https://t.me/abrosxd",
-      imgSrc: "/assets/icons/social/telegram.svg",
-      name: "Telegram",
+      img: "/assets/icons/social/telegram.svg",
+      color: "#37BBFE",
     },
     {
       href: "https://www.facebook.com/abrosxd/",
-      imgSrc: "/assets/icons/social/facebook.svg",
-      name: "Facebook",
+      img: "/assets/icons/social/facebook.svg",
+      color: "#3A559F",
     },
     {
       href: "https://vk.com/abrosxd",
-      imgSrc: "/assets/icons/social/vk.svg",
-      name: "Вконтакте",
+      img: "/assets/icons/social/vk.svg",
+      color: "#1976d2",
     },
-  ];
-
-  const resourceLinks = [
     {
       href: "https://codepen.io/abros",
-      imgSrc: "/assets/icons/social/codepen.svg",
-      name: "Codepen",
+      img: "/assets/icons/social/codepen.svg",
+      color: "#fff",
     },
   ];
 
   const stackItems = {
     title: t("info.stack"),
     stacks: [
-      { imgSrc: "/assets/icons/stack/vs-code.jpg", name: "VS Code" },
-      { imgSrc: "/assets/icons/stack/html5.png", name: "HTML" },
-      { imgSrc: "/assets/icons/stack/css3.png", name: "CSS" },
-      { imgSrc: "/assets/icons/stack/js.png", name: "JavaScript" },
-      { imgSrc: "/assets/icons/stack/react.png", name: "React" },
-      { imgSrc: "/assets/icons/stack/gsap.png", name: "GSAP" },
-      { imgSrc: "/assets/icons/stack/node-js.svg", name: "Node.js" },
-      { imgSrc: "/assets/icons/stack/figma.png", name: "Figma" },
-      { imgSrc: "/assets/icons/stack/webflow.png", name: "Webflow" },
-      { imgSrc: "/assets/icons/stack/tilda.png", name: "Tilda" },
-      { imgSrc: "/assets/icons/stack/airtable.svg", name: "Airtable" },
+      { img: "/assets/icons/stack/vs-code.jpg", name: "VS Code" },
+      { img: "/assets/icons/stack/html5.png", name: "HTML" },
+      { img: "/assets/icons/stack/css3.png", name: "CSS" },
+      { img: "/assets/icons/stack/js.png", name: "JavaScript" },
+      { img: "/assets/icons/stack/react.png", name: "React" },
+      { img: "/assets/icons/stack/gsap.png", name: "GSAP" },
+      { img: "/assets/icons/stack/node-js.svg", name: "Node.js" },
+      { img: "/assets/icons/stack/figma.png", name: "Figma" },
+      { img: "/assets/icons/stack/wordpress.png", name: "Wordpress" },
+      { img: "/assets/icons/stack/webflow.png", name: "Webflow" },
+      { img: "/assets/icons/stack/tilda.png", name: "Tilda" },
+      { img: "/assets/icons/stack/airtable.svg", name: "Airtable" },
+      { img: "/assets/icons/stack/nocodb.png", name: "NocoDB" },
+      { img: "/assets/icons/stack/make.png", name: "Make" },
+      { img: "/assets/icons/stack/n8n.svg", name: "N8N" },
+      { img: "/assets/icons/stack/zapier.png", name: "Zapier" },
     ],
   };
 
@@ -129,7 +135,7 @@ const About = () => {
         className={`left ${expandedSection === "left" ? "expanded" : ""}`}
         onClick={() => handleExpandSection("left")}
       >
-        <img className="bg" src="/assets/photo/statue1.avif" alt="Statue 1" />
+        <img className="bg" src="/assets/photo/statue.png" alt="Statue" />
         <div
           className={`overlay ${expandedSection === "left" ? "expanded" : ""}`}
         >
@@ -138,8 +144,7 @@ const About = () => {
         <div
           className={`content ${expandedSection === "left" ? "expanded" : ""}`}
         >
-          <SocialLinks title="Связь со мной" links={socialLinks} />
-          <SocialLinks title="Ресурсы" links={resourceLinks} />
+          <Links links={links} />
         </div>
       </div>
 
@@ -147,7 +152,7 @@ const About = () => {
         className={`center ${expandedSection === "center" ? "expanded" : ""}`}
         onClick={() => handleExpandSection("center")}
       >
-        <img className="bg" src="/assets/photo/statue2.png" alt="Statue 2" />
+        <img className="bg" src="/assets/photo/meduza.png" alt="Meduza" />
         <div
           className={`overlay ${
             expandedSection === "center" ? "expanded" : ""
@@ -165,10 +170,9 @@ const About = () => {
           </div>
           <div className="block time">
             <div className="title">
-              <h1 className="text">{t("info.time.text")}</h1>
-              <h1 className="tag city">Warszawa</h1>
+              <h1 className="tag city">{t("info.time.city")}</h1>
             </div>
-            <div className="dayblock">
+            <div className="block dayblock">
               <div className="date">
                 <p className="day">{currentDateTime.day}</p>
                 <p>{currentDateTime.date}</p>
@@ -182,12 +186,8 @@ const About = () => {
           <div className="block desc">
             <h1>{t("info.desc.me.title")}</h1>
             <h3>{t("info.desc.me.text")}</h3>
-          </div>
-          <div className="block desc">
             <h1>{t("info.desc.doing.title")}</h1>
             <h3>{t("info.desc.doing.text")}</h3>
-          </div>
-          <div className="block desc">
             <h1>{t("info.desc.from.title")}</h1>
             <h3>{t("info.desc.from.text")}</h3>
           </div>

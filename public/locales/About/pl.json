@@ -3,7 +3,7 @@
     "title": "Kilka słów o mnie",
     "hello": "👋 Cześć — Jestem Danil, web designer i web developer. Tutaj znajdziesz wszystkie potrzebne informacje o mnie i nawet więcej. Witaj!",
     "time": {
-      "text": "Mój Czas",
+      "city": "Warszawa",
       "days": ["ND", "PN", "WT", "ŚR", "CZW", "PT", "SB"]
     },
     "stack": "Stos",
